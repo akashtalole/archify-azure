@@ -14,6 +14,8 @@ Enterprise product catalog search (hybrid keyword + vector search on Azure AI Se
 [architecture](examples/out/product-catalog-search.png) · [page with cost and review](examples/out/product-catalog-search.html) ·
 [draw.io file](examples/out/product-catalog-search.drawio)
 
+Multi-agent solution (Copilot Studio + Azure AI Foundry + Microsoft Fabric): [architecture](examples/out/multi-agent-foundry-fabric-copilot.png) · [page](examples/out/multi-agent-foundry-fabric-copilot.html) · [draw.io](examples/out/multi-agent-foundry-fabric-copilot.drawio)
+
 Serverless API: [architecture](examples/out/serverless-api.png) · Agent tool call: [sequence](examples/out/agent-tool-call.sequence.png) ·
 Clinical notes: [dataflow](examples/out/clinical-notes.dataflow.png)
 
