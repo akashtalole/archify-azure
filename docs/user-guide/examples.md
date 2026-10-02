@@ -27,6 +27,15 @@ A larger use case in its own folder, `examples/enterprise-agentic-copilot/`: Cop
 | Claim question to approved payout | sequence | [open](../live/enterprise-claim-run.sequence.html) |
 | Claims data platform on Fabric | dataflow | [open](../live/enterprise-data-platform.dataflow.html) |
 
+## Dynamics 365 to Fabric analytics
+
+`examples/dynamics365-fabric-analytics/`: Business Central and the customer engagement apps (Sales, Customer Service, Field Service on Dataverse) feeding Microsoft Fabric. Customer engagement data arrives through **Dataverse Link to Fabric** (read-only OneLake shortcuts); Business Central, which is not a built-in mirroring source, arrives through an **open mirrored database** fed by an extract function. The folder README lists what the Microsoft documentation says about each path.
+
+| Example | Type | Page |
+|---|---|---|
+| Business Central and CE apps to Fabric | architecture | [open](../live/d365-architecture.html) |
+| Three ways into OneLake | dataflow | [open](../live/d365-data-mirroring.dataflow.html) |
+
 ## Sequence and dataflow
 
 | Example | Type | Page |

@@ -2,7 +2,7 @@
   "ok": true,
   "tool": "archify-azure",
   "version": "0.1.0",
-  "iconRelease": "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric icons",
+  "iconRelease": "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric + Dynamics 365 icons",
   "input": {
     "path": "examples/enterprise-agentic-copilot/claim-run.sequence.json",
     "sha256": "81236e6d118f266458ed6012d8ecb9883cce377eb1b5c430644eef360485a991"
