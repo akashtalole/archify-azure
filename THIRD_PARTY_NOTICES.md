@@ -21,6 +21,13 @@ Power Automate, Power Pages, Dataverse, AI Builder, Power Platform) from
 Corporation: do not crop, flip, rotate, distort or recolour them, include the product name near the icon, and do not use them to represent
 your own product. `fetch-icons --no-power` skips them.
 
+## Dynamics 365 icons
+Not redistributed. `npm run icons:fetch` also downloads the official Dynamics 365 icon set (Business Central, Sales, Customer Service, Field Service, Finance,
+Finance and Operations, Supply Chain Management, Commerce, Customer Insights, Contact Center… and the product-family icon) from
+<https://learn.microsoft.com/dynamics365/get-started/icons> into `assets/azure-icons/dynamics-365/` (git-ignored). They are © Microsoft Corporation: use them in architecture
+diagrams, training materials or documentation, do not crop, flip, rotate or distort them, include the product name near the icon, and do not use them to represent your own product.
+`fetch-icons --no-d365` skips them.
+
 ## Microsoft Fabric icons
 Not redistributed. `npm run icons:fetch` also downloads the official Fabric icons (<https://learn.microsoft.com/fabric/fundamentals/icons>,
 npm package `@fabric-msft/svg-icons` as published in [microsoft/fabric-samples](https://github.com/microsoft/fabric-samples), `docs-samples/Icons.zip`) and keeps

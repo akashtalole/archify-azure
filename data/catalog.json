@@ -1,5 +1,5 @@
 {
- "generatedFrom": "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric icons",
+ "generatedFrom": "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric + Dynamics 365 icons",
  "categories": {
   "ai-machine-learning": "#0078D4",
   "analytics": "#0078D4",
@@ -11,6 +11,7 @@
   "databases": "#0078D4",
   "developer-tools": "#0078D4",
   "devops": "#0078D4",
+  "dynamics-365": "#0078D4",
   "fabric": "#0078D4",
   "hybrid-multicloud": "#0078D4",
   "identity": "#0078D4",
@@ -4111,6 +4112,118 @@
    "name": "Microsoft Fabric",
    "category": "fabric",
    "file": "fabric/Microsoft-Fabric.svg"
+  },
+  {
+   "key": "Dynamics-365",
+   "id": "dynamics-365",
+   "name": "Dynamics 365",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365.svg"
+  },
+  {
+   "key": "Dynamics-365-Business-Central",
+   "id": "dynamics-365-business-central",
+   "name": "Dynamics 365 Business Central",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Business-Central.svg"
+  },
+  {
+   "key": "Dynamics-365-Commerce",
+   "id": "dynamics-365-commerce",
+   "name": "Dynamics 365 Commerce",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Commerce.svg"
+  },
+  {
+   "key": "Dynamics-365-Contact-Center",
+   "id": "dynamics-365-contact-center",
+   "name": "Dynamics 365 Contact Center",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Contact-Center.svg"
+  },
+  {
+   "key": "Dynamics-365-Customer-Insights",
+   "id": "dynamics-365-customer-insights",
+   "name": "Dynamics 365 Customer Insights",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Customer-Insights.svg"
+  },
+  {
+   "key": "Dynamics-365-Customer-Service",
+   "id": "dynamics-365-customer-service",
+   "name": "Dynamics 365 Customer Service",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Customer-Service.svg"
+  },
+  {
+   "key": "Dynamics-365-Customer-Voice",
+   "id": "dynamics-365-customer-voice",
+   "name": "Dynamics 365 Customer Voice",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Customer-Voice.svg"
+  },
+  {
+   "key": "Dynamics-365-Field-Service",
+   "id": "dynamics-365-field-service",
+   "name": "Dynamics 365 Field Service",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Field-Service.svg"
+  },
+  {
+   "key": "Dynamics-365-Finance",
+   "id": "dynamics-365-finance",
+   "name": "Dynamics 365 Finance",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Finance.svg"
+  },
+  {
+   "key": "Dynamics-365-Finance-and-Operations",
+   "id": "dynamics-365-finance-and-operations",
+   "name": "Dynamics 365 Finance and Operations",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Finance-and-Operations.svg"
+  },
+  {
+   "key": "Dynamics-365-Human-Resources",
+   "id": "dynamics-365-human-resources",
+   "name": "Dynamics 365 Human Resources",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Human-Resources.svg"
+  },
+  {
+   "key": "Dynamics-365-Intelligent-Order-Management",
+   "id": "dynamics-365-intelligent-order-management",
+   "name": "Dynamics 365 Intelligent Order Management",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Intelligent-Order-Management.svg"
+  },
+  {
+   "key": "Dynamics-365-Project-Operations",
+   "id": "dynamics-365-project-operations",
+   "name": "Dynamics 365 Project Operations",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Project-Operations.svg"
+  },
+  {
+   "key": "Dynamics-365-Sales",
+   "id": "dynamics-365-sales",
+   "name": "Dynamics 365 Sales",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Sales.svg"
+  },
+  {
+   "key": "Dynamics-365-Sales-Insights",
+   "id": "dynamics-365-sales-insights",
+   "name": "Dynamics 365 Sales Insights",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Sales-Insights.svg"
+  },
+  {
+   "key": "Dynamics-365-Supply-Chain-Management",
+   "id": "dynamics-365-supply-chain-management",
+   "name": "Dynamics 365 Supply Chain Management",
+   "category": "dynamics-365",
+   "file": "dynamics-365/Dynamics-365-Supply-Chain-Management.svg"
   },
   {
    "key": "ABS-Member",

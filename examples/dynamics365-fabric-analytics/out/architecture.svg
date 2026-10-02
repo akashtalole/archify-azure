@@ -1,0 +1,508 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 1788 1050" width="1788" height="1050" role="img" aria-label="Dynamics 365 Business Central and customer engagement apps: operational data to Microsoft Fabric analytics">
+<title>Dynamics 365 Business Central and customer engagement apps: operational data to Microsoft Fabric analytics</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="svc-Microsoft-Fabric" viewBox="0 0 64 64"><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-a)" fill-rule="evenodd" d="m5.64 31.6-.586 2.144c-.218.685-.524 1.693-.689 2.59a5.63 5.63 0 0 0 4.638 7.588c.792.114 1.688.108 2.692-.04l4.613-.636a2.92 2.92 0 0 0 2.421-2.127l3.175-11.662L5.64 31.599Z" clip-rule="evenodd"/><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-b)" d="M10.14 32.152c-4.863.753-5.861 4.423-5.861 4.423l4.656-17.11 24.333-3.292-3.318 12.052a1.71 1.71 0 0 1-1.388 1.244l-.136.022-18.423 2.684z"/><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-c)" fill-opacity=".8" d="M10.14 32.152c-4.863.753-5.861 4.423-5.861 4.423l4.656-17.11 24.333-3.292-3.318 12.052a1.71 1.71 0 0 1-1.388 1.244l-.136.022-18.423 2.684z"/><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-d)" d="m12.899 21.235 26.938-3.98a1.6 1.6 0 0 0 1.323-1.17l2.78-10.06a1.595 1.595 0 0 0-1.74-2.012L16.498 7.81a7.19 7.19 0 0 0-5.777 5.193L7.013 26.438c.744-2.717 1.202-4.355 5.886-5.203"/><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-e)" d="m12.899 21.235 26.938-3.98a1.6 1.6 0 0 0 1.323-1.17l2.78-10.06a1.595 1.595 0 0 0-1.74-2.012L16.498 7.81a7.19 7.19 0 0 0-5.777 5.193L7.013 26.438c.744-2.717 1.202-4.355 5.886-5.203"/><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-f)" fill-opacity=".4" d="m12.899 21.235 26.938-3.98a1.6 1.6 0 0 0 1.323-1.17l2.78-10.06a1.595 1.595 0 0 0-1.74-2.012L16.498 7.81a7.19 7.19 0 0 0-5.777 5.193L7.013 26.438c.744-2.717 1.202-4.355 5.886-5.203"/><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-g)" d="M12.899 21.236c-3.901.706-4.87 1.962-5.514 3.932L4.279 36.577s.992-3.633 5.796-4.41l18.352-2.673.136-.022a1.71 1.71 0 0 0 1.388-1.244l2.73-9.915z"/><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-h)" fill-opacity=".2" d="M12.899 21.236c-3.901.706-4.87 1.962-5.514 3.932L4.279 36.577s.992-3.633 5.796-4.41l18.352-2.673.136-.022a1.71 1.71 0 0 0 1.388-1.244l2.73-9.915z"/><path fill="url(#svc-Microsoft-Fabric__i7fa1c1-i)" fill-rule="evenodd" d="M10.075 32.167c-4.06.657-5.392 3.345-5.71 4.164a5.63 5.63 0 0 0 4.638 7.59c.792.114 1.688.108 2.692-.039l4.613-.637a2.92 2.92 0 0 0 2.421-2.127l2.894-10.633-11.547 1.683z" clip-rule="evenodd"/><defs><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-a" x1="12.953" x2="12.953" y1="44.001" y2="29.457" gradientUnits="userSpaceOnUse"><stop offset=".056" stop-color="#2AAC94"/><stop offset=".155" stop-color="#239C87"/><stop offset=".372" stop-color="#177E71"/><stop offset=".588" stop-color="#0E6961"/><stop offset=".799" stop-color="#095D57"/><stop offset="1" stop-color="#085954"/></linearGradient><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-b" x1="31.331" x2="17.286" y1="33.448" y2="18.173" gradientUnits="userSpaceOnUse"><stop offset=".042" stop-color="#ABE88E"/><stop offset=".549" stop-color="#2AAA92"/><stop offset=".906" stop-color="#117865"/></linearGradient><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-c" x1="-3.182" x2="10.183" y1="32.706" y2="28.148" gradientUnits="userSpaceOnUse"><stop stop-color="#6AD6F9"/><stop offset="1" stop-color="#6AD6F9" stop-opacity="0"/></linearGradient><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-d" x1="7.013" x2="42.589" y1="15.219" y2="15.219" gradientUnits="userSpaceOnUse"><stop offset=".043" stop-color="#25FFD4"/><stop offset=".874" stop-color="#55DDB9"/></linearGradient><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-e" x1="7.013" x2="39.06" y1="10.247" y2="25.128" gradientUnits="userSpaceOnUse"><stop stop-color="#6AD6F9"/><stop offset=".23" stop-color="#60E9D0"/><stop offset=".651" stop-color="#6DE9BB"/><stop offset=".994" stop-color="#ABE88E"/></linearGradient><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-f" x1="9.978" x2="27.404" y1="13.031" y2="16.885" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".459" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-g" x1="15.756" x2="16.168" y1="27.96" y2="15.74" gradientUnits="userSpaceOnUse"><stop offset=".205" stop-color="#063D3B" stop-opacity="0"/><stop offset=".586" stop-color="#063D3B" stop-opacity=".237"/><stop offset=".872" stop-color="#063D3B" stop-opacity=".75"/></linearGradient><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-h" x1="2.81" x2="17.701" y1="26.744" y2="29.545" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".459" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="svc-Microsoft-Fabric__i7fa1c1-i" x1="13.567" x2="10.662" y1="39.97" y2="25.764" gradientUnits="userSpaceOnUse"><stop offset=".064" stop-color="#063D3B" stop-opacity="0"/><stop offset=".17" stop-color="#063D3B" stop-opacity=".135"/><stop offset=".562" stop-color="#063D3B" stop-opacity=".599"/><stop offset=".85" stop-color="#063D3B" stop-opacity=".9"/><stop offset="1" stop-color="#063D3B"/></linearGradient></defs></symbol><symbol id="svc-Dynamics-365-Business-Central" viewBox="0 0 96 96"><g clip-path="url(#svc-Dynamics-365-Business-Central__clip0_4303_1230)">
+<g clip-path="url(#svc-Dynamics-365-Business-Central__clip1_4303_1230)">
+<path d="M34 33.9998C41.732 41.7317 54.268 41.7318 62 33.9999C69.732 26.2679 69.732 13.7318 62 5.99986C54.268 -1.73209 41.732 -1.73214 34 5.99979C26.268 13.7318 26.2681 26.2678 34 33.9998Z" fill="url(#svc-Dynamics-365-Business-Central__paint0_linear_4303_1230)"/>
+<path d="M34 33.9998C41.732 41.7317 54.268 41.7318 62 33.9999C69.732 26.2679 69.732 13.7318 62 5.99986C54.268 -1.73209 41.732 -1.73214 34 5.99979C26.268 13.7318 26.2681 26.2678 34 33.9998Z" fill="url(#svc-Dynamics-365-Business-Central__paint1_radial_4303_1230)"/>
+<path d="M34 33.9998C41.732 41.7317 54.268 41.7318 62 33.9999C69.732 26.2679 69.732 13.7318 62 5.99986C54.268 -1.73209 41.732 -1.73214 34 5.99979C26.268 13.7318 26.2681 26.2678 34 33.9998Z" fill="url(#svc-Dynamics-365-Business-Central__paint2_linear_4303_1230)"/>
+<path d="M62 62.0002C54.268 54.2683 41.732 54.2682 34 62.0001C26.268 69.7321 26.268 82.2682 34 90.0001C41.732 97.7321 54.268 97.7321 62 90.0002C69.732 82.2682 69.7319 69.7322 62 62.0002Z" fill="url(#svc-Dynamics-365-Business-Central__paint3_linear_4303_1230)"/>
+<path d="M62 62.0002C54.268 54.2683 41.732 54.2682 34 62.0001C26.268 69.7321 26.268 82.2682 34 90.0001C41.732 97.7321 54.268 97.7321 62 90.0002C69.732 82.2682 69.7319 69.7322 62 62.0002Z" fill="url(#svc-Dynamics-365-Business-Central__paint4_linear_4303_1230)"/>
+<path d="M62 62.0002C54.268 54.2683 41.732 54.2682 34 62.0001C26.268 69.7321 26.268 82.2682 34 90.0001C41.732 97.7321 54.268 97.7321 62 90.0002C69.732 82.2682 69.7319 69.7322 62 62.0002Z" fill="url(#svc-Dynamics-365-Business-Central__paint5_radial_4303_1230)"/>
+<path d="M34 62C41.732 69.732 54.268 69.732 62 62C69.732 54.268 69.732 41.732 62 34C54.268 26.268 41.732 26.268 34 34C26.268 41.732 26.268 54.268 34 62Z" fill="url(#svc-Dynamics-365-Business-Central__paint6_linear_4303_1230)"/>
+<path d="M34 62C41.732 69.732 54.268 69.732 62 62C69.732 54.268 69.732 41.732 62 34C54.268 26.268 41.732 26.268 34 34C26.268 41.732 26.268 54.268 34 62Z" fill="url(#svc-Dynamics-365-Business-Central__paint7_radial_4303_1230)"/>
+<path d="M34 62C41.732 69.732 54.268 69.732 62 62C69.732 54.268 69.732 41.732 62 34C54.268 26.268 41.732 26.268 34 34C26.268 41.732 26.268 54.268 34 62Z" fill="url(#svc-Dynamics-365-Business-Central__paint8_radial_4303_1230)"/>
+<path d="M6.00002 34L34 5.99998C26.2681 13.732 26.268 26.2681 34 34.0001C41.732 41.7321 41.732 54.2681 34 62.0001C26.268 69.732 13.732 69.732 6.00004 62C-1.73195 54.268 -1.73198 41.732 6.00002 34Z" fill="url(#svc-Dynamics-365-Business-Central__paint9_linear_4303_1230)"/>
+<path d="M6.00002 34L34 5.99998C26.2681 13.732 26.268 26.2681 34 34.0001C41.732 41.7321 41.732 54.2681 34 62.0001C26.268 69.732 13.732 69.732 6.00004 62C-1.73195 54.268 -1.73198 41.732 6.00002 34Z" fill="url(#svc-Dynamics-365-Business-Central__paint10_radial_4303_1230)"/>
+<path d="M90 62L62 90C69.7319 82.268 69.732 69.7319 62 61.9999C54.268 54.2679 54.268 41.7319 62 33.9999C69.732 26.268 82.268 26.268 90 34C97.732 41.732 97.732 54.268 90 62Z" fill="url(#svc-Dynamics-365-Business-Central__paint11_linear_4303_1230)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="svc-Dynamics-365-Business-Central__paint0_linear_4303_1230" x1="30" y1="9.49999" x2="67" y2="25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0C74A1"/>
+<stop offset="0.468152" stop-color="#1384B1"/>
+<stop offset="1" stop-color="#16BBDA"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365-Business-Central__paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(48 48) rotate(-90) scale(29.5 29.5)">
+<stop offset="0.456329" stop-color="#0057AA"/>
+<stop offset="1" stop-color="#1384B1" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="svc-Dynamics-365-Business-Central__paint2_linear_4303_1230" x1="49" y1="14" x2="26.5" y2="24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1384B1" stop-opacity="0"/>
+<stop offset="1" stop-color="#004695"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Business-Central__paint3_linear_4303_1230" x1="68.5" y1="79.5" x2="29" y2="71" gradientUnits="userSpaceOnUse">
+<stop stop-color="#06517B"/>
+<stop offset="0.508523" stop-color="#09638E"/>
+<stop offset="1" stop-color="#0C74A1"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Business-Central__paint4_linear_4303_1230" x1="53" y1="76" x2="69.5" y2="72" gradientUnits="userSpaceOnUse">
+<stop stop-color="#09638E" stop-opacity="0"/>
+<stop offset="1" stop-color="#003580"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365-Business-Central__paint5_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(48 48) rotate(90) scale(36 36)">
+<stop offset="0.423337" stop-color="#003580"/>
+<stop offset="1" stop-color="#09638E" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="svc-Dynamics-365-Business-Central__paint6_linear_4303_1230" x1="44.5" y1="29.5" x2="45" y2="68.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#43E5CA"/>
+<stop offset="0.371719" stop-color="#26CFE8"/>
+<stop offset="1" stop-color="#1384B1"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365-Business-Central__paint7_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(76 48) rotate(90) scale(32)">
+<stop offset="0.399827" stop-color="#09638E"/>
+<stop offset="1" stop-color="#119FC5" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="svc-Dynamics-365-Business-Central__paint8_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20 48) rotate(90) scale(34)">
+<stop offset="0.399827" stop-color="#09638E"/>
+<stop offset="1" stop-color="#119FC5" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="svc-Dynamics-365-Business-Central__paint9_linear_4303_1230" x1="14.5" y1="26" x2="43.5" y2="55" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B6F6C7"/>
+<stop offset="0.277847" stop-color="#43E5CA"/>
+<stop offset="1" stop-color="#26CFE8"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365-Business-Central__paint10_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11.5 26) rotate(65.4495) scale(44.5253 44.8148)">
+<stop offset="0.585411" stop-color="#2BDABE" stop-opacity="0"/>
+<stop offset="1" stop-color="#119FC5"/>
+</radialGradient>
+<linearGradient id="svc-Dynamics-365-Business-Central__paint11_linear_4303_1230" x1="63" y1="30" x2="92.5" y2="59.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9FF2E4"/>
+<stop offset="0.266186" stop-color="#2BDABE"/>
+<stop offset="0.620556" stop-color="#16BBDA"/>
+<stop offset="1" stop-color="#1384B1"/>
+</linearGradient>
+<clipPath id="svc-Dynamics-365-Business-Central__clip0_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="svc-Dynamics-365-Business-Central__clip1_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+</defs></symbol><symbol id="svc-Dynamics-365" viewBox="0 0 96 96"><g clip-path="url(#svc-Dynamics-365__clip0_4303_1230)">
+<g clip-path="url(#svc-Dynamics-365__clip1_4303_1230)">
+<path d="M8 8.64804C8 1.48532 12.793 -0.307119 18.0014 0.0408311C54.9592 2.50996 88 13.4612 88 27.5274V70.8626C88 64.136 81.2063 58.5112 70.6791 54.1048C69.0821 53.4363 68.0037 51.8953 68.0037 50.164V36.0118C68.0037 27.913 64.6065 24.5176 58.0039 22.6303C51.4013 20.743 47.9957 22.8343 47.9957 30.273V37.3692C47.9957 42.3552 44.744 45.6372 39.0108 46.5734C33.2776 47.5096 28.4108 48.0653 21.0075 48.7346C13.6041 49.4039 8 44.6457 8 36.59V8.64804Z" fill="url(#svc-Dynamics-365__paint0_linear_4303_1230)"/>
+<path d="M8 8.64804C8 1.48532 12.793 -0.307119 18.0014 0.0408311C54.9592 2.50996 88 13.4612 88 27.5274V70.8626C88 64.136 81.2063 58.5112 70.6791 54.1048C69.0821 53.4363 68.0037 51.8953 68.0037 50.164V36.0118C68.0037 27.913 64.6065 24.5176 58.0039 22.6303C51.4013 20.743 47.9957 22.8343 47.9957 30.273V37.3692C47.9957 42.3552 44.744 45.6372 39.0108 46.5734C33.2776 47.5096 28.4108 48.0653 21.0075 48.7346C13.6041 49.4039 8 44.6457 8 36.59V8.64804Z" fill="url(#svc-Dynamics-365__paint1_radial_4303_1230)"/>
+<path d="M8 8.64804C8 1.48532 12.793 -0.307119 18.0014 0.0408311C54.9592 2.50996 88 13.4612 88 27.5274V70.8626C88 64.136 81.2063 58.5112 70.6791 54.1048C69.0821 53.4363 68.0037 51.8953 68.0037 50.164V36.0118C68.0037 27.913 64.6065 24.5176 58.0039 22.6303C51.4013 20.743 47.9957 22.8343 47.9957 30.273V37.3692C47.9957 42.3552 44.744 45.6372 39.0108 46.5734C33.2776 47.5096 28.4108 48.0653 21.0075 48.7346C13.6041 49.4039 8 44.6457 8 36.59V8.64804Z" fill="url(#svc-Dynamics-365__paint2_radial_4303_1230)"/>
+<path d="M88.0001 27.5273C88.0001 39.0611 66.8268 48.0295 40.0001 52.4565C33.2484 53.5707 28.0001 56.7291 28.0001 63.7778V85.3022C28.0001 95.5107 34.1437 96.8549 41.998 95.5107C70.1946 90.6848 88.0001 80.7717 88.0001 70.8265V27.5273Z" fill="url(#svc-Dynamics-365__paint3_linear_4303_1230)"/>
+<path d="M88.0001 27.5273C88.0001 39.0611 66.8268 48.0295 40.0001 52.4565C33.2484 53.5707 28.0001 56.7291 28.0001 63.7778V85.3022C28.0001 95.5107 34.1437 96.8549 41.998 95.5107C70.1946 90.6848 88.0001 80.7717 88.0001 70.8265V27.5273Z" fill="url(#svc-Dynamics-365__paint4_linear_4303_1230)" fill-opacity="0.5"/>
+<path opacity="0.5" d="M68.0001 62.3574C68 70.7401 65.071 73.7092 58.004 75.7236C51.8306 77.4834 48.0001 76.807 48.0001 68.0771V50.9639C55.4017 49.4174 62.1948 47.5071 68.0001 45.2783V62.3574Z" fill="url(#svc-Dynamics-365__paint5_linear_4303_1230)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="svc-Dynamics-365__paint0_linear_4303_1230" x1="18.1333" y1="2.1153" x2="47.1826" y2="60.9552" gradientUnits="userSpaceOnUse">
+<stop stop-color="#367AF2"/>
+<stop offset="0.28721" stop-color="#2764E7"/>
+<stop offset="0.660233" stop-color="#4A43CB"/>
+<stop offset="1" stop-color="#6D37CD"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365__paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientTransform="matrix(17.6607 52.344 -119.087 40.8452 39.9393 1.5962)" gradientUnits="userSpaceOnUse">
+<stop offset="0.619721" stop-color="#5750E2" stop-opacity="0"/>
+<stop offset="1" stop-color="#4B20A0"/>
+</radialGradient>
+<radialGradient id="svc-Dynamics-365__paint2_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30.5 50.6874) rotate(-90) scale(53.3687 95.7281)">
+<stop offset="0.55" stop-color="#2764E7" stop-opacity="0"/>
+<stop offset="1" stop-color="#AC80FF"/>
+</radialGradient>
+<linearGradient id="svc-Dynamics-365__paint3_linear_4303_1230" x1="67.4738" y1="92.9706" x2="67.4738" y2="36.9473" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2052CB"/>
+<stop offset="0.40599" stop-color="#2764E7"/>
+<stop offset="1" stop-color="#BD96FF"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365__paint4_linear_4303_1230" x1="73.2633" y1="49.8376" x2="88.0001" y2="49.8376" gradientUnits="userSpaceOnUse">
+<stop stop-color="#367AF2" stop-opacity="0"/>
+<stop offset="0.488848" stop-color="#4BA3F3" stop-opacity="0.3769"/>
+<stop offset="1" stop-color="#6FE8F5"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365__paint5_linear_4303_1230" x1="57.6792" y1="45.4777" x2="57.6792" y2="74.1402" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CEB0FF"/>
+<stop offset="1" stop-color="#4894FE"/>
+</linearGradient>
+<clipPath id="svc-Dynamics-365__clip0_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="svc-Dynamics-365__clip1_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+</defs></symbol><symbol id="gen-Users" viewBox="0 0 18 18"><defs><linearGradient id="gen-Users__be92901b-ec33-4c65-adf1-9b0eed06d677" x1="9" y1="6.88" x2="9" y2="20.45" gradientUnits="userSpaceOnUse"><stop offset="0.22" stop-color="#32d4f5" /><stop offset="1" stop-color="#198ab3" /></linearGradient><linearGradient id="gen-Users__b46fc246-25d8-4398-8779-1042e8cacae7" x1="8.61" y1="-0.4" x2="9.6" y2="11.92" gradientUnits="userSpaceOnUse"><stop offset="0.22" stop-color="#32d4f5" /><stop offset="1" stop-color="#198ab3" /></linearGradient></defs><path d="M15.72,18a1.45,1.45,0,0,0,1.45-1.45.47.47,0,0,0,0-.17C16.59,11.81,14,8.09,9,8.09S1.34,11.24.83,16.39A1.46,1.46,0,0,0,2.14,18H15.72Z" fill="url(#gen-Users__be92901b-ec33-4c65-adf1-9b0eed06d677)" /><path d="M9,9.17a4.59,4.59,0,0,1-2.48-.73L9,14.86l2.44-6.38A4.53,4.53,0,0,1,9,9.17Z" fill="#fff" opacity="0.8" /><circle cx="9.01" cy="4.58" r="4.58" fill="url(#gen-Users__b46fc246-25d8-4398-8779-1042e8cacae7)" /></symbol><symbol id="svc-Dynamics-365-Sales" viewBox="0 0 96 96"><g clip-path="url(#svc-Dynamics-365-Sales__clip0_4303_1230)">
+<g clip-path="url(#svc-Dynamics-365-Sales__clip1_4303_1230)">
+<path d="M0 48C0 41.3726 5.37258 36 12 36H16V60H12C5.37258 60 0 54.6274 0 48Z" fill="url(#svc-Dynamics-365-Sales__paint0_linear_4303_1230)"/>
+<path d="M0 48C0 41.3726 5.37258 36 12 36H16V60H12C5.37258 60 0 54.6274 0 48Z" fill="url(#svc-Dynamics-365-Sales__paint1_radial_4303_1230)"/>
+<path d="M16 30C16 23.3726 21.3726 18 28 18H32V60H16V30Z" fill="url(#svc-Dynamics-365-Sales__paint2_linear_4303_1230)"/>
+<path d="M16 30C16 23.3726 21.3726 18 28 18H32V60H16V30Z" fill="url(#svc-Dynamics-365-Sales__paint3_linear_4303_1230)" fill-opacity="0.6"/>
+<path d="M32 12C32 5.37258 37.3726 0 44 0H48C55 0 60 1.54995 60 1.54995V54C60 57.3137 57.3137 60 54 60H32V12Z" fill="url(#svc-Dynamics-365-Sales__paint4_linear_4303_1230)"/>
+<path d="M32 12C32 5.37258 37.3726 0 44 0H48C55 0 60 1.54995 60 1.54995V54C60 57.3137 57.3137 60 54 60H32V12Z" fill="url(#svc-Dynamics-365-Sales__paint5_linear_4303_1230)" fill-opacity="0.5"/>
+<path d="M48 6.00024C48 2.68659 50.6966 -0.038762 53.9844 0.374268C61.3571 1.30072 68.4432 3.93058 74.667 8.08911C82.5606 13.3634 88.7137 20.8602 92.3467 29.6311C95.9796 38.4019 96.9302 48.0535 95.0781 57.3645C93.226 66.6754 88.6541 75.2278 81.9414 81.9407C75.2285 88.6536 66.6753 93.2253 57.3643 95.0774C48.0532 96.9295 38.4017 95.979 29.6309 92.3459C20.8602 88.7129 13.3641 82.5606 8.08984 74.6672C2.81563 66.7738 7.16976e-05 57.4936 0 48.0002C0.000195854 54.6275 5.3727 60.0002 12 60.0002H42C45.3136 60.0002 47.9998 57.3138 48 54.0002V6.00024Z" fill="url(#svc-Dynamics-365-Sales__paint6_radial_4303_1230)"/>
+<path d="M48 6.00024C48 2.68659 50.6966 -0.038762 53.9844 0.374268C61.3571 1.30072 68.4432 3.93058 74.667 8.08911C82.5606 13.3634 88.7137 20.8602 92.3467 29.6311C95.9796 38.4019 96.9302 48.0535 95.0781 57.3645C93.226 66.6754 88.6541 75.2278 81.9414 81.9407C75.2285 88.6536 66.6753 93.2253 57.3643 95.0774C48.0532 96.9295 38.4017 95.979 29.6309 92.3459C20.8602 88.7129 13.3641 82.5606 8.08984 74.6672C2.81563 66.7738 7.16976e-05 57.4936 0 48.0002C0.000195854 54.6275 5.3727 60.0002 12 60.0002H42C45.3136 60.0002 47.9998 57.3138 48 54.0002V6.00024Z" fill="url(#svc-Dynamics-365-Sales__paint7_radial_4303_1230)"/>
+<path opacity="0.6" d="M96 48C96 41.3726 90.6274 36 84 36H48V54C48 57.3137 45.3137 60 42 60H40H84C90.6274 60 96 54.6274 96 48Z" fill="url(#svc-Dynamics-365-Sales__paint8_radial_4303_1230)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="svc-Dynamics-365-Sales__paint0_linear_4303_1230" x1="0.228189" y1="52.4858" x2="15.9261" y2="53.8502" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1B44B1"/>
+<stop offset="1" stop-color="#102784"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365-Sales__paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.5 36) rotate(90) scale(24 17.6815)">
+<stop offset="0.57876" stop-color="#102784" stop-opacity="0"/>
+<stop offset="1" stop-color="#102784"/>
+</radialGradient>
+<linearGradient id="svc-Dynamics-365-Sales__paint2_linear_4303_1230" x1="24" y1="18" x2="24" y2="60" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0094F0"/>
+<stop offset="0.775536" stop-color="#2052CB"/>
+<stop offset="1" stop-color="#163697"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Sales__paint3_linear_4303_1230" x1="24" y1="45" x2="32.0052" y2="44.6047" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0078D4" stop-opacity="0"/>
+<stop offset="1" stop-color="#2052CB"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Sales__paint4_linear_4303_1230" x1="40" y1="0" x2="40" y2="60" gradientUnits="userSpaceOnUse">
+<stop stop-color="#26CFE8"/>
+<stop offset="0.409431" stop-color="#0FAFFF"/>
+<stop offset="0.809746" stop-color="#367AF2"/>
+<stop offset="1" stop-color="#2052CB"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Sales__paint5_linear_4303_1230" x1="40.8889" y1="34.5" x2="48.8889" y2="34.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0094F0" stop-opacity="0"/>
+<stop offset="1" stop-color="#2764E7"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365-Sales__paint6_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(63.3122 13.9524) rotate(90) scale(89.1508 89.1508)">
+<stop offset="0.062127" stop-color="#6FE8F5"/>
+<stop offset="0.288121" stop-color="#3BD5FF"/>
+<stop offset="0.68128" stop-color="#0094F0"/>
+<stop offset="1" stop-color="#2052CB"/>
+</radialGradient>
+<radialGradient id="svc-Dynamics-365-Sales__paint7_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(41 63.9998) rotate(-90) scale(68)">
+<stop offset="0.542484" stop-color="#29C3FF" stop-opacity="0"/>
+<stop offset="1" stop-color="#73EDD8"/>
+</radialGradient>
+<radialGradient id="svc-Dynamics-365-Sales__paint8_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46 60) scale(62 62)">
+<stop offset="0.459307" stop-color="#3BD5FF"/>
+<stop offset="1" stop-color="#3BD5FF" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="svc-Dynamics-365-Sales__clip0_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="svc-Dynamics-365-Sales__clip1_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+</defs></symbol><symbol id="svc-Dynamics-365-Customer-Service" viewBox="0 0 96 96"><path d="M67.4112 12H90C93.3137 12 96 14.6863 96 18V35.3441C96 39.8947 94.3668 44.2942 91.3973 47.7424L63.1551 80.5382C55.176 89.8037 40.824 89.8037 32.8449 80.5381L18.8076 64.2373L62.9034 14.0402C64.0426 12.7434 65.6851 12 67.4112 12Z" fill="url(#svc-Dynamics-365-Customer-Service__paint0_linear_4303_1230)"/>
+<path d="M67.4112 12H90C93.3137 12 96 14.6863 96 18V35.3441C96 39.8947 94.3668 44.2942 91.3973 47.7424L63.1551 80.5382C55.176 89.8037 40.824 89.8037 32.8449 80.5381L18.8076 64.2373L62.9034 14.0402C64.0426 12.7434 65.6851 12 67.4112 12Z" fill="url(#svc-Dynamics-365-Customer-Service__paint1_radial_4303_1230)"/>
+<path d="M28.5892 12H6C2.68629 12 0 14.6863 0 18V40.1703C0 41.6073 0.515716 42.9965 1.45337 44.0854L32.8435 80.5387C40.823 89.8053 55.1765 89.8048 63.1553 80.5376L77.1954 64.2305L33.0965 14.0397C31.9574 12.7432 30.3151 12 28.5892 12Z" fill="url(#svc-Dynamics-365-Customer-Service__paint2_linear_4303_1230)"/>
+<path d="M62.7832 47.8271C70.3237 56.4088 83.6506 56.4283 91.2236 47.9434L63.1553 80.5381C55.1762 89.8037 40.8238 89.8037 32.8447 80.5381L18.8076 64.2373L48.001 31.0039L62.7832 47.8271Z" fill="url(#svc-Dynamics-365-Customer-Service__paint3_linear_4303_1230)"/>
+<path d="M62.7832 47.8271C70.3237 56.4088 83.6506 56.4283 91.2236 47.9434L63.1553 80.5381C55.1762 89.8037 40.8238 89.8037 32.8447 80.5381L18.8076 64.2373L48.001 31.0039L62.7832 47.8271Z" fill="url(#svc-Dynamics-365-Customer-Service__paint4_linear_4303_1230)"/>
+<defs>
+<linearGradient id="svc-Dynamics-365-Customer-Service__paint0_linear_4303_1230" x1="93.5333" y1="11.1039" x2="91.0594" y2="55.0684" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9C6CFE"/>
+<stop offset="0.550303" stop-color="#7A41DC"/>
+<stop offset="1" stop-color="#5B2AB5"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365-Customer-Service__paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(70.4999 8.5) rotate(90) scale(46.5 62.8736)">
+<stop offset="0.631434" stop-color="#4B20A0" stop-opacity="0"/>
+<stop offset="1" stop-color="#4B20A0"/>
+</radialGradient>
+<linearGradient id="svc-Dynamics-365-Customer-Service__paint2_linear_4303_1230" x1="7.01238e-07" y1="19.0822" x2="57.6358" y2="86.846" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8C4FA"/>
+<stop offset="0.468701" stop-color="#E4A7FE"/>
+<stop offset="1" stop-color="#AC80FF"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Customer-Service__paint3_linear_4303_1230" x1="66.7859" y1="52.1348" x2="35.9669" y2="82.7397" gradientUnits="userSpaceOnUse">
+<stop stop-color="#AC80FF"/>
+<stop offset="0.699029" stop-color="#CC75FD" stop-opacity="0.190939"/>
+<stop offset="1" stop-color="#D373FC" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Customer-Service__paint4_linear_4303_1230" x1="53.5136" y1="56.9223" x2="69.4716" y2="72.7695" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9C6CFE" stop-opacity="0"/>
+<stop offset="0.50385" stop-color="#9C6CFE" stop-opacity="0.282283"/>
+<stop offset="1" stop-color="#9C6CFE"/>
+</linearGradient>
+</defs></symbol><symbol id="svc-Dynamics-365-Field-Service" viewBox="0 0 96 96"><path d="M71.0557 2C74.0859 2 76.856 3.71206 78.2112 6.42239L94.2251 38.4513C95.3433 40.688 95.3514 43.3189 94.2469 45.5624L83.4318 67.5306C82.0855 70.2652 79.3023 71.9972 76.2542 71.9971L31.0157 71.9959L30.7822 2H71.0557Z" fill="url(#svc-Dynamics-365-Field-Service__paint0_linear_4303_1230)"/>
+<path d="M71.0557 2C74.0859 2 76.856 3.71206 78.2112 6.42239L94.2251 38.4513C95.3433 40.688 95.3514 43.3189 94.2469 45.5624L83.4318 67.5306C82.0855 70.2652 79.3023 71.9972 76.2542 71.9971L31.0157 71.9959L30.7822 2H71.0557Z" fill="url(#svc-Dynamics-365-Field-Service__paint1_radial_4303_1230)"/>
+<path d="M71.0557 2C74.0859 2 76.856 3.71206 78.2112 6.42239L94.2251 38.4513C95.3433 40.688 95.3514 43.3189 94.2469 45.5624L83.4318 67.5306C82.0855 70.2652 79.3023 71.9972 76.2542 71.9971L31.0157 71.9959L30.7822 2H71.0557Z" fill="url(#svc-Dynamics-365-Field-Service__paint2_linear_4303_1230)"/>
+<path d="M22.4 29.2C18.3711 37.2578 18.3711 46.7422 22.4 54.8L39.0557 88.1114C42.7409 95.4819 53.259 95.4819 56.9443 88.1114L73.6 54.7997C77.6289 46.7419 77.6289 37.2574 73.5999 29.1997C63.0521 8.10422 32.9477 8.10445 22.4 29.2Z" fill="url(#svc-Dynamics-365-Field-Service__paint3_linear_4303_1230)"/>
+<path d="M64.9999 41.9433C65.0312 51.3321 57.4455 58.9686 48.0567 58.9999C38.6679 59.0312 31.0314 51.4455 31.0001 42.0567C30.9688 32.6679 38.5545 25.0314 47.9433 25.0001C57.3321 24.9688 64.9686 32.5545 64.9999 41.9433Z" fill="url(#svc-Dynamics-365-Field-Service__paint4_linear_4303_1230)" fill-opacity="0.6"/>
+<path d="M22.4 29.2C18.3711 37.2578 18.3711 46.7422 22.4 54.8L39.0557 88.1114C42.7409 95.4819 53.259 95.4819 56.9443 88.1114L73.6 54.7997C77.6289 46.7419 77.6289 37.2574 73.5999 29.1997C63.0521 8.10422 32.9477 8.10445 22.4 29.2Z" fill="url(#svc-Dynamics-365-Field-Service__paint5_linear_4303_1230)"/>
+<path d="M24.9512 2C21.9215 2 19.1517 3.71152 17.7964 6.42118L1.80366 38.3941C0.669187 40.6622 0.677265 43.3338 1.82543 45.595L13.0103 67.622C14.3741 70.3079 17.1311 72 20.1434 72H31.0078L63.7887 6.42297C65.1437 3.71233 67.914 2.00001 70.9444 2.00001L71.4989 2.00001L24.9512 2Z" fill="url(#svc-Dynamics-365-Field-Service__paint6_linear_4303_1230)"/>
+<path d="M22.4 29.1997C29.6552 14.6896 46.163 10.16 59.1947 15.6111L31.0076 72.0003L30.9998 71.9993L22.4004 54.8004C18.3715 46.7426 18.3711 37.2574 22.4 29.1997Z" fill="url(#svc-Dynamics-365-Field-Service__paint7_linear_4303_1230)"/>
+<defs>
+<linearGradient id="svc-Dynamics-365-Field-Service__paint0_linear_4303_1230" x1="61.9374" y1="7.02464" x2="100.813" y2="64.2912" gradientUnits="userSpaceOnUse">
+<stop stop-color="#944600"/>
+<stop offset="1" stop-color="#E67505"/>
+</linearGradient>
+<radialGradient id="svc-Dynamics-365-Field-Service__paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(48.1363 43.1061) rotate(-0.191073) scale(41.5 41.5)">
+<stop offset="0.525252" stop-color="#741C06"/>
+<stop offset="1" stop-color="#AE5606" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="svc-Dynamics-365-Field-Service__paint2_linear_4303_1230" x1="75.1933" y1="18.8051" x2="57.9412" y2="12.4127" gradientUnits="userSpaceOnUse">
+<stop stop-color="#944600" stop-opacity="0"/>
+<stop offset="1" stop-color="#741C06"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Field-Service__paint3_linear_4303_1230" x1="76.2719" y1="26.6133" x2="43.9862" y2="94.8784" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFCD0F"/>
+<stop offset="0.335265" stop-color="#FFA43D"/>
+<stop offset="0.739919" stop-color="#E67505"/>
+<stop offset="1" stop-color="#CA6407"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Field-Service__paint4_linear_4303_1230" x1="47.9433" y1="25.0001" x2="48.0567" y2="58.9999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CD3E1D"/>
+<stop offset="1" stop-color="#CD3E1D" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Field-Service__paint5_linear_4303_1230" x1="42.9649" y1="40.221" x2="60.223" y2="47.7314" gradientUnits="userSpaceOnUse">
+<stop stop-color="#944600"/>
+<stop offset="1" stop-color="#E67505" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Field-Service__paint6_linear_4303_1230" x1="31.4998" y1="2.16161" x2="31.7533" y2="78.1611" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFE994"/>
+<stop offset="0.146031" stop-color="#FFCD0F"/>
+<stop offset="1" stop-color="#FFA43D"/>
+</linearGradient>
+<linearGradient id="svc-Dynamics-365-Field-Service__paint7_linear_4303_1230" x1="45.5564" y1="10.1388" x2="29.6279" y2="81.6425" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFC205"/>
+<stop offset="1" stop-color="#FF921F"/>
+</linearGradient>
+</defs></symbol><symbol id="svc-Dataverse" viewBox="0 0 96 96"><g clip-path="url(#svc-Dataverse__clip0_4303_1230)">
+<g clip-path="url(#svc-Dataverse__clip1_4303_1230)">
+<g clip-path="url(#svc-Dataverse__clip2_4303_1230)">
+<path d="M13.8776 21.8242C29.1033 8.13791 49.7501 8.1861 62.955 18.9134C74.9816 28.6836 77.4697 44.3159 70.851 55.7801C64.2321 67.2443 52.5277 70.1455 39.5011 62.6247L31.7286 76.087L31.7234 76.0862C27.4181 83.5324 17.8937 86.0828 10.4437 81.7817C7.45394 80.0556 5.25322 77.4879 3.96665 74.551L3.96096 74.5511C-4.07832 55.7804 0.200745 34.1184 13.8776 21.8242Z" fill="url(#svc-Dataverse__paint0_radial_4303_1230)"/>
+<path d="M13.8776 21.8242C29.1033 8.13791 49.7501 8.1861 62.955 18.9134C74.9816 28.6836 77.4697 44.3159 70.851 55.7801C64.2321 67.2443 52.5277 70.1455 39.5011 62.6247L31.7286 76.087L31.7234 76.0862C27.4181 83.5324 17.8937 86.0828 10.4437 81.7817C7.45394 80.0556 5.25322 77.4879 3.96665 74.551L3.96096 74.5511C-4.07832 55.7804 0.200745 34.1184 13.8776 21.8242Z" fill="url(#svc-Dataverse__paint1_radial_4303_1230)" fill-opacity="0.8"/>
+<path d="M85.4327 14.2231C88.4528 15.9668 90.6686 18.569 91.9494 21.5433L91.9533 21.5444C99.9406 40.2943 95.6533 61.9068 81.9983 74.1814C66.7726 87.8677 46.1257 87.8196 32.9209 77.0923C20.8945 67.3221 18.4062 51.6897 25.0249 40.2256C31.6438 28.7614 43.3482 25.8601 56.3748 33.381L64.1434 19.9255L64.1482 19.9249C68.4516 12.4736 77.9805 9.92084 85.4327 14.2231Z" fill="url(#svc-Dataverse__paint2_radial_4303_1230)"/>
+<path d="M85.4327 14.2231C88.4528 15.9668 90.6686 18.569 91.9494 21.5433L91.9533 21.5444C99.9406 40.2943 95.6533 61.9068 81.9983 74.1814C66.7726 87.8677 46.1257 87.8196 32.9209 77.0923C20.8945 67.3221 18.4062 51.6897 25.0249 40.2256C31.6438 28.7614 43.3482 25.8601 56.3748 33.381L64.1434 19.9255L64.1482 19.9249C68.4516 12.4736 77.9805 9.92084 85.4327 14.2231Z" fill="url(#svc-Dataverse__paint3_radial_4303_1230)" fill-opacity="0.9"/>
+<path d="M39.5041 62.6261C52.5307 70.1469 64.2352 67.2456 70.8541 55.7814C77.2488 44.7055 75.1426 29.7389 64.147 19.9271L56.3791 33.3814L39.5041 62.6261Z" fill="url(#svc-Dataverse__paint4_radial_4303_1230)"/>
+<path d="M56.3794 33.3815C43.3528 25.8607 31.6482 28.762 25.0294 40.2262C18.6347 51.3021 20.7409 66.2687 31.7364 76.0806L39.5043 62.6262L56.3794 33.3815Z" fill="url(#svc-Dataverse__paint5_radial_4303_1230)"/>
+<path d="M33.3215 56.4453C37.9837 64.5204 48.3094 67.2872 56.3846 62.625C64.4598 57.9628 67.2266 47.6371 62.5643 39.5619C57.9021 31.4867 47.5764 28.72 39.5013 33.3822C31.4261 38.0444 28.6593 48.3701 33.3215 56.4453Z" fill="url(#svc-Dataverse__paint6_radial_4303_1230)"/>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="svc-Dataverse__paint0_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46.0001 49.4996) rotate(-148.717) scale(46.2195 47.5359)">
+<stop offset="0.465088" stop-color="#09442A"/>
+<stop offset="0.70088" stop-color="#136C6C"/>
+<stop offset="1" stop-color="#22918B"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.0001 32.4996) rotate(123.57) scale(66.0095 46.5498)">
+<stop offset="0.718705" stop-color="#1A7F7C" stop-opacity="0"/>
+<stop offset="1" stop-color="#16BBDA"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint2_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.4999 44.5001) rotate(30.75) scale(45.9618 44.5095)">
+<stop offset="0.358097" stop-color="#136C6C"/>
+<stop offset="0.789474" stop-color="#42B870"/>
+<stop offset="1" stop-color="#76D45E"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint3_radial_4303_1230" cx="0" cy="0" r="1" gradientTransform="matrix(42.5 -36.0002 31.1824 36.8127 49.4998 55.5001)" gradientUnits="userSpaceOnUse">
+<stop offset="0.583166" stop-color="#76D45E" stop-opacity="0"/>
+<stop offset="1" stop-color="#C8F5B7"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint4_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(47.5 48) rotate(-58.9042) scale(32.6898)">
+<stop offset="0.486266" stop-color="#22918B"/>
+<stop offset="0.729599" stop-color="#42B870"/>
+<stop offset="1" stop-color="#43E5CA"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint5_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(47.3833 49.0077) rotate(119.859) scale(31.1328 29.4032)">
+<stop offset="0.459553" stop-color="#08494E"/>
+<stop offset="0.742242" stop-color="#1A7F7C"/>
+<stop offset="1" stop-color="#309C61"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint6_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.5 40) rotate(120.784) scale(27.3542)">
+<stop stop-color="#C8F5B7"/>
+<stop offset="0.24583" stop-color="#98F0B0"/>
+<stop offset="0.643961" stop-color="#52D17C"/>
+<stop offset="1" stop-color="#119FC5"/>
+</radialGradient>
+<clipPath id="svc-Dataverse__clip0_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="svc-Dataverse__clip1_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="svc-Dataverse__clip2_4303_1230">
+<rect width="95.9998" height="96" fill="white"/>
+</clipPath>
+</defs></symbol><symbol id="svc-Function-Apps" viewBox="0 0 18 18"><defs><linearGradient id="svc-Function-Apps__b403aca7-f387-4434-96b4-ae157edc835f" x1="-175.993" y1="-343.723" x2="-175.993" y2="-359.232" gradientTransform="translate(212.573 370.548) scale(1.156 1.029)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fea11b" /><stop offset="0.284" stop-color="#fea51a" /><stop offset="0.547" stop-color="#feb018" /><stop offset="0.8" stop-color="#ffc314" /><stop offset="1" stop-color="#ffd70f" /></linearGradient></defs><g><path d="M2.37,7.475H3.2a.267.267,0,0,1,.267.267v6.148a.533.533,0,0,1-.533.533H2.1a0,0,0,0,1,0,0V7.741a.267.267,0,0,1,.267-.267Z" transform="translate(12.507 16.705) rotate(134.919)" fill="#50e6ff" /><path d="M2.325,3.6h.833a.267.267,0,0,1,.267.267v6.583a0,0,0,0,1,0,0H2.591a.533.533,0,0,1-.533-.533V3.865A.267.267,0,0,1,2.325,3.6Z" transform="translate(5.759 0.114) rotate(44.919)" fill="#1490df" /></g><g><path d="M14.53,7.475h.833a.533.533,0,0,1,.533.533v6.148a.267.267,0,0,1-.267.267H14.8a.267.267,0,0,1-.267-.267V7.475a0,0,0,0,1,0,0Z" transform="translate(12.223 -7.555) rotate(45.081)" fill="#50e6ff" /><path d="M15.108,3.6h.833a0,0,0,0,1,0,0v6.583a.267.267,0,0,1-.267.267h-.833a.267.267,0,0,1-.267-.267V4.131a.533.533,0,0,1,.533-.533Z" transform="translate(31.022 1.222) rotate(135.081)" fill="#1490df" /></g><path d="M8.459,9.9H4.87a.193.193,0,0,1-.2-.181.166.166,0,0,1,.018-.075L8.991,1.13a.206.206,0,0,1,.186-.106h4.245a.193.193,0,0,1,.2.181.165.165,0,0,1-.035.1L8.534,7.966h4.928a.193.193,0,0,1,.2.181.176.176,0,0,1-.052.122L5.421,16.788c-.077.046-.624.5-.356-.189h0Z" fill="url(#svc-Function-Apps__b403aca7-f387-4434-96b4-ae157edc835f)" /></symbol><symbol id="svc-Key-Vaults" viewBox="0 0 18 18"><defs><radialGradient id="svc-Key-Vaults__fb114c93-7c16-4540-899a-0796041629e6" cx="9" cy="9" r="8.5" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#5ea0ef" /><stop offset="0.56" stop-color="#5c9fee" /><stop offset="0.69" stop-color="#559ced" /><stop offset="0.78" stop-color="#4a97e9" /><stop offset="0.86" stop-color="#3990e4" /><stop offset="0.93" stop-color="#2387de" /><stop offset="0.99" stop-color="#087bd6" /><stop offset="1" stop-color="#0078d4" /></radialGradient><radialGradient id="svc-Key-Vaults__ec478bd3-5b38-4e7f-b661-11f355578bff" cx="38.95" cy="182.07" r="9.88" gradientTransform="translate(-28.71 -163.24) scale(0.94 0.94)" gradientUnits="userSpaceOnUse"><stop offset="0.27" stop-color="#ffd70f" /><stop offset="0.49" stop-color="#ffcb12" /><stop offset="0.88" stop-color="#feac19" /><stop offset="1" stop-color="#fea11b" /></radialGradient></defs><path id="svc-Key-Vaults__aacf8311-a317-400f-b613-74bd00da5ce3" d="M9,.5A8.5,8.5,0,1,0,17.5,9,8.51,8.51,0,0,0,9,.5ZM9,16.34A7.34,7.34,0,1,1,16.34,9,7.34,7.34,0,0,1,9,16.34Z" fill="url(#svc-Key-Vaults__fb114c93-7c16-4540-899a-0796041629e6)" /><circle cx="9" cy="9" r="7.34" fill="#fff" /><g><path id="svc-Key-Vaults__bd983c41-db73-40ec-a4f4-da1213fc9924" d="M13.44,7.33a1.84,1.84,0,0,0,0-2.59h0L10.29,1.58a1.83,1.83,0,0,0-2.58,0h0L4.56,4.74a1.84,1.84,0,0,0,0,2.59L7.18,10a.51.51,0,0,1,.15.36v4.88a.63.63,0,0,0,.18.44l1.2,1.2a.41.41,0,0,0,.58,0l1.16-1.16h0l.68-.68a.25.25,0,0,0,0-.34l-.49-.49a.27.27,0,0,1,0-.37l.49-.49a.25.25,0,0,0,0-.34l-.49-.49a.27.27,0,0,1,0-.37l.49-.49a.25.25,0,0,0,0-.34l-.68-.69v-.25ZM9,2.35A1,1,0,0,1,9,4.42,1,1,0,1,1,9,2.35Z" fill="url(#svc-Key-Vaults__ec478bd3-5b38-4e7f-b661-11f355578bff)" /><path id="svc-Key-Vaults__ad2e7e44-9bfd-4775-8bf4-8ef26a544921" d="M8.18,15.3h0a.23.23,0,0,0,.38-.17v-4a.24.24,0,0,0-.11-.2h0a.22.22,0,0,0-.34.2v4A.28.28,0,0,0,8.18,15.3Z" fill="#ff9300" opacity="0.75" /><rect id="svc-Key-Vaults__a996fbff-3936-4b24-b407-369336c143ba" x="6.48" y="5.79" width="5.17" height="0.61" rx="0.28" fill="#ff9300" opacity="0.75" /><rect id="svc-Key-Vaults__bb12d31c-3352-4a18-87dd-a169a4a8721d" x="6.48" y="6.78" width="5.17" height="0.61" rx="0.28" fill="#ff9300" opacity="0.75" /></g></symbol><symbol id="svc-Entra-ID-Protection" viewBox="0 0 18 18"><defs><linearGradient id="svc-Entra-ID-Protection__uuid-10d303dc-dbc6-4fd6-9b51-4d2c7ef1af93" x1="10.901" y1="4.385" x2="10.901" y2="18.783" gradientUnits="userSpaceOnUse"><stop offset=".085" stop-color="#ef7100" /><stop offset=".999" stop-color="#f78d1e" /></linearGradient><linearGradient id="svc-Entra-ID-Protection__uuid-6bbe745f-b495-46ca-a7f6-6d49d57ee029" x1="-79.452" y1="778.657" x2="-79.452" y2="786.378" gradientTransform="translate(94 795.516) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset=".06" stop-color="#0a7cd7" /><stop offset=".34" stop-color="#2e8ce1" /><stop offset=".59" stop-color="#4897e9" /><stop offset=".82" stop-color="#589eed" /><stop offset="1" stop-color="#5ea0ef" /></linearGradient></defs><g><polygon points="4.636 9.985 4.688 10.017 9 12.713 9.001 12.713 9.001 12.713 9.001 5.062 9 5.061 4.636 9.985" fill="#ffb34d" isolation="isolate" opacity=".9" stroke-width="0" /><path d="m10.146,1.294c-.299-.338-.722-.507-1.145-.507h0c-.424-.001-.847.168-1.147.506h-.001L.353,9.753c-.579.654-.428,1.642.323,2.111,0,0,2.776,1.735,3.126,1.954.388.242,1.033.511,1.715.511.621,0,1.198-.18,1.676-.487,0,0,0,0,.002,0l1.805-1.128-4.364-2.728,4.365-4.924.109-.123c.55-.627,1.377-1.026,2.302-1.026.472,0,.916.107,1.313.291l-2.579-2.909Z" fill="#faa21d" stroke-width="0" /><polygon points="13.365 9.985 13.365 9.985 13.365 9.985 9.001 5.062 9.001 12.712 13.365 9.985" fill="#f78d1e" stroke-width="0" /><path d="m17.647,9.753l-4.921-5.551c-.397-.185-.842-.291-1.313-.291-.925,0-1.752.399-2.302,1.026l-.109.123,4.364,4.924-4.266,2.666-.099.062v.003s-.001-.002-.001-.002l-1.805,1.128s-.002,0-.002,0c-.478.307-1.055.487-1.676.487-.682,0-1.327-.269-1.715-.511l4.374,2.734c.25.156.538.234.824.234h0s.001,0,.001,0c.287,0,.573-.078.823-.234l1.73-1.081h0s5.77-3.607,5.77-3.607h0c.751-.468.902-1.456.323-2.11Z" fill="url(#svc-Entra-ID-Protection__uuid-10d303dc-dbc6-4fd6-9b51-4d2c7ef1af93)" stroke-width="0" /></g><path d="m18,12.721c0,2.265-2.739,4.088-3.338,4.46-.068.044-.156.044-.224,0-.599-.367-3.338-2.19-3.338-4.46v-2.725c0-.119.093-.215.21-.218,2.134-.055,1.642-.991,3.241-.991s1.106.937,3.241.991c.117.003.21.1.21.218v2.725Z" fill="#0078d4" stroke-width="0" /><path d="m17.717,12.741c0,2.081-2.515,3.751-3.065,4.088-.063.039-.142.039-.205,0-.551-.337-3.065-2.007-3.065-4.088v-2.478c-.019-.111.054-.216.163-.235.011-.002.021-.003.032-.003,1.959-.035,1.511-.887,2.973-.887s1.014.852,2.973.887c.107.003.192.09.195.198v2.517Z" fill="url(#svc-Entra-ID-Protection__uuid-6bbe745f-b495-46ca-a7f6-6d49d57ee029)" stroke-width="0" /></symbol><symbol id="svc-Fabric-Mirrored-Generic-Database" viewBox="0 0 64 64"><path fill="url(#svc-Fabric-Mirrored-Generic-Database__i74a30d-a)" d="M6 13a7 7 0 0 1 7-7h38a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H13a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Mirrored-Generic-Database__i74a30d-b)" fill-opacity=".2" d="M6 13a7 7 0 0 1 7-7h38a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H13a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Mirrored-Generic-Database__i74a30d-c)" fill-rule="evenodd" d="M51 7H13a6 6 0 0 0-6 6v38a6 6 0 0 0 6 6h38a6 6 0 0 0 6-6V13a6 6 0 0 0-6-6M13 6a7 7 0 0 0-7 7v38a7 7 0 0 0 7 7h38a7 7 0 0 0 7-7V13a7 7 0 0 0-7-7z" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Mirrored-Generic-Database__i74a30d-d)" d="M21 24.866v16.148h.003c.036.794.426 1.495 1 2.077.601.61 1.439 1.13 2.424 1.553C26.401 45.49 29.085 46 32.02 46s5.61-.509 7.574-1.357c.98-.423 1.814-.943 2.411-1.553.576-.588.964-1.296.994-2.095H43v-16.13a5 5 0 0 1-.345.338c-.721.643-1.676 1.15-2.723 1.545C37.827 27.54 35.022 28 32 28s-5.827-.459-7.932-1.252c-1.047-.395-2.002-.902-2.723-1.545a5 5 0 0 1-.345-.337"/><path fill="url(#svc-Fabric-Mirrored-Generic-Database__i74a30d-e)" d="M43 22.484v.032c-.006.76-.418 1.414-1.01 1.94-.597.533-1.43.986-2.41 1.356C37.612 26.553 34.932 27 32 27s-5.613-.447-7.58-1.188c-.85-.32-1.59-.704-2.16-1.148l-.038-.03a5 5 0 0 1-.212-.177c-.596-.531-1.01-1.19-1.01-1.957a2 2 0 0 1 .019-.282c.087-.647.47-1.21.991-1.675.597-.532 1.43-.985 2.41-1.355C26.388 18.447 29.068 18 32 18s5.613.447 7.58 1.188c.98.37 1.813.823 2.41 1.355q.07.063.138.129c.517.503.867 1.113.872 1.812"/><path fill="url(#svc-Fabric-Mirrored-Generic-Database__i74a30d-f)" d="M54 48.761a.85.85 0 0 0-1.403-.645l-5.654 4.846a.85.85 0 0 0-.086 1.205l5.654 6.461c.516.591 1.49.225 1.49-.56z"/><path fill="url(#svc-Fabric-Mirrored-Generic-Database__i74a30d-g)" d="M55.027 48.761a.85.85 0 0 1 1.403-.645l5.654 4.846a.85.85 0 0 1 .086 1.205l-5.653 6.461c-.517.591-1.49.225-1.49-.56z"/><path fill="#F5F5F5" fill-rule="evenodd" d="M54.514 47.506c-.632-.678-1.751-.85-2.568-.15l-5.654 4.846a1.85 1.85 0 0 0-.188 2.623l5.654 6.462c.788.9 2.063.78 2.756.04.693.74 1.967.86 2.755-.04l5.654-6.462a1.85 1.85 0 0 0-.188-2.623l-5.654-4.846c-.816-.7-1.935-.528-2.567.15m-1.917.61A.85.85 0 0 1 54 48.76v11.31c0 .784-.973 1.15-1.49.56l-5.653-6.462a.85.85 0 0 1 .086-1.205l5.654-4.846Zm3.833 0a.85.85 0 0 0-1.403.645V60.07c0 .784.973 1.15 1.49.56l5.653-6.462a.85.85 0 0 0-.086-1.205l-5.654-4.846Z" clip-rule="evenodd"/><defs><linearGradient id="svc-Fabric-Mirrored-Generic-Database__i74a30d-a" x1="20.444" x2="27.022" y1="6" y2="58.622" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#EBEBEB"/></linearGradient><linearGradient id="svc-Fabric-Mirrored-Generic-Database__i74a30d-c" x1="22.792" x2="29.793" y1="6" y2="58.511" gradientUnits="userSpaceOnUse"><stop stop-color="#BBB"/><stop offset="1" stop-color="#888"/></linearGradient><linearGradient id="svc-Fabric-Mirrored-Generic-Database__i74a30d-d" x1="21" x2="48.205" y1="18" y2="39.375" gradientUnits="userSpaceOnUse"><stop stop-color="#008EE6"/><stop offset="1" stop-color="#006094"/></linearGradient><linearGradient id="svc-Fabric-Mirrored-Generic-Database__i74a30d-e" x1="21" x2="48.205" y1="18" y2="39.375" gradientUnits="userSpaceOnUse"><stop stop-color="#008EE6"/><stop offset="1" stop-color="#006094"/></linearGradient><linearGradient id="svc-Fabric-Mirrored-Generic-Database__i74a30d-f" x1="46.647" x2="59.426" y1="47.909" y2="63.364" gradientUnits="userSpaceOnUse"><stop stop-color="#008EE6"/><stop offset="1" stop-color="#006094"/></linearGradient><linearGradient id="svc-Fabric-Mirrored-Generic-Database__i74a30d-g" x1="46.647" x2="59.426" y1="47.909" y2="63.364" gradientUnits="userSpaceOnUse"><stop stop-color="#008EE6"/><stop offset="1" stop-color="#006094"/></linearGradient><radialGradient id="svc-Fabric-Mirrored-Generic-Database__i74a30d-b" cx="0" cy="0" r="1" gradientTransform="matrix(27.4444 41.16672 -35.62501 23.74995 22.61 19.541)" gradientUnits="userSpaceOnUse"><stop offset=".177" stop-color="#fff"/><stop offset="1" stop-color="#B8B8B8"/></radialGradient></defs></symbol><symbol id="svc-Fabric-Lakehouse" viewBox="0 0 64 64"><path fill="url(#svc-Fabric-Lakehouse__i0b400e-a)" d="M10 11a7 7 0 0 1 7-7h30a7 7 0 0 1 7 7v42a7 7 0 0 1-7 7H17a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Lakehouse__i0b400e-b)" fill-opacity=".2" d="M10 11a7 7 0 0 1 7-7h30a7 7 0 0 1 7 7v42a7 7 0 0 1-7 7H17a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Lakehouse__i0b400e-c)" fill-rule="evenodd" d="M47 5H17a6 6 0 0 0-6 6v42a6 6 0 0 0 6 6h30a6 6 0 0 0 6-6V11a6 6 0 0 0-6-6M17 4a7 7 0 0 0-7 7v42a7 7 0 0 0 7 7h30a7 7 0 0 0 7-7V11a7 7 0 0 0-7-7z" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Lakehouse__i0b400e-d)" d="M32.837 46H21a2 2 0 0 1-2-2V30.888a2 2 0 0 1 .659-1.484l11-9.942a2 2 0 0 1 2.683 0l11 9.942A2 2 0 0 1 45 30.888v9.116a1.5 1.5 0 0 0-.5-.084c-.62 0-1.16.36-1.39.93-.01.04-.06.09-.11.13a.4.4 0 0 1-.11-.13 1.49 1.49 0 0 0-1.39-.93 1.49 1.49 0 0 0-1.39.92c-.01.04-.06.09-.11.13a.4.4 0 0 1-.11-.13 1.498 1.498 0 0 0-2.45-.488 1.4 1.4 0 0 0-.33.488c-.01.04-.06.09-.11.13a.4.4 0 0 1-.11-.13c-.23-.56-.76-.93-1.4-.93-.62.01-1.16.38-1.38.96-.04.09-.06.13-.06.13a.7.7 0 0 1-.13.04c-.8.18-1.31.99-1.13 1.79a1.48 1.48 0 0 0 1.266 1.157L34.05 44a.7.7 0 0 1-.13.04A1.505 1.505 0 0 0 32.837 46"/><path fill="url(#svc-Fabric-Lakehouse__i0b400e-e)" d="M35.76 42.544a3 3 0 0 1-.23-.207q-.087.099-.188.185c-.281.242-.613.383-.982.466a.5.5 0 1 1-.22-.976c.257-.058.425-.141.55-.249.126-.107.241-.268.344-.533a.5.5 0 0 1 .93-.007c.072.178.22.382.416.538.196.154.41.239.613.239s.422-.085.622-.242c.198-.154.345-.352.418-.524a.499.499 0 0 1 .935 0 1.4 1.4 0 0 0 .412.526c.196.155.409.24.612.24.205 0 .423-.085.623-.242s.35-.359.421-.533l.002-.005a.5.5 0 0 1 .27-.27l.012-.005a.5.5 0 0 1 .36 0l.011.004c.12.05.22.145.272.274a1.4 1.4 0 0 0 .417.538c.196.154.409.239.612.239.205 0 .423-.085.623-.242.202-.157.35-.36.422-.535a.498.498 0 0 1 .82-.162.5.5 0 0 1 .11.17c.102.264.217.425.343.532.125.108.294.191.55.25a.5.5 0 1 1-.22.975c-.368-.083-.7-.224-.982-.466a2 2 0 0 1-.19-.188 3 3 0 0 1-.238.213c-.328.256-.757.453-1.238.453s-.907-.197-1.233-.456a2.4 2.4 0 0 1-.261-.24 2.5 2.5 0 0 1-.267.243c-.33.256-.758.453-1.239.453s-.907-.197-1.233-.456a2.4 2.4 0 0 1-.261-.24 2.5 2.5 0 0 1-.267.243c-.33.256-.758.453-1.238.453-.482 0-.908-.197-1.234-.456Z"/><path fill="url(#svc-Fabric-Lakehouse__i0b400e-f)" d="M35.76 45.544a3 3 0 0 1-.23-.207q-.087.099-.188.185c-.281.242-.613.383-.982.466a.5.5 0 1 1-.22-.976c.257-.058.425-.141.55-.249.126-.107.241-.268.344-.533a.5.5 0 0 1 .93-.007c.072.178.22.382.416.538.196.154.41.239.613.239s.422-.085.622-.242c.198-.154.345-.352.418-.524a.499.499 0 0 1 .935 0 1.4 1.4 0 0 0 .412.526c.196.155.409.24.612.24.205 0 .423-.085.623-.242s.35-.359.421-.533l.002-.005a.5.5 0 0 1 .27-.27l.012-.005a.5.5 0 0 1 .36 0l.011.004c.12.05.22.145.272.274a1.4 1.4 0 0 0 .417.538c.196.154.409.239.612.239.205 0 .423-.085.623-.242.202-.157.35-.36.422-.535a.498.498 0 0 1 .82-.162.5.5 0 0 1 .11.17c.102.264.217.425.343.532.125.108.294.191.55.25a.5.5 0 1 1-.22.975c-.368-.083-.7-.224-.982-.466a2 2 0 0 1-.19-.188 3 3 0 0 1-.238.213c-.328.256-.757.453-1.238.453s-.907-.197-1.233-.456a2.4 2.4 0 0 1-.261-.24 2.5 2.5 0 0 1-.267.243c-.33.256-.758.453-1.239.453s-.907-.197-1.233-.456a2.4 2.4 0 0 1-.261-.24 2.5 2.5 0 0 1-.267.243c-.33.256-.758.453-1.238.453-.482 0-.908-.197-1.234-.456Z"/><defs><linearGradient id="svc-Fabric-Lakehouse__i0b400e-a" x1="22.222" x2="31.153" y1="4" y2="60.135" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#EBEBEB"/></linearGradient><linearGradient id="svc-Fabric-Lakehouse__i0b400e-c" x1="24.208" x2="33.702" y1="4" y2="59.944" gradientUnits="userSpaceOnUse"><stop stop-color="#BBB"/><stop offset="1" stop-color="#888"/></linearGradient><linearGradient id="svc-Fabric-Lakehouse__i0b400e-d" x1="19" x2="46.053" y1="18.946" y2="46.195" gradientUnits="userSpaceOnUse"><stop stop-color="#3477EA"/><stop offset="1" stop-color="#1D53A4"/></linearGradient><linearGradient id="svc-Fabric-Lakehouse__i0b400e-e" x1="19" x2="46.053" y1="18.946" y2="46.195" gradientUnits="userSpaceOnUse"><stop stop-color="#3477EA"/><stop offset="1" stop-color="#1D53A4"/></linearGradient><linearGradient id="svc-Fabric-Lakehouse__i0b400e-f" x1="19" x2="46.053" y1="18.946" y2="46.195" gradientUnits="userSpaceOnUse"><stop stop-color="#3477EA"/><stop offset="1" stop-color="#1D53A4"/></linearGradient><radialGradient id="svc-Fabric-Lakehouse__i0b400e-b" cx="0" cy="0" r="1" gradientTransform="matrix(23.22222 44.33329 -34.16705 17.89704 24.056 18.583)" gradientUnits="userSpaceOnUse"><stop offset=".177" stop-color="#fff"/><stop offset="1" stop-color="#B8B8B8"/></radialGradient></defs></symbol><symbol id="svc-Fabric-Notebook" viewBox="0 0 64 64"><path fill="url(#svc-Fabric-Notebook__i1be9bb-a)" fill-rule="evenodd" d="M13.875 2.5H48.5c2.343 0 4.893 2.759 4.893 5.172v35.73c0 1.479 1.255.442 0 1.348l.348 1.671v8.704l-.348 2.563-3.018 3.5h-35l-4.313-2-1.75-4.563v-2.25s1.143-1.715.348-.88V11.654c0-3.62.7-9.154 4.215-9.154" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Notebook__i1be9bb-b)" fill-opacity=".2" fill-rule="evenodd" d="M13.875 2.5H48.5c2.343 0 4.893 2.759 4.893 5.172v35.73c0 1.479 1.255.442 0 1.348l.348 1.671v8.704l-.348 2.563-3.018 3.5h-35l-4.313-2-1.75-4.563v-2.25s1.143-1.715.348-.88V11.654c0-3.62.7-9.154 4.215-9.154" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Notebook__i1be9bb-c)" fill-rule="evenodd" d="M9.006 54.32A8 8 0 0 0 17 62h31a6 6 0 0 0 6-6V8a6 6 0 0 0-6-6H15a6 6 0 0 0-6 6v46q0 .083.002.164L9 54.32zM15 3h33a5 5 0 0 1 5 5v35.5a3.5 3.5 0 0 1-3.5 3.5H16.32A7.32 7.32 0 0 0 10 50.625V8a5 5 0 0 1 5-5m-4.998 51.164A6.32 6.32 0 0 1 16.32 48H49.5a4.5 4.5 0 0 0 3.5-1.671V50.5a3.5 3.5 0 0 1-3.5 3.5h-34a.5.5 0 0 0 0 1h34a4.5 4.5 0 0 0 3.5-1.671V56a5 5 0 0 1-5 5H17a7 7 0 0 1-6.998-6.836" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Notebook__i1be9bb-d)" d="M34.926 14.02a.5.5 0 0 1 .337.623l-6.534 22a.5.5 0 1 1-.958-.285l6.533-22a.5.5 0 0 1 .622-.337Z"/><path fill="url(#svc-Fabric-Notebook__i1be9bb-e)" d="M24.854 18.146a.5.5 0 0 0-.708 0l-6.929 6.93a.6.6 0 0 0 0 .848l6.93 6.93a.5.5 0 0 0 .707-.708L18.207 25.5l6.647-6.646a.5.5 0 0 0 0-.708"/><path fill="url(#svc-Fabric-Notebook__i1be9bb-f)" d="M38.854 32.854a.5.5 0 0 1-.708-.708l6.647-6.646-6.647-6.646a.5.5 0 0 1 .708-.708l6.929 6.93a.6.6 0 0 1 0 .848z"/><defs><linearGradient id="svc-Fabric-Notebook__i1be9bb-a" x1="21.712" x2="31.364" y1="2.5" y2="61.231" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#EBEBEB"/></linearGradient><linearGradient id="svc-Fabric-Notebook__i1be9bb-c" x1="23.531" x2="34.158" y1="2" y2="61.777" gradientUnits="userSpaceOnUse"><stop stop-color="#BBB"/><stop offset="1" stop-color="#888"/></linearGradient><linearGradient id="svc-Fabric-Notebook__i1be9bb-d" x1="17.041" x2="39.452" y1="14" y2="42.176" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><linearGradient id="svc-Fabric-Notebook__i1be9bb-e" x1="17.041" x2="39.452" y1="14" y2="42.176" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><linearGradient id="svc-Fabric-Notebook__i1be9bb-f" x1="17.041" x2="39.452" y1="14" y2="42.176" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><radialGradient id="svc-Fabric-Notebook__i1be9bb-b" cx="0" cy="0" r="1" gradientTransform="rotate(63.112 -2.692 28.083)scale(52.0928 39.3979)" gradientUnits="userSpaceOnUse"><stop offset=".177" stop-color="#fff"/><stop offset="1" stop-color="#B8B8B8"/></radialGradient></defs></symbol><symbol id="svc-Fabric-Semantic-Model" viewBox="0 0 64 64"><path fill="url(#svc-Fabric-Semantic-Model__i093b8a-a)" d="M6 13a7 7 0 0 1 7-7h38a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H13a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Semantic-Model__i093b8a-b)" fill-opacity=".2" d="M6 13a7 7 0 0 1 7-7h38a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H13a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Semantic-Model__i093b8a-c)" fill-rule="evenodd" d="M51 7H13a6 6 0 0 0-6 6v38a6 6 0 0 0 6 6h38a6 6 0 0 0 6-6V13a6 6 0 0 0-6-6M13 6a7 7 0 0 0-7 7v38a7 7 0 0 0 7 7h38a7 7 0 0 0 7-7V13a7 7 0 0 0-7-7z" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Semantic-Model__i093b8a-d)" d="M18 28a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/><path fill="url(#svc-Fabric-Semantic-Model__i093b8a-e)" d="M32 28a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/><path fill="url(#svc-Fabric-Semantic-Model__i093b8a-f)" d="M34.873 39a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/><path fill="url(#svc-Fabric-Semantic-Model__i093b8a-g)" d="M18 42a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/><path fill="url(#svc-Fabric-Semantic-Model__i093b8a-h)" d="M49 25a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/><defs><linearGradient id="svc-Fabric-Semantic-Model__i093b8a-a" x1="20.444" x2="27.022" y1="6" y2="58.622" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#EBEBEB"/></linearGradient><linearGradient id="svc-Fabric-Semantic-Model__i093b8a-c" x1="22.792" x2="29.793" y1="6" y2="58.511" gradientUnits="userSpaceOnUse"><stop stop-color="#BBB"/><stop offset="1" stop-color="#888"/></linearGradient><linearGradient id="svc-Fabric-Semantic-Model__i093b8a-d" x1="15" x2="32.481" y1="22" y2="51.717" gradientUnits="userSpaceOnUse"><stop stop-color="#7751B8"/><stop offset="1" stop-color="#5A409C"/></linearGradient><linearGradient id="svc-Fabric-Semantic-Model__i093b8a-e" x1="15" x2="32.481" y1="22" y2="51.717" gradientUnits="userSpaceOnUse"><stop stop-color="#7751B8"/><stop offset="1" stop-color="#5A409C"/></linearGradient><linearGradient id="svc-Fabric-Semantic-Model__i093b8a-f" x1="15" x2="32.481" y1="22" y2="51.717" gradientUnits="userSpaceOnUse"><stop stop-color="#7751B8"/><stop offset="1" stop-color="#5A409C"/></linearGradient><linearGradient id="svc-Fabric-Semantic-Model__i093b8a-g" x1="15" x2="32.481" y1="22" y2="51.717" gradientUnits="userSpaceOnUse"><stop stop-color="#7751B8"/><stop offset="1" stop-color="#5A409C"/></linearGradient><linearGradient id="svc-Fabric-Semantic-Model__i093b8a-h" x1="15" x2="32.481" y1="22" y2="51.717" gradientUnits="userSpaceOnUse"><stop stop-color="#7751B8"/><stop offset="1" stop-color="#5A409C"/></linearGradient><radialGradient id="svc-Fabric-Semantic-Model__i093b8a-b" cx="0" cy="0" r="1" gradientTransform="matrix(27.4444 41.16672 -35.62501 23.74995 22.61 19.541)" gradientUnits="userSpaceOnUse"><stop offset=".177" stop-color="#fff"/><stop offset="1" stop-color="#B8B8B8"/></radialGradient></defs></symbol><symbol id="svc-Fabric-Power-BI" viewBox="0 0 64 64"><mask id="svc-Fabric-Power-BI__i5e5111-mask0_56017_40862" width="30" height="40" x="9" y="4" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#fff" d="M25.667 5.667c0-.92.746-1.667 1.666-1.667h10C38.253 4 39 4.746 39 5.667v36.665c0 .92-.746 1.667-1.667 1.667H10.667c-.92 0-1.667-.746-1.667-1.667V25.666c0-.92.747-1.666 1.667-1.666h6.667v-8.334c0-.92.746-1.666 1.666-1.666h6.667z"/></mask><g mask="url(#svc-Fabric-Power-BI__i5e5111-mask0_56017_40862)"><path fill="url(#svc-Fabric-Power-BI__i5e5111-paint0_linear_56017_40862)" d="M39 4v39.999H25.667V4z"/><g filter="url(#svc-Fabric-Power-BI__i5e5111-filter0_dd_56017_40862)"><path fill="url(#svc-Fabric-Power-BI__i5e5111-paint1_linear_56017_40862)" d="M30.667 15.666V44H17.334v-30H29c.92 0 1.667.747 1.667 1.667"/></g><path fill="url(#svc-Fabric-Power-BI__i5e5111-paint2_linear_56017_40862)" d="M9 24v19.999h13.334V25.666c0-.92-.747-1.666-1.667-1.666z"/></g><defs><filter id="svc-Fabric-Power-BI__i5e5111-filter0_dd_56017_40862" width="19.999" height="36.666" x="14.001" y="11.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy=".158"/><feGaussianBlur stdDeviation=".158"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_56017_40862"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy=".833"/><feGaussianBlur stdDeviation="1.667"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0"/><feBlend in2="effect1_dropShadow_56017_40862" result="effect2_dropShadow_56017_40862"/><feBlend in="SourceGraphic" in2="effect2_dropShadow_56017_40862" result="shape"/></filter><linearGradient id="svc-Fabric-Power-BI__i5e5111-paint0_linear_56017_40862" x1="23.445" x2="41.027" y1="4" y2="41.268" gradientUnits="userSpaceOnUse"><stop stop-color="#E6AD10"/><stop offset="1" stop-color="#C87E0E"/></linearGradient><linearGradient id="svc-Fabric-Power-BI__i5e5111-paint1_linear_56017_40862" x1="17.333" x2="32.119" y1="14" y2="42.677" gradientUnits="userSpaceOnUse"><stop stop-color="#F6D751"/><stop offset="1" stop-color="#E6AD10"/></linearGradient><linearGradient id="svc-Fabric-Power-BI__i5e5111-paint2_linear_56017_40862" x1="8.999" x2="17.17" y1="24" y2="43.365" gradientUnits="userSpaceOnUse"><stop stop-color="#F9E589"/><stop offset="1" stop-color="#F6D751"/></linearGradient></defs></symbol><symbol id="svc-Fabric-Data-Agent" viewBox="0 0 64 64"><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-a)" d="M6 13a7 7 0 0 1 7-7h38a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H13a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-b)" fill-opacity=".2" d="M6 13a7 7 0 0 1 7-7h38a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H13a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-c)" fill-rule="evenodd" d="M51 7H13a6 6 0 0 0-6 6v38a6 6 0 0 0 6 6h38a6 6 0 0 0 6-6V13a6 6 0 0 0-6-6M13 6a7 7 0 0 0-7 7v38a7 7 0 0 0 7 7h38a7 7 0 0 0 7-7V13a7 7 0 0 0-7-7z" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-d)" d="M32.75 18.777a1.5 1.5 0 0 0-1.5 0l-4.743 2.738a1.5 1.5 0 0 0-.75 1.3v5.476a1.5 1.5 0 0 0 .75 1.299l4.743 2.738a1.5 1.5 0 0 0 1.5 0l4.743-2.738a1.5 1.5 0 0 0 .75-1.299v-5.477a1.5 1.5 0 0 0-.75-1.299z"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-e)" fill-rule="evenodd" d="M25.382 31.672a1.5 1.5 0 0 0-1.5 0l-4.743 2.738a1.5 1.5 0 0 0-.75 1.3v5.476a1.5 1.5 0 0 0 .75 1.3l4.743 2.738a1.5 1.5 0 0 0 1.5 0l4.743-2.739a1.5 1.5 0 0 0 .75-1.299v-5.477a1.5 1.5 0 0 0-.75-1.299zm-1 .866a.5.5 0 0 1 .5 0l4.743 2.738a.5.5 0 0 1 .25.433v5.477a.5.5 0 0 1-.25.433l-4.743 2.739a.5.5 0 0 1-.5 0l-4.743-2.739a.5.5 0 0 1-.25-.433v-5.477a.5.5 0 0 1 .25-.433z" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-f)" d="M40.118 31.672a1.5 1.5 0 0 0-1.5 0l-4.743 2.738a1.5 1.5 0 0 0-.75 1.3v5.476a1.5 1.5 0 0 0 .75 1.3l4.743 2.738a1.5 1.5 0 0 0 1.5 0l4.743-2.739a1.5 1.5 0 0 0 .75-1.299v-5.477a1.5 1.5 0 0 0-.75-1.299z"/><defs><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-a" x1="20.444" x2="27.022" y1="6" y2="58.622" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#EBEBEB"/></linearGradient><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-c" x1="22.792" x2="29.793" y1="6" y2="58.511" gradientUnits="userSpaceOnUse"><stop stop-color="#BBB"/><stop offset="1" stop-color="#888"/></linearGradient><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-d" x1="18.389" x2="45.235" y1="18.576" y2="45.796" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-e" x1="18.389" x2="45.235" y1="18.576" y2="45.796" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-f" x1="18.389" x2="45.235" y1="18.576" y2="45.796" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><radialGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-b" cx="0" cy="0" r="1" gradientTransform="matrix(27.4444 41.16672 -35.62501 23.74995 22.61 19.541)" gradientUnits="userSpaceOnUse"><stop offset=".177" stop-color="#fff"/><stop offset="1" stop-color="#B8B8B8"/></radialGradient></defs></symbol></defs>
+<rect class="bg" width="1788" height="1050"/>
+<text class="title" x="40" y="46">Dynamics 365 Business Central and customer engagement apps: operational data to Microsoft Fabric analytics</text>
+<text class="subtitle" x="40" y="70">Customer engagement apps reach OneLake through Dataverse Link to Fabric (shortcuts); Business Central is replicated through an open mirrored database fed by an extract function; both land in one Fabric lakehouse for Power BI and a data agent</text>
+<g class="group" data-id="cloud" data-label="Azure">
+<rect x="597" y="195" width="294" height="508" fill="none" stroke="#243A5E" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<text class="glabel" x="607" y="215">Azure</text>
+</g>
+<g class="group" data-id="fabric" data-label="Microsoft Fabric">
+<rect x="961" y="189" width="787" height="520" fill="none" stroke="#0078D4" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<use href="#svc-Microsoft-Fabric" x="961" y="189" width="32" height="32"/>
+<text class="glabel" x="1001" y="210">Microsoft Fabric</text>
+</g>
+<g class="group" data-id="bcg" data-label="Business Central environment">
+<rect x="227" y="116" width="300" height="184" fill="none" stroke="#0078D4" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<use href="#svc-Dynamics-365-Business-Central" x="227" y="116" width="32" height="32"/>
+<text class="glabel" x="267" y="137">Business Central environment</text>
+</g>
+<g class="group" data-id="ceg" data-label="Customer engagement apps">
+<rect x="267" y="370" width="220" height="640" fill="none" stroke="#0078D4" stroke-width="1.25" data-fill-light="none" data-fill-dark="none" class="grect"/>
+<use href="#svc-Dynamics-365" x="267" y="370" width="32" height="32"/>
+<text class="glabel" x="307" y="391">Customer engagement apps</text>
+</g>
+<g class="edge" data-from="ce_sales" data-to="dv" data-step="3" data-label="tables" data-tip="Dynamics 365 Sales → Dataverse (tables)">
+<path d="M345 450 L299 450 L299 906 L345 906" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="317" y="554.32" text-anchor="start">tables</text>
+<g class="badge"><title>3. Dynamics 365 Sales → Dataverse (tables)</title><circle cx="321" cy="906" r="11"/><circle class="hit" cx="321" cy="906" r="16"/><text x="321" y="910.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="sem" data-to="pbi" data-step="7" data-label="report" data-tip="Semantic model → Power BI (report)">
+<path d="M1630 349 L1630 405" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="1648" y="381" text-anchor="start">report</text>
+<g class="badge"><title>7. Semantic model → Power BI (report)</title><circle cx="1630" cy="373" r="11"/><circle class="hit" cx="1630" cy="373" r="16"/><text x="1630" y="377.5" text-anchor="middle">7</text></g>
+</g>
+<g class="edge" data-from="sem" data-to="fda" data-step="8" data-label="ground" data-tip="Semantic model → Fabric data agent (ground)">
+<path d="M1598 269 L1528 269 L1528 605 L1598 605" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="1546" y="390.6" text-anchor="start">ground</text>
+<g class="badge"><title>8. Semantic model → Fabric data agent (ground)</title><circle cx="1574" cy="269" r="11"/><circle class="hit" cx="1574" cy="269" r="16"/><text x="1574" y="273.5" text-anchor="middle">8</text></g>
+</g>
+<g class="edge" data-from="gold" data-to="nb" data-step="" data-label="curate">
+<path d="M1360.5 426 L1360.5 496" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="1378.5" y="465" text-anchor="start">curate</text>
+</g>
+<g class="edge" data-from="fn" data-to="kv" data-step="" data-label="secret">
+<path d="M744 355 L744 405" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="762" y="384" text-anchor="start">secret</text>
+</g>
+<g class="edge" data-from="idp" data-to="fn" data-step="" data-label="token">
+<path d="M712 599 L666 599 L666 275 L712 275" fill="none" class="eline" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arw)"/>
+<text class="elabel" x="684" y="392.4" text-anchor="start">token</text>
+</g>
+<g class="edge" data-from="bc" data-to="fn" data-step="1" data-label="API v2.0 delta read" data-tip="An extract function reads changed Business Central records through the API v2.0 (filtered by last modified time) using a service principal">
+<path d="M377 164 L377 157.5 L744 157.5 L744 243" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="560.5" y="149.5" text-anchor="middle">API v2.0 delta read</text>
+<g class="badge"><title>1. An extract function reads changed Business Central records through the API v2.0 (filtered by last modified time) using a service principal</title><circle cx="377" cy="157.5" r="11"/><circle class="hit" cx="377" cy="157.5" r="16"/><text x="377" y="162" text-anchor="middle">1</text></g>
+</g>
+<g class="edge" data-from="fn" data-to="omd" data-step="2" data-label="change files" data-tip="The function writes initial and incremental change files to the open mirroring landing zone; Fabric applies them to Delta tables">
+<path d="M776 275 L1085 275 L1085 294" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="930.5" y="267" text-anchor="middle">change files</text>
+<g class="badge"><title>2. The function writes initial and incremental change files to the open mirroring landing zone; Fabric applies them to Delta tables</title><circle cx="800" cy="275" r="11"/><circle class="hit" cx="800" cy="275" r="16"/><text x="800" y="279.5" text-anchor="middle">2</text></g>
+</g>
+<g class="edge" data-from="dv" data-to="dvl" data-step="4" data-label="Link to Fabric" data-tip="Link to Microsoft Fabric creates a lakehouse with read-only shortcuts to Dataverse tables; data stays in Dataverse and refreshes within about an hour">
+<path d="M409 906 L1085 906 L1085 628" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="747" y="898" text-anchor="middle">Link to Fabric</text>
+<g class="badge"><title>4. Link to Microsoft Fabric creates a lakehouse with read-only shortcuts to Dataverse tables; data stays in Dataverse and refreshes within about an hour</title><circle cx="433" cy="906" r="11"/><circle class="hit" cx="433" cy="906" r="16"/><text x="433" y="910.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="omd" data-to="gold" data-step="5" data-label="shortcut / SQL" data-tip="Open mirrored database → Curated lakehouse (shortcut / SQL)">
+<path d="M1117 326 L1222.75 326 L1222.75 346 L1328.5 346" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="1169.875" y="318" text-anchor="middle">shortcut / SQL</text>
+<g class="badge"><title>5. Open mirrored database → Curated lakehouse (shortcut / SQL)</title><circle cx="1141" cy="326" r="11"/><circle class="hit" cx="1141" cy="326" r="16"/><text x="1141" y="330.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="dvl" data-to="gold" data-step="5" data-label="shortcut" data-tip="Dataverse lakehouse → Curated lakehouse (shortcut)">
+<path d="M1085 516 L1085 447 L1360.5 447 L1360.5 426" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="1222.75" y="439" text-anchor="middle">shortcut</text>
+<g class="badge"><title>5. Dataverse lakehouse → Curated lakehouse (shortcut)</title><circle cx="1085" cy="492" r="11"/><circle class="hit" cx="1085" cy="492" r="16"/><text x="1085" y="496.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="gold" data-to="sem" data-step="6" data-label="Direct Lake" data-tip="Curated lakehouse → Semantic model (Direct Lake)">
+<path d="M1360.5 314 L1360.5 229.5 L1630 229.5 L1630 237" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="1495.25" y="221.5" text-anchor="middle">Direct Lake</text>
+<g class="badge"><title>6. Curated lakehouse → Semantic model (Direct Lake)</title><circle cx="1360.5" cy="290" r="11"/><circle class="hit" cx="1360.5" cy="290" r="16"/><text x="1360.5" y="294.5" text-anchor="middle">6</text></g>
+</g>
+<g class="edge" data-from="sales" data-to="ce_sales" data-step="9" data-label="work" data-tip="Sales and service teams → Dynamics 365 Sales (work)">
+<path d="M130.5 353 L237.75 353 L237.75 450 L345 450" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="184.125" y="345" text-anchor="middle">work</text>
+<g class="badge"><title>9. Sales and service teams → Dynamics 365 Sales (work)</title><circle cx="154.5" cy="353" r="11"/><circle class="hit" cx="154.5" cy="353" r="16"/><text x="154.5" y="357.5" text-anchor="middle">9</text></g>
+</g>
+<g class="edge" data-from="fin" data-to="bc" data-step="9" data-label="post" data-tip="Finance and operations → Business Central (post)">
+<path d="M130.5 521 L213.75 521 L213.75 196 L345 196" fill="none" class="eline" stroke-width="2" marker-end="url(#arw)"/>
+<text class="elabel" x="231.75" y="313.75" text-anchor="start">post</text>
+<g class="badge"><title>9. Finance and operations → Business Central (post)</title><circle cx="154.5" cy="521" r="11"/><circle class="hit" cx="154.5" cy="521" r="16"/><text x="154.5" y="525.5" text-anchor="middle">9</text></g>
+</g>
+<g class="node" data-id="sales" data-label="Sales and service teams" data-service="Users" data-category="General"><title>Sales and service teams (Users)</title>
+<use href="#gen-Users" x="66.5" y="321" width="64" height="64"/>
+<text class="nlabel" x="98.5" y="402" text-anchor="middle">Sales and service</text>
+<text class="nlabel" x="98.5" y="416" text-anchor="middle">teams</text>
+</g>
+<g class="node" data-id="fin" data-label="Finance and operations" data-service="Users" data-category="General"><title>Finance and operations (Users)</title>
+<use href="#gen-Users" x="66.5" y="489" width="64" height="64"/>
+<text class="nlabel" x="98.5" y="570" text-anchor="middle">Finance and</text>
+<text class="nlabel" x="98.5" y="584" text-anchor="middle">operations</text>
+</g>
+<g class="node" data-id="bc" data-label="Business Central" data-service="Dynamics 365 Business Central" data-category="dynamics-365"><title>Business Central (Dynamics 365 Business Central)</title>
+<use href="#svc-Dynamics-365-Business-Central" x="345" y="164" width="64" height="64"/>
+<text class="nlabel" x="377" y="245" text-anchor="middle">Business Central</text>
+<text class="nsub" x="377" y="259" text-anchor="middle">SaaS ERP: ledgers, items, orders, API v2.0</text>
+</g>
+<g class="node" data-id="ce_sales" data-label="Dynamics 365 Sales" data-service="Dynamics 365 Sales" data-category="dynamics-365"><title>Dynamics 365 Sales (Dynamics 365 Sales)</title>
+<use href="#svc-Dynamics-365-Sales" x="345" y="418" width="64" height="64"/>
+<text class="nlabel" x="377" y="499" text-anchor="middle">Dynamics 365 Sales</text>
+</g>
+<g class="node" data-id="ce_cs" data-label="Customer Service" data-service="Dynamics 365 Customer Service" data-category="dynamics-365"><title>Customer Service (Dynamics 365 Customer Service)</title>
+<use href="#svc-Dynamics-365-Customer-Service" x="345" y="570" width="64" height="64"/>
+<text class="nlabel" x="377" y="651" text-anchor="middle">Customer Service</text>
+</g>
+<g class="node" data-id="ce_fs" data-label="Field Service" data-service="Dynamics 365 Field Service" data-category="dynamics-365"><title>Field Service (Dynamics 365 Field Service)</title>
+<use href="#svc-Dynamics-365-Field-Service" x="345" y="722" width="64" height="64"/>
+<text class="nlabel" x="377" y="803" text-anchor="middle">Field Service</text>
+</g>
+<g class="node" data-id="dv" data-label="Dataverse" data-service="Dataverse" data-category="power-platform"><title>Dataverse (Dataverse)</title>
+<use href="#svc-Dataverse" x="345" y="874" width="64" height="64"/>
+<text class="nlabel" x="377" y="955" text-anchor="middle">Dataverse</text>
+<text class="nsub" x="377" y="969" text-anchor="middle">tables with Track changes</text>
+</g>
+<g class="node" data-id="fn" data-label="Extract function" data-service="Function Apps" data-category="compute"><title>Extract function (Function Apps)</title>
+<use href="#svc-Function-Apps" x="712" y="243" width="64" height="64"/>
+<text class="nlabel" x="744" y="324" text-anchor="middle">Extract function</text>
+<text class="nsub" x="744" y="338" text-anchor="middle">BC API v2.0, incremental by modified time</text>
+</g>
+<g class="node" data-id="kv" data-label="Key Vault" data-service="Key Vaults" data-category="security"><title>Key Vault (Key Vaults)</title>
+<use href="#svc-Key-Vaults" x="712" y="405" width="64" height="64"/>
+<text class="nlabel" x="744" y="486" text-anchor="middle">Key Vault</text>
+<text class="nsub" x="744" y="500" text-anchor="middle">app registration secret</text>
+</g>
+<g class="node" data-id="idp" data-label="Microsoft Entra ID" data-service="Entra ID Protection" data-category="identity"><title>Microsoft Entra ID (Entra ID Protection)</title>
+<use href="#svc-Entra-ID-Protection" x="712" y="567" width="64" height="64"/>
+<text class="nlabel" x="744" y="648" text-anchor="middle">Microsoft Entra ID</text>
+<text class="nsub" x="744" y="662" text-anchor="middle">service principal, workspace identity</text>
+</g>
+<g class="node" data-id="omd" data-label="Open mirrored database" data-service="Fabric Mirrored Generic Database" data-category="fabric"><title>Open mirrored database (Fabric Mirrored Generic Database)</title>
+<use href="#svc-Fabric-Mirrored-Generic-Database" x="1053" y="294" width="64" height="64"/>
+<text class="nlabel" x="1085" y="375" text-anchor="middle">Open mirrored</text>
+<text class="nlabel" x="1085" y="389" text-anchor="middle">database</text>
+<text class="nsub" x="1085" y="403" text-anchor="middle">Business Central tables, Delta</text>
+</g>
+<g class="node" data-id="dvl" data-label="Dataverse lakehouse" data-service="Fabric Lakehouse" data-category="fabric"><title>Dataverse lakehouse (Fabric Lakehouse)</title>
+<use href="#svc-Fabric-Lakehouse" x="1053" y="516" width="64" height="64"/>
+<text class="nlabel" x="1085" y="597" text-anchor="middle">Dataverse</text>
+<text class="nlabel" x="1085" y="611" text-anchor="middle">lakehouse</text>
+<text class="nsub" x="1085" y="625" text-anchor="middle">shortcuts to CE tables, read-only</text>
+</g>
+<g class="node" data-id="gold" data-label="Curated lakehouse" data-service="Fabric Lakehouse" data-category="fabric"><title>Curated lakehouse (Fabric Lakehouse)</title>
+<use href="#svc-Fabric-Lakehouse" x="1328.5" y="314" width="64" height="64"/>
+<text class="nlabel" x="1360.5" y="395" text-anchor="middle">Curated lakehouse</text>
+<text class="nsub" x="1360.5" y="409" text-anchor="middle">unified customers, orders, invoices</text>
+</g>
+<g class="node" data-id="nb" data-label="Notebooks" data-service="Fabric Notebook" data-category="fabric"><title>Notebooks (Fabric Notebook)</title>
+<use href="#svc-Fabric-Notebook" x="1328.5" y="496" width="64" height="64"/>
+<text class="nlabel" x="1360.5" y="577" text-anchor="middle">Notebooks</text>
+<text class="nsub" x="1360.5" y="591" text-anchor="middle">joins and conformed dimensions</text>
+</g>
+<g class="node" data-id="sem" data-label="Semantic model" data-service="Fabric Semantic Model" data-category="fabric"><title>Semantic model (Fabric Semantic Model)</title>
+<use href="#svc-Fabric-Semantic-Model" x="1598" y="237" width="64" height="64"/>
+<text class="nlabel" x="1630" y="318" text-anchor="middle">Semantic model</text>
+<text class="nsub" x="1630" y="332" text-anchor="middle">Direct Lake, certified measures</text>
+</g>
+<g class="node" data-id="pbi" data-label="Power BI" data-service="Fabric Power BI" data-category="fabric"><title>Power BI (Fabric Power BI)</title>
+<use href="#svc-Fabric-Power-BI" x="1598" y="405" width="64" height="64"/>
+<text class="nlabel" x="1630" y="486" text-anchor="middle">Power BI</text>
+<text class="nsub" x="1630" y="500" text-anchor="middle">order-to-cash, service KPIs</text>
+</g>
+<g class="node" data-id="fda" data-label="Fabric data agent" data-service="Fabric Data Agent" data-category="fabric"><title>Fabric data agent (Fabric Data Agent)</title>
+<use href="#svc-Fabric-Data-Agent" x="1598" y="573" width="64" height="64"/>
+<text class="nlabel" x="1630" y="654" text-anchor="middle">Fabric data agent</text>
+<text class="nsub" x="1630" y="668" text-anchor="middle">questions over finance + CRM</text>
+</g>
+</svg>
