@@ -13,7 +13,7 @@ Each example is a spec in the repository's `examples/` folder, rendered to a liv
 | **Multi-agent: Copilot Studio + Foundry + Fabric** | Copilot Studio front door, Foundry orchestrator with knowledge/data/action agents, Fabric data agent, AI Search, Logic Apps, Content Safety | [open](../live/multi-agent-foundry-fabric-copilot.html) | [file](../live/multi-agent-foundry-fabric-copilot.drawio) |
 
 !!! note "Icons"
-    The icon package has no Microsoft Fabric or Copilot Studio icon, so this example draws Fabric with the Synapse Analytics icon and Copilot Studio with the Power Platform icon, both labelled with the real product name. Fabric capacity and Copilot Studio messages are not in the Retail Prices API and are not priced.
+    Copilot Studio uses the official Power Platform icon set. The Azure package has no Microsoft Fabric icon, so Fabric is drawn with the Synapse Analytics icon and labelled with its real name. Fabric capacity and Copilot Studio messages are not in the Retail Prices API and are not priced.
 
 ![Product catalog search](../assets/example-product-catalog.png)
 

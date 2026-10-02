@@ -28,6 +28,14 @@ test("icon aliases resolve to catalog entries", () => {
   assert.ok(searchIcons("cosmos").some((h) => h.id === "cosmos-db"));
 });
 
+test("official Power Platform icons are in the catalog with aliases and importer keywords", async () => {
+  for (const [a, id] of [["copilot-studio", "copilot-studio"], ["copilot", "copilot-studio"], ["power-automate", "power-automate"], ["dataverse", "dataverse"], ["powerapps", "power-apps"], ["agent-365", "agent-365"]]) assert.equal(resolveIcon(a).entry.id, id, a);
+  assert.equal(resolveIcon("copilot-studio").entry.category, "power-platform");
+  const { guessIcon } = await import("../src/iconguess.mjs");
+  assert.equal(guessIcon("Copilot Studio agent").icon, "copilot-studio");
+  assert.notEqual(guessIcon("Order flow").icon, "power-automate");
+});
+
 test("label wrapping never breaks a word", () => {
   assert.deepEqual(wrapLabel("Application Gateway Ingress"), ["Application", "Gateway Ingress"]);
   assert.deepEqual(wrapLabel("Key Vault"), ["Key Vault"]);

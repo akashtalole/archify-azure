@@ -2,10 +2,10 @@
   "ok": true,
   "tool": "archify-azure",
   "version": "0.1.0",
-  "iconRelease": "Azure Architecture Icons V24",
+  "iconRelease": "Azure Architecture Icons V24 + Power Platform icons",
   "input": {
     "path": "examples/multi-agent-foundry-fabric-copilot.json",
-    "sha256": "5803d1674f5b1da73ed910d2f26fd0e7903f6c8b6ccbebc9acbb8810df53cab2"
+    "sha256": "bf2dfc6c32be9476f0fa54cd5e8247ddfdbb2064f39668e6bbccd63e4d118234"
   },
   "stages": [
     {
@@ -60,20 +60,20 @@
   "outputs": {
     "html": {
       "path": "examples/out/multi-agent-foundry-fabric-copilot.html",
-      "sha256": "881d71183a69d923e6d04419116f96b588f5e450eee9fc9922dac3259be61be7",
-      "bytes": 158527
+      "sha256": "0f279a397bd544e45db83ec8103ece59474591fbc8508728dd2ec3f319264567",
+      "bytes": 163992
     },
     "svg": {
       "path": "examples/out/multi-agent-foundry-fabric-copilot.svg",
-      "sha256": "65512d95f0ff5d8e7bffb0b65f8c863674685b7e75e688d05cc294f7432db6a9"
+      "sha256": "7a16b565fdbb3a01161c85852e8db16ac52b1f936822b95d969e575c82a31f1e"
     },
     "drawio": {
       "path": "examples/out/multi-agent-foundry-fabric-copilot.drawio",
-      "sha256": "2f24c4fbcf017889902535de53b7e8a031118bbfd7f7c073e9c6c170218c9df8"
+      "sha256": "db523eb572112ac22045782af7f036ce0438a6e57a934b63cf57a3167f4a3f3f"
     },
     "png": {
       "path": "examples/out/multi-agent-foundry-fabric-copilot.png",
-      "sha256": "e9f0dfd05bfbe7a975691e6b75973ae3972869c60f8a7207c2155ea508609e41"
+      "sha256": "470375edbab50a5010a71beefb3f330fcc4372595c2ceb45727f9d1d29b66ad4"
     }
   },
   "summary": {
