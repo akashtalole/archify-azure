@@ -1,0 +1,8 @@
+flowchart LR
+    U([Customer Browser]) -->|HTTPS| FD[Front Door CDN] --> APIM[API Management]
+    subgraph Azure Subscription
+      APIM --> F[Orders Function App]
+      F -.-> D[(Orders Cosmos DB)]
+      F --> Q[Service Bus Queue]
+    end
+    F --> P[Payment Gateway]

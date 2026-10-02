@@ -1,0 +1,123 @@
+{
+  "ok": true,
+  "tool": "archify-azure",
+  "version": "0.1.0",
+  "iconRelease": "Azure Architecture Icons V24",
+  "input": {
+    "path": "examples/product-catalog-search.json",
+    "sha256": "3eb3f22ea8cc42def9aa6494a5c20ef827d014047abe987455bd15299470bd0a"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "architecture",
+        "nodes": 20,
+        "groups": 3,
+        "edges": 19
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": true,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 0,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 20,
+        "viewerEdges": 19
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/out/product-catalog-search.html",
+      "sha256": "c557bbf028815c5d9e7353b15a98f1ff0602878aa6917da05e876113f0de535a",
+      "bytes": 173455
+    },
+    "svg": {
+      "path": "examples/out/product-catalog-search.svg",
+      "sha256": "4f92c79536cdd2202cf1b61ea84e93c1abd2efd713144d50f253a24463aada9c"
+    },
+    "drawio": {
+      "path": "examples/out/product-catalog-search.drawio",
+      "sha256": "20fe70192572c7b72f26b6f3a090d3457b597aca975194d30124faa2f8b38f48"
+    },
+    "png": {
+      "path": "examples/out/product-catalog-search.png",
+      "sha256": "9706050fcf79f43f8cb01f3858a3226e045addfb80e708038d73ad1c5bdf9deb"
+    }
+  },
+  "summary": {
+    "type": "architecture",
+    "nodes": 20,
+    "groups": 3,
+    "edges": 19,
+    "size": {
+      "width": 1323,
+      "height": 1334
+    }
+  },
+  "cost": {
+    "region": "eastus",
+    "asOf": "2026-10-02",
+    "monthlyUsd": 4822.055,
+    "confidence": "indicative",
+    "coverage": {
+      "nodes": 20,
+      "estimated": 13,
+      "override": 0,
+      "noCharge": 1,
+      "notBillable": 3,
+      "notItemized": 0,
+      "needsInput": 0,
+      "notEstimated": 3,
+      "error": 0
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "generative-ai",
+    "findings": {
+      "Critical": 0,
+      "High": 1,
+      "Medium": 0,
+      "Low": 0
+    },
+    "evidenced": 17,
+    "bps": 59,
+    "ids": [
+      "F-001"
+    ]
+  },
+  "visualReview": "not-performed"
+}

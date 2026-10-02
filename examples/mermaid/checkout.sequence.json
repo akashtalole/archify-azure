@@ -1,0 +1,87 @@
+{
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Imported sequence",
+    "subtitle": "Imported from Mermaid; verify icon choices",
+    "output": "examples/mermaid/checkout.sequence.html"
+  },
+  "participants": [
+    {
+      "id": "U",
+      "icon": "gen:users",
+      "label": "Customer"
+    },
+    {
+      "id": "A",
+      "icon": "api-management-services",
+      "label": "API Management"
+    },
+    {
+      "id": "F",
+      "icon": "function-apps",
+      "label": "Orders Function App"
+    },
+    {
+      "id": "D",
+      "icon": "cosmos-db",
+      "label": "Cosmos DB"
+    }
+  ],
+  "messages": [
+    {
+      "from": "U",
+      "to": "A",
+      "label": "POST /orders"
+    },
+    {
+      "from": "A",
+      "to": "F",
+      "label": "invoke"
+    },
+    {
+      "from": "F",
+      "to": "D",
+      "label": "write order"
+    },
+    {
+      "from": "D",
+      "to": "F",
+      "label": "ok",
+      "kind": "return"
+    },
+    {
+      "from": "F",
+      "to": "A",
+      "label": "OrderConfirmed event",
+      "kind": "async"
+    },
+    {
+      "from": "F",
+      "to": "A",
+      "label": "402",
+      "kind": "return"
+    },
+    {
+      "from": "F",
+      "to": "F",
+      "label": "validate",
+      "kind": "self"
+    },
+    {
+      "from": "A",
+      "to": "U",
+      "label": "201 Created",
+      "kind": "return"
+    }
+  ],
+  "fragments": [
+    {
+      "kind": "alt",
+      "label": "payment approved",
+      "elseAt": 5,
+      "elseLabel": "declined",
+      "from": 4,
+      "to": 5
+    }
+  ]
+}

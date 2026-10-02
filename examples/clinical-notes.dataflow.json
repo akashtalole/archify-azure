@@ -1,0 +1,20 @@
+{
+  "diagram_type": "dataflow",
+  "meta": { "title": "Clinical notes pipeline", "subtitle": "Notes land in storage, are analysed for health entities, indexed for search and served through an API", "output": "examples/out/clinical-notes.html", "cost": { "note": "Illustrative: 300,000 text records/month through Language; other services use defaults." } },
+  "stages": [
+    { "id": "src", "label": "Sources", "external": true, "items": [ { "id": "ehr", "icon": "gen:server-farm", "label": "EHR system", "sublabel": "HL7 / FHIR export" } ] },
+    { "id": "ingest", "label": "Ingest", "items": [ { "id": "adf", "icon": "data-factories", "label": "Azure Data Factory", "sublabel": "copy + schedule" }, { "id": "raw", "icon": "storage-accounts", "label": "Azure Storage", "sublabel": "raw notes", "usage": { "storageGb": 500, "readOperationsPerMonth": 3000000 } } ] },
+    { "id": "process", "label": "Process", "items": [ { "id": "lang", "icon": "language", "label": "Azure AI Language", "sublabel": "health entities, PHI" }, { "id": "fn", "icon": "function-apps", "label": "Azure Functions", "sublabel": "de-identify, enrich", "usage": { "requestsPerMonth": 300000, "avgDurationMs": 400, "memoryMb": 1024 } } ] },
+    { "id": "store", "label": "Store", "items": [ { "id": "cosmos", "icon": "cosmos-db", "label": "Azure Cosmos DB", "sublabel": "structured notes", "usage": { "mode": "autoscale", "ruPerSecond": 2000, "storageGb": 100 } }, { "id": "kb", "icon": "cognitive-search", "label": "Azure AI Search", "sublabel": "search index", "usage": { "sku": "standard-s1", "searchUnits": 2 } } ] },
+    { "id": "serve", "label": "Serve", "items": [ { "id": "apim", "icon": "apim", "label": "API Management", "usage": { "tier": "standard", "units": 1 } } ] }
+  ],
+  "edges": [
+    { "from": "ehr", "to": "adf", "step": 1, "label": "export" },
+    { "from": "adf", "to": "raw", "step": 2, "label": "land" },
+    { "from": "raw", "to": "fn", "step": 3, "label": "blob trigger" },
+    { "from": "fn", "to": "lang", "step": 4, "label": "analyse" },
+    { "from": "fn", "to": "cosmos", "step": 5, "label": "save" },
+    { "from": "cosmos", "to": "kb", "step": 6, "label": "index" },
+    { "from": "kb", "to": "apim", "step": 7, "label": "serve" }
+  ]
+}

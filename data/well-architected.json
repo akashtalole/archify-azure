@@ -1,0 +1,31 @@
+{
+ "framework": {
+  "pillars": {
+   "reliability": {
+    "name": "Reliability",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/reliability/checklist"
+   },
+   "security": {
+    "name": "Security",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/security/checklist"
+   },
+   "cost-optimization": {
+    "name": "Cost Optimization",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/checklist"
+   },
+   "operational-excellence": {
+    "name": "Operational Excellence",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/checklist"
+   },
+   "performance-efficiency": {
+    "name": "Performance Efficiency",
+    "url": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/checklist"
+   }
+  }
+ },
+ "ai-workloads": {
+  "name": "Azure Well-Architected Framework perspective on AI workloads",
+  "url": "https://learn.microsoft.com/en-us/azure/well-architected/ai/",
+  "designPrinciples": []
+ }
+}

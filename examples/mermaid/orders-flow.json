@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Imported diagram",
+    "subtitle": "Imported from Mermaid; verify icon choices",
+    "output": "examples/mermaid/orders-flow.html"
+  },
+  "root": {
+    "layout": "row",
+    "gap": 70,
+    "children": [
+      {
+        "id": "layer0_0",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "U",
+            "label": "Customer Browser",
+            "icon": "gen:users"
+          }
+        ]
+      },
+      {
+        "id": "layer0_1",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "FD",
+            "label": "Front Door CDN",
+            "icon": "front-door-and-cdn-profiles"
+          }
+        ]
+      },
+      {
+        "id": "layer0_2",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "APIM",
+            "label": "API Management",
+            "icon": "api-management-services"
+          }
+        ]
+      },
+      {
+        "id": "layer0_3",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "Azure_Subscription",
+            "kind": "subscription",
+            "label": "Azure Subscription",
+            "children": [
+              {
+                "id": "layer1_0",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 56,
+                "children": [
+                  {
+                    "id": "F",
+                    "label": "Orders Function App",
+                    "icon": "function-apps"
+                  }
+                ]
+              },
+              {
+                "id": "layer1_1",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 56,
+                "children": [
+                  {
+                    "id": "D",
+                    "label": "Orders Cosmos DB",
+                    "icon": "cosmos-db"
+                  },
+                  {
+                    "id": "Q",
+                    "label": "Service Bus Queue",
+                    "icon": "service-bus"
+                  }
+                ]
+              }
+            ],
+            "layout": "row",
+            "gap": 56
+          }
+        ]
+      },
+      {
+        "id": "layer0_4",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "P",
+            "label": "Payment Gateway",
+            "icon": "gen:cubes"
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "U",
+      "to": "FD",
+      "label": "HTTPS"
+    },
+    {
+      "from": "FD",
+      "to": "APIM"
+    },
+    {
+      "from": "APIM",
+      "to": "F"
+    },
+    {
+      "from": "F",
+      "to": "D",
+      "style": "dashed"
+    },
+    {
+      "from": "F",
+      "to": "Q"
+    },
+    {
+      "from": "F",
+      "to": "P"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "title": "bicep — architecture from bicep",
+    "subtitle": "4 resources, 3 relationships inferred from references; verify against the deployed system",
+    "output": "examples/iac/bicep.diagram.html"
+  },
+  "root": {
+    "layout": "row",
+    "gap": 70,
+    "children": [
+      {
+        "id": "cloud",
+        "kind": "azure-cloud",
+        "layout": "row",
+        "gap": 64,
+        "children": [
+          {
+            "id": "layer0_0",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "web",
+                "icon": "app-services",
+                "label": "Web",
+                "sublabel": "Web sites"
+              }
+            ]
+          },
+          {
+            "id": "layer0_1",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "sql",
+                "icon": "sql-database",
+                "label": "Sql",
+                "sublabel": "Sql servers databases"
+              },
+              {
+                "id": "kv",
+                "icon": "key-vaults",
+                "label": "Kv",
+                "sublabel": "KeyVault vaults"
+              },
+              {
+                "id": "redis",
+                "icon": "cache-redis",
+                "label": "Redis",
+                "sublabel": "Cache redis"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "web",
+      "to": "redis"
+    },
+    {
+      "from": "web",
+      "to": "sql"
+    },
+    {
+      "from": "web",
+      "to": "kv"
+    }
+  ]
+}

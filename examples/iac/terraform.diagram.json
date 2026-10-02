@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "terraform — architecture from terraform",
+    "subtitle": "8 resources, 6 relationships inferred from references; verify against the deployed system",
+    "output": "examples/iac/terraform.diagram.html"
+  },
+  "root": {
+    "layout": "row",
+    "gap": 70,
+    "children": [
+      {
+        "id": "cloud",
+        "kind": "azure-cloud",
+        "layout": "row",
+        "gap": 64,
+        "children": [
+          {
+            "id": "layer0_0",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "ai",
+                "icon": "application-insights",
+                "label": "Ai",
+                "sublabel": "application_insights"
+              },
+              {
+                "id": "apim",
+                "icon": "api-management-services",
+                "label": "Apim",
+                "sublabel": "api_management"
+              },
+              {
+                "id": "eventgrid_system_topic_uploads",
+                "icon": "event-grid-topics",
+                "label": "Uploads",
+                "sublabel": "eventgrid_system_topic"
+              }
+            ]
+          },
+          {
+            "id": "layer0_1",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "vnet",
+                "kind": "vnet",
+                "label": "Virtual network",
+                "children": [
+                  {
+                    "id": "api",
+                    "icon": "function-apps",
+                    "label": "Api",
+                    "sublabel": "linux_function_app"
+                  }
+                ],
+                "layout": "row",
+                "gap": 56
+              }
+            ]
+          },
+          {
+            "id": "layer0_2",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "bus",
+                "icon": "service-bus",
+                "label": "Bus",
+                "sublabel": "servicebus_namespace"
+              },
+              {
+                "id": "kv",
+                "icon": "key-vaults",
+                "label": "Kv",
+                "sublabel": "key_vault"
+              },
+              {
+                "id": "db",
+                "icon": "cosmos-db",
+                "label": "Db",
+                "sublabel": "cosmosdb_account"
+              },
+              {
+                "id": "uploads",
+                "icon": "storage-accounts",
+                "label": "Uploads",
+                "sublabel": "storage_account"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "api",
+      "to": "uploads"
+    },
+    {
+      "from": "api",
+      "to": "bus"
+    },
+    {
+      "from": "api",
+      "to": "kv"
+    },
+    {
+      "from": "api",
+      "to": "db"
+    },
+    {
+      "from": "eventgrid_system_topic_uploads",
+      "to": "uploads"
+    },
+    {
+      "from": "apim",
+      "to": "api"
+    }
+  ]
+}

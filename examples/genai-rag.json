@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "RAG chat assistant on Azure OpenAI",
+    "subtitle": "Authenticated API → orchestrator → content-safe model call grounded by Azure AI Search, with diagnostic logging",
+    "lens": ["framework", "generative-ai"],
+    "output": "examples/out/genai-rag.html",
+    "cost": { "note": "Illustrative: 200,000 questions/month, about 750 input and 75 output tokens each after retrieval; gpt-4o-mini-0718 global deployment, 100 GB of indexed content." }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      { "id": "users", "icon": "users", "label": "Users" },
+      {
+        "id": "cloud", "kind": "azure-cloud", "layout": "row", "gap": 80,
+        "children": [
+          {
+            "id": "front", "kind": "stack", "layout": "column", "gap": 56,
+            "children": [
+              { "id": "idp", "icon": "entra-id-protection", "label": "Microsoft Entra ID", "sublabel": "sign-in, RBAC" },
+              { "id": "apim", "icon": "apim", "label": "API Management", "sublabel": "auth, throttling", "usage": { "tier": "standard", "units": 1 } }
+            ]
+          },
+          {
+            "id": "region", "kind": "region", "layout": "row", "gap": 90,
+            "children": [
+              { "id": "orch", "icon": "app-services", "label": "App Service", "sublabel": "orchestrator", "usage": { "sku": "P1v3", "instances": 2 } },
+              {
+                "id": "ai", "kind": "custom", "icon": "ai-foundry", "label": "Azure AI", "layout": "column", "gap": 56,
+                "children": [
+                  { "id": "safety", "icon": "content-safety", "label": "Azure AI Content Safety", "sublabel": "filters, prompt shields", "usage": { "textRecordsPerMonth": 400000 } },
+                  { "id": "fm", "icon": "openai", "label": "Azure OpenAI", "sublabel": "chat + embeddings", "usage": { "model": "gpt-4o-mini-0718", "inputTokensPerMonth": 150000000, "outputTokensPerMonth": 15000000 } },
+                  { "id": "search", "icon": "cognitive-search", "label": "Azure AI Search", "sublabel": "vector + keyword index", "usage": { "sku": "standard-s1", "searchUnits": 3 } }
+                ]
+              },
+              { "id": "docs", "icon": "storage-accounts", "label": "Azure Storage", "sublabel": "source documents", "usage": { "storageGb": 100, "readOperationsPerMonth": 2000000 } }
+            ]
+          },
+          {
+            "id": "ops", "kind": "stack", "layout": "column", "gap": 56,
+            "children": [
+              { "id": "mon", "icon": "log-analytics-workspaces", "label": "Log Analytics", "sublabel": "diagnostic logs, tokens", "usage": { "ingestGbPerMonth": 60 } },
+              { "id": "kv", "icon": "key-vaults", "label": "Azure Key Vault", "usage": { "operationsPerMonth": 500000 } }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    { "from": "users", "to": "apim", "step": 1, "label": "HTTPS + token" },
+    { "from": "idp", "to": "apim", "style": "dashed", "label": "validates" },
+    { "from": "apim", "to": "orch", "step": 2 },
+    { "from": "orch", "to": "safety", "step": 3, "label": "screen prompt" },
+    { "from": "orch", "to": "search", "step": 4, "label": "retrieve" },
+    { "from": "orch", "to": "fm", "step": 5, "label": "grounded prompt" },
+    { "from": "search", "to": "docs", "style": "dashed", "label": "indexer" },
+    { "from": "fm", "to": "mon", "style": "dashed", "label": "diagnostics" }
+  ]
+}
