@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Highly available three-tier web application",
+    "subtitle": "Front Door + WAF → Application Gateway → VM scale sets → Azure SQL Database, across two availability zones",
+    "output": "examples/out/three-tier.html",
+    "cost": { "note": "Illustrative: ~2M page views/month, 500 GB edge egress, two D2s v5 web VMs per zone, SQL Database Business Critical 4 vCores (replicas included)." }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      { "id": "users", "icon": "users", "label": "Users" },
+      {
+        "id": "cloud", "kind": "azure-cloud", "layout": "row", "gap": 80,
+        "children": [
+          {
+            "id": "edge", "kind": "stack", "layout": "column", "gap": 56,
+            "children": [
+              { "id": "waf", "icon": "waf", "label": "Web Application Firewall", "sublabel": "managed rules + bot protection" },
+              { "id": "fd", "icon": "front-door", "label": "Azure Front Door", "sublabel": "global entry, caching", "usage": { "tier": "standard", "egressGbPerMonth": 500, "requestsPerMonth": 20000000 } },
+              { "id": "sa", "icon": "storage-accounts", "label": "Azure Storage", "sublabel": "static assets", "usage": { "storageGb": 200, "readOperationsPerMonth": 5000000 } }
+            ]
+          },
+          {
+            "id": "region", "kind": "region", "label": "Region",
+            "children": [
+              {
+                "id": "rg", "kind": "resource-group", "label": "Resource group", "layout": "row",
+                "children": [
+                  {
+                    "id": "vnet", "kind": "vnet", "layout": "row", "label": "Virtual network",
+                    "children": [
+                      { "id": "agw", "icon": "application-gateways", "label": "Application Gateway", "sublabel": "WAF v2, zone-redundant", "usage": { "waf": true, "avgCapacityUnits": 3 } },
+                      {
+                        "id": "zones", "kind": "stack", "layout": "column", "gap": 40,
+                        "children": [
+                          {
+                            "id": "z1", "kind": "availability-zone", "label": "Availability zone 1",
+                            "children": [
+                              { "id": "app1", "kind": "subnet", "label": "App subnet", "children": [ { "id": "vm1", "icon": "vm-scale-sets", "label": "VM scale set", "sublabel": "web tier", "usage": { "pricer": "vm", "vmSize": "Standard_D2s_v5", "count": 2 } } ] },
+                              { "id": "data1", "kind": "private-subnet", "label": "Data subnet", "children": [ { "id": "sql1", "icon": "sql-database", "label": "Azure SQL Database", "sublabel": "primary", "usage": { "tier": "business-critical", "vcores": 4, "storageGb": 250 } } ] }
+                            ]
+                          },
+                          {
+                            "id": "z2", "kind": "availability-zone", "label": "Availability zone 2",
+                            "children": [
+                              { "id": "app2", "kind": "subnet", "label": "App subnet", "children": [ { "id": "vm2", "icon": "vm-scale-sets", "label": "VM scale set", "sublabel": "web tier", "usage": { "pricer": "vm", "vmSize": "Standard_D2s_v5", "count": 2 } } ] },
+                              { "id": "data2", "kind": "private-subnet", "label": "Data subnet", "children": [ { "id": "sql2", "icon": "sql-database", "label": "Azure SQL Database", "sublabel": "readable replica", "usage": { "monthlyUsd": 0, "note": "Replica is included in the Business Critical price." } } ] }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ops", "kind": "stack", "layout": "column", "gap": 56,
+            "children": [
+              { "id": "mon", "icon": "monitor", "label": "Azure Monitor", "sublabel": "metrics, logs, alerts", "usage": { "ingestGbPerMonth": 60 } },
+              { "id": "kv", "icon": "key-vaults", "label": "Azure Key Vault", "usage": { "operationsPerMonth": 2000000 } }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    { "from": "users", "to": "fd", "step": 1, "label": "HTTPS" },
+    { "from": "waf", "to": "fd", "style": "dashed", "label": "inspects" },
+    { "from": "fd", "to": "agw", "step": 2 },
+    { "from": "agw", "to": "vm1", "step": 3 },
+    { "from": "agw", "to": "vm2", "step": 3 },
+    { "from": "vm1", "to": "sql1", "step": 4, "label": "SQL" },
+    { "from": "vm2", "to": "sql2", "step": 4 },
+    { "from": "sql1", "to": "sql2", "style": "dashed", "arrow": "both", "label": "sync replication" },
+    { "from": "fd", "to": "sa", "style": "dashed", "label": "static assets" }
+  ]
+}

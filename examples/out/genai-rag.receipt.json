@@ -1,0 +1,123 @@
+{
+  "ok": true,
+  "tool": "archify-azure",
+  "version": "0.1.0",
+  "iconRelease": "Azure Architecture Icons V24",
+  "input": {
+    "path": "examples/genai-rag.json",
+    "sha256": "ee9cc555b000f2c5d556da1e23b9262575abcb54ca38706239c32b65d6148f1a"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "architecture",
+        "nodes": 10,
+        "groups": 3,
+        "edges": 8
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": true,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 0,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 10,
+        "viewerEdges": 8
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/out/genai-rag.html",
+      "sha256": "164c702e0dff5bad3ed7dc9e14c10a5a9a52bc01a5e5bcba3a832462c3fe7759",
+      "bytes": 133439
+    },
+    "svg": {
+      "path": "examples/out/genai-rag.svg",
+      "sha256": "209bc3dc9eb5938148ef2654b566c1e481ffd722f27195a5129f106cc3ddf05a"
+    },
+    "drawio": {
+      "path": "examples/out/genai-rag.drawio",
+      "sha256": "ea01695292a8a88a1c10026a8ded9d5343d0a0cf52a58af74912011cbf9d8ba9"
+    },
+    "png": {
+      "path": "examples/out/genai-rag.png",
+      "sha256": "8b1b0c795ff12c5907485966cb86096166ca1dfd886b12b7768af885a30f4d2e"
+    }
+  },
+  "summary": {
+    "type": "architecture",
+    "nodes": 10,
+    "groups": 3,
+    "edges": 8,
+    "size": {
+      "width": 1345,
+      "height": 820
+    }
+  },
+  "cost": {
+    "region": "eastus",
+    "asOf": "2026-10-02",
+    "monthlyUsd": 1961.731,
+    "confidence": "indicative",
+    "coverage": {
+      "nodes": 10,
+      "estimated": 8,
+      "override": 0,
+      "noCharge": 1,
+      "notBillable": 1,
+      "notItemized": 0,
+      "needsInput": 0,
+      "notEstimated": 0,
+      "error": 0
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "generative-ai",
+    "findings": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 1,
+      "Low": 0
+    },
+    "evidenced": 12,
+    "bps": 59,
+    "ids": [
+      "F-001"
+    ]
+  },
+  "visualReview": "not-performed"
+}

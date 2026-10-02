@@ -1,0 +1,121 @@
+{
+  "ok": true,
+  "tool": "archify-azure",
+  "version": "0.1.0",
+  "iconRelease": "Azure Architecture Icons V24",
+  "input": {
+    "path": "examples/serverless-api.json",
+    "sha256": "c008afd502bd36d3905f31c9b13995e362a9cb94143fb946fa8e2fb191711dee"
+  },
+  "stages": [
+    {
+      "name": "validate",
+      "status": "pass",
+      "detail": {
+        "type": "architecture",
+        "nodes": 11,
+        "groups": 2,
+        "edges": 8
+      }
+    },
+    {
+      "name": "analyze",
+      "status": "pass",
+      "detail": {
+        "cost": true,
+        "review": true
+      }
+    },
+    {
+      "name": "render",
+      "status": "pass",
+      "detail": {}
+    },
+    {
+      "name": "check",
+      "status": "pass",
+      "detail": {
+        "warnings": 0,
+        "standalone": true
+      }
+    },
+    {
+      "name": "browser-check",
+      "status": "pass",
+      "detail": {
+        "viewport": "1440x900",
+        "minFontPx": 10.5,
+        "overflowX": 0,
+        "consoleErrors": 0,
+        "viewerNodes": 11,
+        "viewerEdges": 8
+      }
+    },
+    {
+      "name": "export-png",
+      "status": "pass",
+      "detail": {}
+    }
+  ],
+  "outputs": {
+    "html": {
+      "path": "examples/out/serverless-api.html",
+      "sha256": "0f36d62590508330ba17361db09bce94a26c4178128d236c82b05a3ee3b69e6d",
+      "bytes": 128796
+    },
+    "svg": {
+      "path": "examples/out/serverless-api.svg",
+      "sha256": "bf2078d5f01f7785c004a4c904a89e9c24de1a3817b70c0b4f3f725b03ff7a6b"
+    },
+    "drawio": {
+      "path": "examples/out/serverless-api.drawio",
+      "sha256": "921d5909a950b7b4f037285d34e12927dfb6fb5553f3b7239917ccf3285feacb"
+    },
+    "png": {
+      "path": "examples/out/serverless-api.png",
+      "sha256": "c137f097eb854b6ff0ba243ed11e3cf4b6dad7cb710c69c7e7725816d67392bb"
+    }
+  },
+  "summary": {
+    "type": "architecture",
+    "nodes": 11,
+    "groups": 2,
+    "edges": 8,
+    "size": {
+      "width": 1427,
+      "height": 676
+    }
+  },
+  "cost": {
+    "region": "eastus",
+    "asOf": "2026-10-02",
+    "monthlyUsd": 474.22,
+    "confidence": "indicative",
+    "coverage": {
+      "nodes": 11,
+      "estimated": 8,
+      "override": 0,
+      "noCharge": 1,
+      "notBillable": 1,
+      "notItemized": 0,
+      "needsInput": 0,
+      "notEstimated": 1,
+      "error": 0
+    }
+  },
+  "review": {
+    "advisory": true,
+    "mode": "full",
+    "lens": "general",
+    "findings": {
+      "Critical": 0,
+      "High": 0,
+      "Medium": 0,
+      "Low": 0
+    },
+    "evidenced": 13,
+    "bps": 59,
+    "ids": []
+  },
+  "visualReview": "not-performed"
+}

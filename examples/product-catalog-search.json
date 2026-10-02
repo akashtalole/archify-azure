@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Enterprise product catalog search on Azure",
+    "subtitle": "Hybrid keyword + vector search on Azure AI Search, Azure OpenAI embeddings, and an event-driven pipeline that keeps the index fresh",
+    "output": "examples/out/product-catalog-search.html",
+    "workload": { "name": "Product catalog search", "criticality": "high", "description": "Customer-facing search across ~2M SKUs with near-real-time catalog updates" },
+    "cost": { "note": "Illustrative: 10M searches/month, 2M products, ~300,000 catalog updates/day re-embedded. Event Hubs capture, Data Explorer and Personalizer are not priced yet." }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      {
+        "id": "people", "kind": "stack", "layout": "column", "gap": 70,
+        "children": [
+          { "id": "shoppers", "icon": "users", "label": "Shoppers", "sublabel": "web and app" },
+          { "id": "merch", "icon": "users", "label": "Merchandisers", "sublabel": "synonyms, boosts" },
+          { "id": "pim", "icon": "gen:server-farm", "label": "PIM / ERP", "sublabel": "product master" }
+        ]
+      },
+      {
+        "id": "cloud", "kind": "azure-cloud", "layout": "column", "gap": 50,
+        "children": [
+          {
+            "id": "edge", "kind": "stack", "layout": "row", "gap": 90,
+            "children": [
+              { "id": "fd", "icon": "front-door", "label": "Azure Front Door", "sublabel": "cache popular queries", "usage": { "tier": "standard", "egressGbPerMonth": 800, "requestsPerMonth": 10000000 } },
+              { "id": "waf", "icon": "waf", "label": "Web Application Firewall", "sublabel": "bot and rate rules" }
+            ]
+          },
+          {
+            "id": "region", "kind": "region", "layout": "column", "gap": 64,
+            "children": [
+              {
+                "id": "searchrow", "kind": "stack", "layout": "row", "gap": 90,
+                "children": [
+                  {
+                    "id": "api", "kind": "stack", "layout": "column", "gap": 56,
+                    "children": [
+                      { "id": "apim", "icon": "apim", "label": "API Management", "sublabel": "search API", "usage": { "tier": "standard", "units": 2 } },
+                      { "id": "searchfn", "icon": "function-apps", "label": "Azure Functions", "sublabel": "query understanding + blend", "usage": { "plan": "premium", "instances": 2 } }
+                    ]
+                  },
+                  {
+                    "id": "retrieval", "kind": "custom", "icon": "cognitive-search", "label": "Retrieval and ranking", "layout": "column", "gap": 56,
+                    "children": [
+                      { "id": "ais", "icon": "cognitive-search", "label": "Azure AI Search", "sublabel": "BM25 + vector (hybrid)", "usage": { "sku": "standard-s1", "searchUnits": 6 } },
+                      { "id": "embed", "icon": "openai", "label": "Azure OpenAI", "sublabel": "text embeddings", "usage": { "model": "text-embedding-3-small", "inputTokensPerMonth": 1230000000, "outputTokensPerMonth": 0 } },
+                      { "id": "rank", "icon": "machine-learning", "label": "Azure Machine Learning", "sublabel": "learning-to-rank" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ingestrow", "kind": "stack", "layout": "row", "gap": 70,
+                "children": [
+                  { "id": "feed", "icon": "storage-accounts", "label": "Azure Storage", "sublabel": "catalog feeds + images", "usage": { "storageGb": 800, "readOperationsPerMonth": 5000000 } },
+                  { "id": "reindex", "icon": "logic-apps", "label": "Azure Logic Apps", "sublabel": "full re-index + alias swap" },
+                  { "id": "cosmos", "icon": "cosmos-db", "label": "Azure Cosmos DB", "sublabel": "catalog + curation rules", "usage": { "mode": "autoscale", "ruPerSecond": 10000, "storageGb": 150 } },
+                  { "id": "q", "icon": "service-bus", "label": "Azure Service Bus", "sublabel": "update buffer + DLQ", "usage": { "tier": "standard", "operationsPerMonth": 27000000 } },
+                  { "id": "indexer", "icon": "function-apps", "label": "Azure Functions", "sublabel": "enrich, embed, index", "usage": { "requestsPerMonth": 9000000, "avgDurationMs": 350, "memoryMb": 1024 } }
+                ]
+              },
+              {
+                "id": "bottomrow", "kind": "stack", "layout": "row", "gap": 70,
+                "children": [
+                  { "id": "eh", "icon": "event-hubs", "label": "Azure Event Hubs", "sublabel": "search + click events", "usage": { "tier": "standard", "throughputUnits": 2, "ingressEventsPerMonth": 60000000 } },
+                  { "id": "lake", "icon": "storage-accounts", "label": "Azure Storage", "sublabel": "analytics lake", "usage": { "storageGb": 1500, "readOperationsPerMonth": 2000000 } },
+                  { "id": "adx", "icon": "data-explorer-clusters", "label": "Azure Data Explorer", "sublabel": "relevance analysis" },
+                  { "id": "mon", "icon": "monitor", "label": "Azure Monitor", "sublabel": "latency, zero-result rate", "usage": { "ingestGbPerMonth": 150 } },
+                  { "id": "kv", "icon": "key-vaults", "label": "Azure Key Vault", "usage": { "operationsPerMonth": 20000000 } }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    { "from": "shoppers", "to": "fd", "step": 1, "label": "search" },
+    { "from": "waf", "to": "fd", "style": "dashed", "label": "protects" },
+    { "from": "fd", "to": "apim", "step": 2, "label": "cache miss" },
+    { "from": "apim", "to": "searchfn", "step": 3 },
+    { "from": "searchfn", "to": "embed", "step": 4, "label": "embed query" },
+    { "from": "searchfn", "to": "ais", "step": 5, "label": "hybrid query" },
+    { "from": "searchfn", "to": "rank", "step": 6, "label": "re-rank" },
+    { "from": "merch", "to": "cosmos", "label": "curation rules" },
+    { "from": "pim", "to": "feed", "label": "bulk feed" },
+    { "from": "pim", "to": "cosmos", "label": "updates" },
+    { "from": "cosmos", "to": "q", "label": "change feed" },
+    { "from": "q", "to": "indexer" },
+    { "from": "indexer", "to": "embed", "label": "embed product" },
+    { "from": "indexer", "to": "ais", "label": "upsert" },
+    { "from": "reindex", "to": "ais", "label": "rebuild index" },
+    { "from": "feed", "to": "reindex", "style": "dashed" },
+    { "from": "apim", "to": "eh", "style": "dashed", "label": "events" },
+    { "from": "eh", "to": "lake" },
+    { "from": "lake", "to": "adx" }
+  ]
+}

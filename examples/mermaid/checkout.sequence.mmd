@@ -1,0 +1,16 @@
+sequenceDiagram
+    participant U as Customer
+    participant A as API Management
+    participant F as Orders Function App
+    participant D as Cosmos DB
+    U->>A: POST /orders
+    A->>F: invoke
+    F->>D: write order
+    D-->>F: ok
+    alt payment approved
+      F-)A: OrderConfirmed event
+    else declined
+      F-->>A: 402
+    end
+    F->>F: validate
+    A-->>U: 201 Created

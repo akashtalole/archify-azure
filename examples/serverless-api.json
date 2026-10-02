@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "Serverless API with asynchronous processing",
+    "subtitle": "Entra External ID → API Management → Functions → Cosmos DB, with a Service Bus queue feeding background work",
+    "output": "examples/out/serverless-api.html",
+    "cost": { "note": "Illustrative: 3M API calls/month on the Consumption plan, 20,000 monthly active users, 500,000 background jobs." }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      { "id": "client", "icon": "mobile", "label": "Mobile app" },
+      {
+        "id": "cloud", "kind": "azure-cloud", "layout": "row", "gap": 80,
+        "children": [
+          {
+            "id": "front", "kind": "stack", "layout": "column", "gap": 56,
+            "children": [
+              { "id": "idp", "icon": "external-identities", "label": "Entra External ID", "sublabel": "sign-in, JWT" },
+              { "id": "apim", "icon": "apim", "label": "API Management", "sublabel": "consumption tier", "usage": { "tier": "consumption", "callsPerMonth": 3000000 } },
+              { "id": "waf", "icon": "waf", "label": "Front Door WAF", "sublabel": "rate limiting" }
+            ]
+          },
+          {
+            "id": "region", "kind": "region", "layout": "row", "gap": 90,
+            "children": [
+              { "id": "api", "icon": "function-apps", "label": "Azure Functions", "sublabel": "HTTP API", "usage": { "requestsPerMonth": 3000000, "avgDurationMs": 120, "memoryMb": 512 } },
+              {
+                "id": "data", "kind": "stack", "layout": "column", "gap": 56,
+                "children": [
+                  { "id": "cosmos", "icon": "cosmos-db", "label": "Azure Cosmos DB", "sublabel": "NoSQL, autoscale", "usage": { "mode": "autoscale", "ruPerSecond": 4000, "storageGb": 80 } },
+                  { "id": "bus", "icon": "service-bus", "label": "Azure Service Bus", "sublabel": "jobs queue", "usage": { "tier": "standard", "operationsPerMonth": 3000000 } }
+                ]
+              },
+              { "id": "worker", "icon": "function-apps", "label": "Azure Functions", "sublabel": "background worker", "usage": { "requestsPerMonth": 500000, "avgDurationMs": 800, "memoryMb": 1024 } },
+              { "id": "blob", "icon": "storage-accounts", "label": "Azure Storage", "sublabel": "exports", "usage": { "storageGb": 150, "readOperationsPerMonth": 2000000 } }
+            ]
+          },
+          {
+            "id": "ops", "kind": "stack", "layout": "column", "gap": 56,
+            "children": [
+              { "id": "ai", "icon": "application-insights", "label": "Application Insights", "sublabel": "traces, failures", "usage": { "ingestGbPerMonth": 40 } },
+              { "id": "kv", "icon": "key-vaults", "label": "Azure Key Vault", "usage": { "operationsPerMonth": 500000 } }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    { "from": "client", "to": "apim", "step": 1, "label": "HTTPS + JWT" },
+    { "from": "idp", "to": "apim", "style": "dashed", "label": "validates tokens" },
+    { "from": "waf", "to": "apim", "style": "dashed", "label": "protects" },
+    { "from": "apim", "to": "api", "step": 2 },
+    { "from": "api", "to": "cosmos", "step": 3, "label": "read/write" },
+    { "from": "api", "to": "bus", "step": 4, "label": "enqueue job" },
+    { "from": "bus", "to": "worker", "step": 5, "label": "trigger" },
+    { "from": "worker", "to": "blob", "step": 6, "label": "export" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "archify-azure",
+  "version": "0.1.0",
+  "description": "Generate Azure architecture diagrams (standalone HTML/SVG/PNG/draw.io) from typed JSON using the official Azure Architecture Icons, with Azure Retail Prices cost estimates and an Azure Well-Architected Framework review. Companion to tt-a1i/archify and archify-aws.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "archify-azure": "bin/archify-azure.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "icons:fetch": "node scripts/fetch-icons.mjs",
+    "prices:fetch": "node scripts/fetch-prices.mjs",
+    "wa:corpus": "node scripts/build-wa-corpus.mjs",
+    "examples": "node scripts/build-examples.mjs",
+    "drawio:map": "node scripts/build-drawio-map.mjs",
+    "schemas": "node scripts/build-schemas.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

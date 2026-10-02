@@ -1,0 +1,14 @@
+node_modules/
+assets/azure-icons/
+.cache/
+.archify-azure/
+*.png
+!examples/out/*.png
+
+.cache/
+!examples/**/out/*.png
+!docs/assets/*.png
+!examples/iac/*.png
+!examples/mermaid/*.png
+docs/live/
+site/
