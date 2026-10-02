@@ -2,7 +2,7 @@
   "ok": true,
   "tool": "archify-azure",
   "version": "0.1.0",
-  "iconRelease": "Azure Architecture Icons V24",
+  "iconRelease": "Azure Architecture Icons V24 + Power Platform icons",
   "input": {
     "path": "examples/product-catalog-search.json",
     "sha256": "3eb3f22ea8cc42def9aa6494a5c20ef827d014047abe987455bd15299470bd0a"

@@ -1,5 +1,5 @@
 {
- "generatedFrom": "Azure Architecture Icons V24",
+ "generatedFrom": "Azure Architecture Icons V24 + Power Platform icons",
  "categories": {
   "ai-machine-learning": "#0078D4",
   "analytics": "#0078D4",
@@ -24,6 +24,7 @@
   "networking": "#0078D4",
   "new-icons": "#0078D4",
   "other": "#0078D4",
+  "power-platform": "#0078D4",
   "security": "#0078D4",
   "storage": "#0078D4",
   "web": "#0078D4"
@@ -3619,6 +3620,62 @@
    "name": "Keys",
    "category": "menu",
    "file": "menu/00787-icon-service-Keys.svg"
+  },
+  {
+   "key": "Agent-365",
+   "id": "agent-365",
+   "name": "Agent 365",
+   "category": "power-platform",
+   "file": "power-platform/Agent-365.svg"
+  },
+  {
+   "key": "AI-Builder",
+   "id": "ai-builder",
+   "name": "AI Builder",
+   "category": "power-platform",
+   "file": "power-platform/AI-Builder.svg"
+  },
+  {
+   "key": "Copilot-Studio",
+   "id": "copilot-studio",
+   "name": "Copilot Studio",
+   "category": "power-platform",
+   "file": "power-platform/Copilot-Studio.svg"
+  },
+  {
+   "key": "Dataverse",
+   "id": "dataverse",
+   "name": "Dataverse",
+   "category": "power-platform",
+   "file": "power-platform/Dataverse.svg"
+  },
+  {
+   "key": "Microsoft-Power-Platform",
+   "id": "microsoft-power-platform",
+   "name": "Microsoft Power Platform",
+   "category": "power-platform",
+   "file": "power-platform/Microsoft-Power-Platform.svg"
+  },
+  {
+   "key": "Power-Apps",
+   "id": "power-apps",
+   "name": "Power Apps",
+   "category": "power-platform",
+   "file": "power-platform/Power-Apps.svg"
+  },
+  {
+   "key": "Power-Automate",
+   "id": "power-automate",
+   "name": "Power Automate",
+   "category": "power-platform",
+   "file": "power-platform/Power-Automate.svg"
+  },
+  {
+   "key": "Power-Pages",
+   "id": "power-pages",
+   "name": "Power Pages",
+   "category": "power-platform",
+   "file": "power-platform/Power-Pages.svg"
   },
   {
    "key": "ABS-Member",

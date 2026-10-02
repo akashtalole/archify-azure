@@ -2,7 +2,7 @@
   "ok": true,
   "tool": "archify-azure",
   "version": "0.1.0",
-  "iconRelease": "Azure Architecture Icons V24",
+  "iconRelease": "Azure Architecture Icons V24 + Power Platform icons",
   "input": {
     "path": "examples/three-tier.json",
     "sha256": "49ea9e18e36ae0d11d52dac883b4878584cc0968930edaf76eaddffcdff4a92a"
