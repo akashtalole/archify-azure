@@ -4,6 +4,8 @@ The official **Azure Architecture Icons** package is **not committed**. `scripts
 
 The official **Power Platform icons** (<https://learn.microsoft.com/power-platform/guidance/icons>) are fetched by the same script (`POWER_URL`, override with `ARCHIFY_POWER_ICON_URL`, skip with `--no-power`). The zip's `<Name>_scalable.svg` files are renamed through `POWER_NAMES` and extracted to `assets/azure-icons/power-platform/`; they appear in the catalog as category `power-platform` with ids `copilot-studio`, `agent-365`, `ai-builder`, `dataverse`, `power-apps`, `power-automate`, `power-pages` and `microsoft-power-platform` (the Azure package's own `power-platform` icon keeps that id). They have no draw.io Azure-library equivalent, so the draw.io export embeds them as SVG, and the cost engine reports them as not estimated.
 
+**Microsoft Fabric icons** (<https://learn.microsoft.com/fabric/fundamentals/icons>) come from the `docs-samples/Icons.zip` in `microsoft/fabric-samples` (a ~30 MB npm package; override with `ARCHIFY_FABRIC_ICON_URL`, skip with `--no-fabric`). `fetch-icons.mjs` keeps the five workload icons (48 px colour: `fabric`, `fabric-power-bi`, `fabric-real-time-intelligence`, `fabric-data-engineering`, `fabric-data-science`) and every 64 px item icon (`fabric-lakehouse`, `fabric-data-agent`, `fabric-semantic-model`, `fabric-event-house`, `fabric-eventstream`, …) as category `fabric`. The Fabric workload "OneLake" has no icon of its own; use the lakehouse icon.
+
 ## Catalog (`data/catalog.json`)
 
 ```json
@@ -13,7 +15,7 @@ The official **Power Platform icons** (<https://learn.microsoft.com/power-platfo
   "general": [ { "id": "users", "name": "Users", "file": "general/…" } ] }
 ```
 
-Currently 547 services (539 Azure + 8 Power Platform), 97 general icons and 8 group icons. Ids are slugs of the file name with `azure-`/`microsoft-` prefixes removed. `GROUP_ICON_KEYS` in `catalog-build.mjs` maps group kinds to icons (Subscription, Resource-Group, Management-Group, Region, VNet, Subnet, NSG, Availability-Set). Azure has no separate "resource" icon tier, so `catalog.resources` is empty.
+Currently 609 services (539 Azure, 8 Power Platform and 62 Fabric), 97 general icons and 8 group icons. Ids are slugs of the file name with `azure-`/`microsoft-` prefixes removed. `GROUP_ICON_KEYS` in `catalog-build.mjs` maps group kinds to icons (Subscription, Resource-Group, Management-Group, Region, VNet, Subnet, NSG, Availability-Set). Azure has no separate "resource" icon tier, so `catalog.resources` is empty.
 
 `data/aliases.json` maps friendly names (`functions`, `aks`, `cosmos`, `apim`, `front-door`) to service ids; a separate map exists for general icons.
 

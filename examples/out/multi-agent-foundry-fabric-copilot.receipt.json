@@ -2,10 +2,10 @@
   "ok": true,
   "tool": "archify-azure",
   "version": "0.1.0",
-  "iconRelease": "Azure Architecture Icons V24 + Power Platform icons",
+  "iconRelease": "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric icons",
   "input": {
     "path": "examples/multi-agent-foundry-fabric-copilot.json",
-    "sha256": "bf2dfc6c32be9476f0fa54cd5e8247ddfdbb2064f39668e6bbccd63e4d118234"
+    "sha256": "63e2ed6fd04b773aca587dbffd9bbbaab3d13b54e8045aacb52e6f1f11ee7c94"
   },
   "stages": [
     {
@@ -60,8 +60,8 @@
   "outputs": {
     "html": {
       "path": "examples/out/multi-agent-foundry-fabric-copilot.html",
-      "sha256": "0f279a397bd544e45db83ec8103ece59474591fbc8508728dd2ec3f319264567",
-      "bytes": 163992
+      "sha256": "fd6bf582ee6684abefa23c2652f4cf0a82850ad2024f18ac693c91e1e7008505",
+      "bytes": 163924
     },
     "svg": {
       "path": "examples/out/multi-agent-foundry-fabric-copilot.svg",

@@ -1,0 +1,338 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="az theme-light" viewBox="0 0 1980 1591" width="1980" height="1591" role="img" aria-label="Claim question to approved payout across Copilot Studio, Power Automate, Foundry and Fabric">
+<title>Claim question to approved payout across Copilot Studio, Power Automate, Foundry and Fabric</title>
+<style>.az{--bg:#ffffff;--fg:#000000;--muted:#545b64;--line:#232F3E;--halo:#ffffff;--badge:#000000;--badgeFg:#ffffff}
+.az.theme-dark{--bg:#161E2D;--fg:#ffffff;--muted:#aab4c3;--line:#d5dbdb;--halo:#161E2D;--badge:#ffffff;--badgeFg:#000000}
+.az .bg{fill:var(--bg)}
+.az text{font-family:Arial,Helvetica,sans-serif;fill:var(--fg)}
+.az .title{font-size:22px;font-weight:700}
+.az .subtitle{font-size:13px;fill:var(--muted)}
+.az .glabel,.az .nlabel,.az .elabel{font-size:12px}
+.az .nsub{font-size:10.5px;fill:var(--muted)}
+.az .elabel{paint-order:stroke;stroke:var(--halo);stroke-width:4px;stroke-linejoin:round}
+.az .eline{stroke:var(--line)}
+.az .arw{fill:none;stroke:var(--line);stroke-width:1.6}
+.az .badge circle{fill:var(--badge)}.az .badge circle.hit{fill:transparent}.az .badge{cursor:help}.az .badge:hover circle:not(.hit){stroke:#ff9900;stroke-width:3}
+.az .badge text{fill:var(--badgeFg);font-weight:700;font-size:12px}
+.az .only-dark{display:none}.az.theme-dark .only-dark{display:inline}.az.theme-dark .only-light{display:none}
+.az.theme-dark .grect[data-fill-dark="none"]{fill:none}
+.az .dim{opacity:.18}.az .hl .eline{stroke-width:3}
+.az .edge,.az .node{transition:opacity .12s}
+.az .life{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4;opacity:.7}
+.az .asyncdot{fill:var(--line)}
+.az .note rect{fill:none;stroke:var(--muted);stroke-width:1.25}.az .note text{font-size:11.5px}
+.az .frag rect{stroke:var(--muted);stroke-width:1.25}.az .fragtab{fill:var(--bg);stroke:var(--muted);stroke-width:1.25}
+.az .fraglabel{font-size:11px;font-weight:700}.az .fragelse{stroke:var(--muted);stroke-dasharray:6 4}</style>
+<defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path class="arw" d="M1.5 1.5 L8.5 5 L1.5 8.5"/></marker><symbol id="gen-Users" viewBox="0 0 18 18"><defs><linearGradient id="gen-Users__be92901b-ec33-4c65-adf1-9b0eed06d677" x1="9" y1="6.88" x2="9" y2="20.45" gradientUnits="userSpaceOnUse"><stop offset="0.22" stop-color="#32d4f5" /><stop offset="1" stop-color="#198ab3" /></linearGradient><linearGradient id="gen-Users__b46fc246-25d8-4398-8779-1042e8cacae7" x1="8.61" y1="-0.4" x2="9.6" y2="11.92" gradientUnits="userSpaceOnUse"><stop offset="0.22" stop-color="#32d4f5" /><stop offset="1" stop-color="#198ab3" /></linearGradient></defs><path d="M15.72,18a1.45,1.45,0,0,0,1.45-1.45.47.47,0,0,0,0-.17C16.59,11.81,14,8.09,9,8.09S1.34,11.24.83,16.39A1.46,1.46,0,0,0,2.14,18H15.72Z" fill="url(#gen-Users__be92901b-ec33-4c65-adf1-9b0eed06d677)" /><path d="M9,9.17a4.59,4.59,0,0,1-2.48-.73L9,14.86l2.44-6.38A4.53,4.53,0,0,1,9,9.17Z" fill="#fff" opacity="0.8" /><circle cx="9.01" cy="4.58" r="4.58" fill="url(#gen-Users__b46fc246-25d8-4398-8779-1042e8cacae7)" /></symbol><symbol id="svc-Copilot-Studio" viewBox="0 0 96 96"><path d="M64.3242 4.77449C52.3121 0.77044 46.3052 -1.23042 42.1523 1.76277C38.0001 4.75619 38 11.0874 38 23.7491V33.9991L28.3242 30.7745C16.3121 26.7705 10.3052 24.7696 6.15234 27.7628C1.99998 30.7562 2 37.0874 2 49.7491V67.585C2 74.5417 1.9996 78.0209 3.88672 80.6397C5.7743 83.2586 9.07559 84.3596 15.6758 86.5596L20.002 87.9991L20 88.0011L33.8906 92.63C41.0527 95.0173 44.634 96.2117 48.2168 95.6612C51.7998 95.1105 54.8577 92.8959 60.9727 88.4678L79.5957 74.9835C84.6242 71.3421 87.5709 69.2032 89.3691 66.7569C89.551 66.5194 89.7213 66.2697 89.8789 66.005C90.0501 65.7303 90.212 65.4518 90.3594 65.1632C91.9996 61.9502 92 58.1948 92 50.6846V28.4151C92 21.4583 92.0007 17.9792 90.1133 15.3604C88.2257 12.7416 84.9244 11.6425 78.3242 9.44246L64.3242 4.77449Z" fill="url(#svc-Copilot-Studio__paint0_linear_4303_1230)"/>
+<path d="M64.3242 4.77449C52.3121 0.77044 46.3052 -1.23042 42.1523 1.76277C38.0001 4.75619 38 11.0874 38 23.7491V33.9991L28.3242 30.7745C16.3121 26.7705 10.3052 24.7696 6.15234 27.7628C1.99998 30.7562 2 37.0874 2 49.7491V67.585C2 74.5417 1.9996 78.0209 3.88672 80.6397C5.7743 83.2586 9.07559 84.3596 15.6758 86.5596L20.002 87.9991L20 88.0011L33.8906 92.63C41.0527 95.0173 44.634 96.2117 48.2168 95.6612C51.7998 95.1105 54.8577 92.8959 60.9727 88.4678L79.5957 74.9835C84.6242 71.3421 87.5709 69.2032 89.3691 66.7569C89.551 66.5194 89.7213 66.2697 89.8789 66.005C90.0501 65.7303 90.212 65.4518 90.3594 65.1632C91.9996 61.9502 92 58.1948 92 50.6846V28.4151C92 21.4583 92.0007 17.9792 90.1133 15.3604C88.2257 12.7416 84.9244 11.6425 78.3242 9.44246L64.3242 4.77449Z" fill="url(#svc-Copilot-Studio__paint1_radial_4303_1230)"/>
+<path d="M64.3242 4.77449C52.3121 0.77044 46.3052 -1.23042 42.1523 1.76277C38.0001 4.75619 38 11.0874 38 23.7491V33.9991L28.3242 30.7745C16.3121 26.7705 10.3052 24.7696 6.15234 27.7628C1.99998 30.7562 2 37.0874 2 49.7491V67.585C2 74.5417 1.9996 78.0209 3.88672 80.6397C5.7743 83.2586 9.07559 84.3596 15.6758 86.5596L20.002 87.9991L20 88.0011L33.8906 92.63C41.0527 95.0173 44.634 96.2117 48.2168 95.6612C51.7998 95.1105 54.8577 92.8959 60.9727 88.4678L79.5957 74.9835C84.6242 71.3421 87.5709 69.2032 89.3691 66.7569C89.551 66.5194 89.7213 66.2697 89.8789 66.005C90.0501 65.7303 90.212 65.4518 90.3594 65.1632C91.9996 61.9502 92 58.1948 92 50.6846V28.4151C92 21.4583 92.0007 17.9792 90.1133 15.3604C88.2257 12.7416 84.9244 11.6425 78.3242 9.44246L64.3242 4.77449Z" fill="url(#svc-Copilot-Studio__paint2_radial_4303_1230)"/>
+<path d="M56 54.4151C56 47.4579 56 43.9793 54.1124 41.3604C52.2248 38.7415 48.9247 37.6415 42.3246 35.4414L28.3246 30.7748C16.312 26.7706 10.3058 24.7685 6.1529 27.7617C2 30.755 2 37.0861 2 49.7484V67.5847C2 74.5419 2 78.0206 3.88758 80.6394C5.77516 83.2583 9.07525 84.3583 15.6754 86.5584L29.6754 91.2251C41.688 95.2292 47.6942 97.2313 51.8471 94.2381C56 91.2448 56 84.9137 56 72.2514V54.4151Z" fill="url(#svc-Copilot-Studio__paint3_radial_4303_1230)"/>
+<path d="M56 54.4151C56 47.4579 56 43.9793 54.1124 41.3604C52.2248 38.7415 48.9247 37.6415 42.3246 35.4414L28.3246 30.7748C16.312 26.7706 10.3058 24.7685 6.1529 27.7617C2 30.755 2 37.0861 2 49.7484V67.5847C2 74.5419 2 78.0206 3.88758 80.6394C5.77516 83.2583 9.07525 84.3583 15.6754 86.5584L29.6754 91.2251C41.688 95.2292 47.6942 97.2313 51.8471 94.2381C56 91.2448 56 84.9137 56 72.2514V54.4151Z" fill="url(#svc-Copilot-Studio__paint4_linear_4303_1230)"/>
+<path d="M92 50.6846C92 58.1947 91.9996 61.9501 90.3594 65.1631C90.212 65.4517 90.0501 65.7302 89.8789 66.0049C89.7213 66.2696 89.551 66.5193 89.3691 66.7568C87.5709 69.2031 84.6242 71.3421 79.5957 74.9834L60.9727 88.4678C54.8577 92.8959 51.7998 95.1105 48.2168 95.6611C44.634 96.2116 41.0527 95.0172 33.8906 92.6299L25.2158 89.7393L20 88L20.002 87.999L16.7822 86.9277L15.2217 86.4072C8.92337 84.3067 5.73047 83.1977 3.88672 80.6396C1.99964 78.0208 2 74.5416 2 67.585V49.749C2 48.4323 2.00119 47.1841 2.00586 46.001L56 61.501L92 35.001V50.6846Z" fill="url(#svc-Copilot-Studio__paint5_radial_4303_1230)"/>
+<path d="M38.0742 15.1036C31.3033 13.0668 27.2217 12.5497 24.1523 14.7618C21.0793 16.9767 20.281 21.0195 20.0732 28.1026C22.4635 28.8216 25.1889 29.7306 28.3232 30.7754L37.999 34V23.7491C37.999 20.4569 38.0012 17.5925 38.0742 15.1036Z" fill="url(#svc-Copilot-Studio__paint6_linear_4303_1230)"/>
+<path d="M38.0742 15.1036C31.3033 13.0668 27.2217 12.5497 24.1523 14.7618C21.0793 16.9767 20.281 21.0195 20.0732 28.1026C22.4635 28.8216 25.1889 29.7306 28.3232 30.7754L37.999 34V23.7491C37.999 20.4569 38.0012 17.5925 38.0742 15.1036Z" fill="url(#svc-Copilot-Studio__paint7_linear_4303_1230)" fill-opacity="0.7"/>
+<path d="M38.0742 15.1035C38.0012 17.5922 38 20.4561 38 23.748V41.585C38 48.5419 38.0002 52.0208 39.8877 54.6396C41.7753 57.2583 45.0758 58.3586 51.6758 60.5586L56 62C64.0027 64.6676 68.0041 66.0014 70.84 64.1408C71.0112 64.0284 71.1774 63.9086 71.3381 63.7817C74 61.6798 74 57.462 74 49.0263V41.415C74 34.4579 73.9999 30.9792 72.1123 28.3604C70.2247 25.7416 66.9243 24.6414 60.3242 22.4414L46.3242 17.7744C43.1901 16.7297 40.4644 15.8225 38.0742 15.1035Z" fill="url(#svc-Copilot-Studio__paint8_linear_4303_1230)"/>
+<path d="M38.0742 15.1035C38.0012 17.5922 38 20.4561 38 23.748V41.585C38 48.5419 38.0002 52.0208 39.8877 54.6396C41.7753 57.2583 45.0758 58.3586 51.6758 60.5586L56 62C64.0027 64.6676 68.0041 66.0014 70.84 64.1408C71.0112 64.0284 71.1774 63.9086 71.3381 63.7817C74 61.6798 74 57.462 74 49.0263V41.415C74 34.4579 73.9999 30.9792 72.1123 28.3604C70.2247 25.7416 66.9243 24.6414 60.3242 22.4414L46.3242 17.7744C43.1901 16.7297 40.4644 15.8225 38.0742 15.1035Z" fill="url(#svc-Copilot-Studio__paint9_radial_4303_1230)"/>
+<path d="M20.0742 28.1035C20.0012 30.5922 20 33.4561 20 36.748V54.585C20 61.5421 20.0001 65.0208 21.8877 67.6396C23.7753 70.2584 27.0757 71.3586 33.6758 73.5586L37.975 74.9917C46.0014 77.6671 50.0146 79.0049 52.855 77.1309C53.0159 77.0247 53.1724 76.9119 53.324 76.7928C56 74.6909 56 70.4606 56 62V54.415C56 47.4579 55.9999 43.9792 54.1123 41.3604C52.2247 38.7416 48.9243 37.6414 42.3242 35.4414L28.3242 30.7744C25.1901 29.7297 22.4644 28.8225 20.0742 28.1035Z" fill="url(#svc-Copilot-Studio__paint10_linear_4303_1230)"/>
+<path d="M38 41.585C38 48.5422 38.0001 52.0208 39.8877 54.6397C41.7753 57.2585 45.0756 58.3585 51.6758 60.5586L56 62V54.415C56 47.4581 55.9998 43.9792 54.1123 41.3604C52.2247 38.7417 48.9242 37.6414 42.3242 35.4414L38 34V41.585Z" fill="url(#svc-Copilot-Studio__paint11_linear_4303_1230)"/>
+<defs>
+<linearGradient id="svc-Copilot-Studio__paint0_linear_4303_1230" x1="53.5" y1="77" x2="80.9999" y2="9.99998" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2764E7"/>
+<stop offset="0.307475" stop-color="#8B52F4"/>
+<stop offset="0.544627" stop-color="#BB45EA"/>
+<stop offset="0.803866" stop-color="#DB56C6"/>
+<stop offset="1" stop-color="#F462AB"/>
+</linearGradient>
+<radialGradient id="svc-Copilot-Studio__paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.5 45) rotate(43.8065) scale(33.9485 21.4653)">
+<stop offset="0.549399" stop-color="#5B2AB5"/>
+<stop offset="1" stop-color="#A931D8" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="svc-Copilot-Studio__paint2_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(44 34) rotate(17.7004) scale(49.3356 24.5964)">
+<stop offset="0.527929" stop-color="#9529C2"/>
+<stop offset="1" stop-color="#DD3CE2" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="svc-Copilot-Studio__paint3_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(61.3922 89.3373) rotate(-124.89) scale(82.0935 82.0935)">
+<stop stop-color="#2764E7"/>
+<stop offset="0.225228" stop-color="#0094F0"/>
+<stop offset="0.443437" stop-color="#19B2CE"/>
+<stop offset="0.6999" stop-color="#52D17C"/>
+<stop offset="1" stop-color="#FFD638"/>
+</radialGradient>
+<linearGradient id="svc-Copilot-Studio__paint4_linear_4303_1230" x1="19.5444" y1="82.7096" x2="53.8452" y2="82.7096" gradientUnits="userSpaceOnUse">
+<stop stop-color="#16BBDA" stop-opacity="0"/>
+<stop offset="0.535279" stop-color="#0094F0"/>
+<stop offset="1" stop-color="#2764E7"/>
+</linearGradient>
+<radialGradient id="svc-Copilot-Studio__paint5_radial_4303_1230" cx="0" cy="0" r="1" gradientTransform="matrix(23 12.9998 8.90874 -13.0499 43 67.9995)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1B44B1"/>
+<stop offset="1" stop-color="#367AF2" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="svc-Copilot-Studio__paint6_linear_4303_1230" x1="33.5" y1="32.5" x2="34" y2="13" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF9C70"/>
+<stop offset="1" stop-color="#FFD394"/>
+</linearGradient>
+<linearGradient id="svc-Copilot-Studio__paint7_linear_4303_1230" x1="28.5" y1="24.5" x2="26.5" y2="33" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB357" stop-opacity="0"/>
+<stop offset="1" stop-color="#F24A9D"/>
+</linearGradient>
+<linearGradient id="svc-Copilot-Studio__paint8_linear_4303_1230" x1="58" y1="20" x2="58.5" y2="64.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB357"/>
+<stop offset="0.380259" stop-color="#FB6F7B"/>
+<stop offset="0.659779" stop-color="#F24A9D"/>
+<stop offset="1" stop-color="#DD3CE2"/>
+</linearGradient>
+<radialGradient id="svc-Copilot-Studio__paint9_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(40 54) rotate(12.702) scale(24.0895 24.0895)">
+<stop offset="0.567938" stop-color="#D7257D"/>
+<stop offset="1" stop-color="#F462AB" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="svc-Copilot-Studio__paint10_linear_4303_1230" x1="50.03" y1="77.3707" x2="20" y2="25.6869" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0FAFFF"/>
+<stop offset="0.54828" stop-color="#2BDABE"/>
+<stop offset="0.765945" stop-color="#88E06C"/>
+<stop offset="1" stop-color="#FFD638"/>
+</linearGradient>
+<linearGradient id="svc-Copilot-Studio__paint11_linear_4303_1230" x1="36" y1="44.5" x2="53" y2="50.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#76EB95"/>
+<stop offset="1" stop-color="#3BD5FF" stop-opacity="0"/>
+</linearGradient>
+</defs></symbol><symbol id="svc-API-Management-Services" viewBox="0 0 18 18"><defs><linearGradient id="svc-API-Management-Services__bf8a9583-aae9-48ff-87d8-fb8f44e7d6bd" x1="9" y1="16.82" x2="9" y2="1.18" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#198ab3" /><stop offset="0.09" stop-color="#1f9dc4" /><stop offset="0.24" stop-color="#28b5d9" /><stop offset="0.4" stop-color="#2dc6e9" /><stop offset="0.57" stop-color="#31d1f2" /><stop offset="0.78" stop-color="#32d4f5" /></linearGradient><linearGradient id="svc-API-Management-Services__f9b1bb8c-728e-4abf-bce5-6c11ac170c5b" x1="8.36" y1="11.35" x2="8.36" y2="14.46" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#c69aeb" /><stop offset="1" stop-color="#6f4bb2" /></linearGradient></defs><path d="M14.18,5.89A4.85,4.85,0,0,0,9.23,1.18,5,5,0,0,0,4.48,4.47,4.61,4.61,0,0,0,.5,9,4.67,4.67,0,0,0,5.29,13.5a3,3,0,0,0,.42,0h1.2a1.47,1.47,0,0,1-.11-.56v0A1.51,1.51,0,0,1,7,12.21H5.6l-.31,0A3.41,3.41,0,0,1,1.77,9,3.33,3.33,0,0,1,4.68,5.73l.76-.12.25-.73A3.73,3.73,0,0,1,9.23,2.45,3.6,3.6,0,0,1,12.91,5.9V7L14,7.15a2.59,2.59,0,0,1,2.26,2.49,2.63,2.63,0,0,1-2.62,2.54h-.15l-.08,0h-1A3.92,3.92,0,0,0,8.54,9a.64.64,0,1,0,0,1.27,2.65,2.65,0,0,1,0,5.29.64.64,0,1,0,0,1.27,3.92,3.92,0,0,0,3.87-3.34h1.05a.64.64,0,0,0,.2,0A3.91,3.91,0,0,0,17.5,9.64,3.86,3.86,0,0,0,14.18,5.89Z" fill="url(#svc-API-Management-Services__bf8a9583-aae9-48ff-87d8-fb8f44e7d6bd)" /><rect x="6.8" y="11.35" width="3.12" height="3.12" rx="1.54" fill="url(#svc-API-Management-Services__f9b1bb8c-728e-4abf-bce5-6c11ac170c5b)" /></symbol><symbol id="svc-Foundry-Agent-Service" viewBox="0 0 18 18"><defs><linearGradient id="svc-Foundry-Agent-Service__uuid-c41a1b5d-c3ee-4413-bef2-f5a072ba936e" x1="7.28" y1="272.84" x2=".39" y2="267.87" gradientTransform="translate(0 280) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4f42fd" /><stop offset=".8" stop-color="#7274ff" /></linearGradient><linearGradient id="svc-Foundry-Agent-Service__uuid-7a8397bb-f82e-4b4e-8fb1-c49dc20eae52" x1="10.19" y1="268.41" x2="4.38" y2="265.16" gradientTransform="translate(0 280) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset=".25" stop-color="#4f42fd" /><stop offset="1" stop-color="#2c08ac" /></linearGradient><linearGradient id="svc-Foundry-Agent-Service__uuid-364cb38b-25e6-4d45-a5f3-7f7567cf1947" x1="17.43" y1="267.02" x2="5.08" y2="264.98" gradientTransform="translate(0 280) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset=".2" stop-color="#7274ff" /><stop offset="1" stop-color="#4f42fd" /></linearGradient><linearGradient id="svc-Foundry-Agent-Service__uuid-fb32e334-867d-4ede-bed1-56aecae762cb" x1="10.15" y1="273.41" x2="16.87" y2="269.71" gradientTransform="translate(0 280) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset=".25" stop-color="#4f42fd" /><stop offset="1" stop-color="#2c08ac" /></linearGradient><linearGradient id="svc-Foundry-Agent-Service__uuid-257bedeb-cb4e-48ec-978d-667d943d4887" x1="17.68" y1="270.57" x2="8.68" y2="279.43" gradientTransform="translate(0 280) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4f42fd" /><stop offset=".8" stop-color="#7274ff" /></linearGradient><linearGradient id="svc-Foundry-Agent-Service__uuid-d24b3f2b-55bd-4731-8d82-2ccb3a949da7" x1="6.64" y1="271.02" x2="6.64" y2="278.12" gradientTransform="translate(0 280) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset=".25" stop-color="#4f42fd" /><stop offset="1" stop-color="#2c08ac" /></linearGradient></defs><path d="M5.02,15.31l-2.82-1.63c-.66-.38-1.06-1.08-1.06-1.83v-5.69c0-.76.4-1.46,1.06-1.83l1.53-.88c.1-.06.24.01.24.14v9.91c0,.37.1.73.28,1.04.18.32.45.59.78.78h0Z" fill="url(#svc-Foundry-Agent-Service__uuid-c41a1b5d-c3ee-4413-bef2-f5a072ba936e)" /><path d="M10.14,10.59v1.76c0,.76-.4,1.46-1.06,1.83l-1.94,1.12c-.65.38-1.46.38-2.12,0-.33-.19-.59-.46-.78-.78-.18-.31-.28-.67-.28-1.04v-.42c0,.36.39.59.71.4l5.23-3.02c.1-.06.24.01.24.14Z" fill="url(#svc-Foundry-Agent-Service__uuid-7a8397bb-f82e-4b4e-8fb1-c49dc20eae52)" /><path d="M16.86,9.53v3.26c0,.76-.4,1.46-1.06,1.83l-4.93,2.84c-.65.38-1.46.38-2.12,0l-1.53-.88c-.1-.06-.1-.21,0-.27l8.59-4.96c.32-.19.58-.45.76-.77.18-.32.28-.68.28-1.06Z" fill="url(#svc-Foundry-Agent-Service__uuid-364cb38b-25e6-4d45-a5f3-7f7567cf1947)" /><path d="M10.22,7.46l1.53-.88c.65-.38,1.46-.38,2.12,0l1.94,1.12c.65.38,1.06,1.08,1.06,1.83,0,.38-.1.74-.28,1.06-.18.31-.44.58-.76.77l-.36.21c.31-.18.31-.63,0-.81l-5.23-3.02c-.1-.06-.1-.21,0-.27Z" fill="url(#svc-Foundry-Agent-Service__uuid-fb32e334-867d-4ede-bed1-56aecae762cb)" /><path d="M5.94,2.16l2.82-1.63c.66-.38,1.46-.38,2.12,0l4.93,2.84c.65.38,1.06,1.08,1.06,1.83v1.76c0,.12-.13.2-.24.14L8.04,2.16c-.32-.18-.68-.28-1.05-.28-.37,0-.73.09-1.06.28h0Z" fill="url(#svc-Foundry-Agent-Service__uuid-257bedeb-cb4e-48ec-978d-667d943d4887)" /><path d="M7.47,8.95l-1.53-.88c-.66-.38-1.06-1.08-1.06-1.83v-2.24c0-.76.4-1.46,1.06-1.83.33-.19.69-.28,1.06-.28s.72.09,1.04.28l.36.21c-.31-.18-.7.05-.7.41v6.04c0,.12-.13.2-.24.14h0Z" fill="url(#svc-Foundry-Agent-Service__uuid-d24b3f2b-55bd-4731-8d82-2ccb3a949da7)" /></symbol><symbol id="svc-Content-Safety" viewBox="0 0 18 18"><defs><linearGradient id="svc-Content-Safety__uuid-80fd62f5-d182-4403-8456-6923e7e033bb" x1="7.997" y1="14.863" x2="7.997" y2="2.057" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0078d4" /><stop offset=".82" stop-color="#5ea0ef" /></linearGradient><linearGradient id="svc-Content-Safety__uuid-f6289940-e1be-4e56-904f-ba5a1586dc17" x1="-558.124" y1="1021.188" x2="-558.124" y2="1019.083" gradientTransform="translate(564 1025.516) scale(1 -1)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity=".7" /><stop offset="1" stop-color="#fff" stop-opacity=".6" /></linearGradient></defs><path d="m.362,3.138C.162,3.138,0,2.976,0,2.777h0V.361C0,.162.162,0,.362,0h2.266c.2,0,.362.162.362.361,0,.199-.162.361-.362.361H.724v2.053c0,.199-.161.362-.361.362,0,0,0,0-.001,0Zm17.638-.361V.361C18,.162,17.838,0,17.638,0h-2.266c-.2,0-.362.162-.362.361s.162.361.362.361h1.904v2.053c0,.199.162.361.362.361.2,0,.361-.162.362-.361h0ZM2.99,17.639c0-.199-.162-.361-.362-.361H.724v-2.053c0-.199-.162-.361-.362-.361-.2,0-.362.162-.362.361v2.415c0,.199.163.36.362.36h2.266c.2,0,.362-.162.362-.361Zm15.01.001v-2.415c0-.199-.162-.361-.362-.361-.2,0-.361.162-.362.361v2.053h-1.904c-.2,0-.362.162-.362.362,0,.199.162.361.362.361h2.266c.199,0,.361-.161.362-.36Z" fill="#76bc2d" /><g><path d="m13.864,8.047c0,3.822-4.627,6.907-5.632,7.544-.12.066-.265.066-.386,0-1.073-.687-5.716-3.772-5.716-7.544V3.386c0-.197.155-.36.352-.369,3.604-.101,2.783-1.676,5.482-1.676s1.861,1.576,5.465,1.676c.197.009.352.171.352.369l.084,4.66Z" fill="#0078d4" /><path d="m8.04,14.863c-4.683-3.064-5.194-5.781-5.194-6.816V3.719c1.873-.106,2.625-.637,3.236-1.068.489-.345.843-.594,1.881-.594s1.387.249,1.872.593c.607.431,1.355.962,3.235,1.069l.078,4.34c0,.817-.372,3.733-5.109,6.804Z" fill="url(#svc-Content-Safety__uuid-80fd62f5-d182-4403-8456-6923e7e033bb)" /></g><g><rect x="8.155" y="4.328" width="3.721" height=".691" rx=".141" ry=".141" fill="#fff" opacity=".7" /><rect x="8.155" y="5.742" width="3.721" height=".691" rx=".141" ry=".141" fill="#fff" opacity=".6" /><rect x="4.117" y="9.983" width="4.472" height=".691" rx=".141" ry=".141" fill="#fff" opacity=".3" /><rect x="4.117" y="8.57" width="7.76" height=".691" rx=".141" ry=".141" fill="#fff" opacity=".4" /><rect x="4.117" y="7.156" width="7.076" height=".691" rx=".14" ry=".14" fill="#fff" opacity=".5" /><g id="svc-Content-Safety__uuid-69ff294d-4d54-4881-9832-ea140e19e0d2"><path d="m4.235,4.328h3.282c.065,0,.118.046.118.102v1.901c0,.057-.053.102-.118.102h-3.282c-.065,0-.118-.046-.118-.102v-1.901c0-.057.053-.102.118-.102Z" fill="url(#svc-Content-Safety__uuid-f6289940-e1be-4e56-904f-ba5a1586dc17)" /></g></g><g><circle cx="12.449" cy="13.203" r="3.442" fill="#76bc2d" /><g><path d="m12.096,14.356l-.316.316c-.054.054-.141.054-.195,0h0l-1.256-1.256c-.054-.054-.054-.141,0-.195h0l.219-.219c.054-.054.141-.054.195,0h0l1.353,1.353h0Z" fill="#fff" /><path d="m11.591,14.676l-.316-.316h0l2.888-2.888c.054-.054.141-.054.195,0h0l.219.219c.054.054.054.141,0,.195h0l-2.791,2.791c-.054.054-.141.054-.195,0h0Z" fill="#f0f0f0" /></g></g></symbol><symbol id="svc-Cognitive-Search" viewBox="0 0 18 18"><defs><linearGradient id="svc-Cognitive-Search__b198f9ad-224e-4f37-99bb-f1c5a20d3916" x1="9" y1="0.36" x2="9" y2="18.31" gradientUnits="userSpaceOnUse"><stop offset="0.18" stop-color="#5ea0ef" /><stop offset="1" stop-color="#0078d4" /></linearGradient></defs><path d="M18,11.32a4.12,4.12,0,0,0-3.51-4,5.15,5.15,0,0,0-5.25-5,5.25,5.25,0,0,0-5,3.49A4.86,4.86,0,0,0,0,10.59a5,5,0,0,0,5.07,4.82l.44,0h8.21a.78.78,0,0,0,.22,0A4.13,4.13,0,0,0,18,11.32Z" fill="url(#svc-Cognitive-Search__b198f9ad-224e-4f37-99bb-f1c5a20d3916)" /><path d="M12.33,6.59a3.07,3.07,0,0,0-5.61.85,3.16,3.16,0,0,0,.33,2.27L4.71,12.08a.79.79,0,0,0,0,1.12.78.78,0,0,0,.56.23.76.76,0,0,0,.56-.23l2.33-2.36a3.14,3.14,0,0,0,.81.33,3.08,3.08,0,0,0,3.36-4.58Zm-.54,2.1A2.16,2.16,0,0,1,9.7,10.34a1.79,1.79,0,0,1-.51-.07,1.87,1.87,0,0,1-.7-.32,2.13,2.13,0,0,1-.56-.56,2.17,2.17,0,0,1-.31-1.73A2.14,2.14,0,0,1,9.7,6a2.31,2.31,0,0,1,.52.06,2.18,2.18,0,0,1,1.32,1A2.13,2.13,0,0,1,11.79,8.69Z" fill="#f2f2f2" /><ellipse cx="9.69" cy="8.18" rx="2.15" ry="2.16" fill="#83b9f9" /></symbol><symbol id="svc-Fabric-Data-Agent" viewBox="0 0 64 64"><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-a)" d="M6 13a7 7 0 0 1 7-7h38a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H13a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-b)" fill-opacity=".2" d="M6 13a7 7 0 0 1 7-7h38a7 7 0 0 1 7 7v38a7 7 0 0 1-7 7H13a7 7 0 0 1-7-7z"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-c)" fill-rule="evenodd" d="M51 7H13a6 6 0 0 0-6 6v38a6 6 0 0 0 6 6h38a6 6 0 0 0 6-6V13a6 6 0 0 0-6-6M13 6a7 7 0 0 0-7 7v38a7 7 0 0 0 7 7h38a7 7 0 0 0 7-7V13a7 7 0 0 0-7-7z" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-d)" d="M32.75 18.777a1.5 1.5 0 0 0-1.5 0l-4.743 2.738a1.5 1.5 0 0 0-.75 1.3v5.476a1.5 1.5 0 0 0 .75 1.299l4.743 2.738a1.5 1.5 0 0 0 1.5 0l4.743-2.738a1.5 1.5 0 0 0 .75-1.299v-5.477a1.5 1.5 0 0 0-.75-1.299z"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-e)" fill-rule="evenodd" d="M25.382 31.672a1.5 1.5 0 0 0-1.5 0l-4.743 2.738a1.5 1.5 0 0 0-.75 1.3v5.476a1.5 1.5 0 0 0 .75 1.3l4.743 2.738a1.5 1.5 0 0 0 1.5 0l4.743-2.739a1.5 1.5 0 0 0 .75-1.299v-5.477a1.5 1.5 0 0 0-.75-1.299zm-1 .866a.5.5 0 0 1 .5 0l4.743 2.738a.5.5 0 0 1 .25.433v5.477a.5.5 0 0 1-.25.433l-4.743 2.739a.5.5 0 0 1-.5 0l-4.743-2.739a.5.5 0 0 1-.25-.433v-5.477a.5.5 0 0 1 .25-.433z" clip-rule="evenodd"/><path fill="url(#svc-Fabric-Data-Agent__icefbbd-i735dd1-f)" d="M40.118 31.672a1.5 1.5 0 0 0-1.5 0l-4.743 2.738a1.5 1.5 0 0 0-.75 1.3v5.476a1.5 1.5 0 0 0 .75 1.3l4.743 2.738a1.5 1.5 0 0 0 1.5 0l4.743-2.739a1.5 1.5 0 0 0 .75-1.299v-5.477a1.5 1.5 0 0 0-.75-1.299z"/><defs><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-a" x1="20.444" x2="27.022" y1="6" y2="58.622" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#EBEBEB"/></linearGradient><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-c" x1="22.792" x2="29.793" y1="6" y2="58.511" gradientUnits="userSpaceOnUse"><stop stop-color="#BBB"/><stop offset="1" stop-color="#888"/></linearGradient><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-d" x1="18.389" x2="45.235" y1="18.576" y2="45.796" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-e" x1="18.389" x2="45.235" y1="18.576" y2="45.796" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><linearGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-f" x1="18.389" x2="45.235" y1="18.576" y2="45.796" gradientUnits="userSpaceOnUse"><stop stop-color="#4BA446"/><stop offset="1" stop-color="#3F7D35"/></linearGradient><radialGradient id="svc-Fabric-Data-Agent__icefbbd-i735dd1-b" cx="0" cy="0" r="1" gradientTransform="matrix(27.4444 41.16672 -35.62501 23.74995 22.61 19.541)" gradientUnits="userSpaceOnUse"><stop offset=".177" stop-color="#fff"/><stop offset="1" stop-color="#B8B8B8"/></radialGradient></defs></symbol><symbol id="svc-Function-Apps" viewBox="0 0 18 18"><defs><linearGradient id="svc-Function-Apps__b403aca7-f387-4434-96b4-ae157edc835f" x1="-175.993" y1="-343.723" x2="-175.993" y2="-359.232" gradientTransform="translate(212.573 370.548) scale(1.156 1.029)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fea11b" /><stop offset="0.284" stop-color="#fea51a" /><stop offset="0.547" stop-color="#feb018" /><stop offset="0.8" stop-color="#ffc314" /><stop offset="1" stop-color="#ffd70f" /></linearGradient></defs><g><path d="M2.37,7.475H3.2a.267.267,0,0,1,.267.267v6.148a.533.533,0,0,1-.533.533H2.1a0,0,0,0,1,0,0V7.741a.267.267,0,0,1,.267-.267Z" transform="translate(12.507 16.705) rotate(134.919)" fill="#50e6ff" /><path d="M2.325,3.6h.833a.267.267,0,0,1,.267.267v6.583a0,0,0,0,1,0,0H2.591a.533.533,0,0,1-.533-.533V3.865A.267.267,0,0,1,2.325,3.6Z" transform="translate(5.759 0.114) rotate(44.919)" fill="#1490df" /></g><g><path d="M14.53,7.475h.833a.533.533,0,0,1,.533.533v6.148a.267.267,0,0,1-.267.267H14.8a.267.267,0,0,1-.267-.267V7.475a0,0,0,0,1,0,0Z" transform="translate(12.223 -7.555) rotate(45.081)" fill="#50e6ff" /><path d="M15.108,3.6h.833a0,0,0,0,1,0,0v6.583a.267.267,0,0,1-.267.267h-.833a.267.267,0,0,1-.267-.267V4.131a.533.533,0,0,1,.533-.533Z" transform="translate(31.022 1.222) rotate(135.081)" fill="#1490df" /></g><path d="M8.459,9.9H4.87a.193.193,0,0,1-.2-.181.166.166,0,0,1,.018-.075L8.991,1.13a.206.206,0,0,1,.186-.106h4.245a.193.193,0,0,1,.2.181.165.165,0,0,1-.035.1L8.534,7.966h4.928a.193.193,0,0,1,.2.181.176.176,0,0,1-.052.122L5.421,16.788c-.077.046-.624.5-.356-.189h0Z" fill="url(#svc-Function-Apps__b403aca7-f387-4434-96b4-ae157edc835f)" /></symbol><symbol id="svc-Power-Automate" viewBox="0 0 96 96"><g clip-path="url(#svc-Power-Automate__clip0_4303_1230)">
+<g clip-path="url(#svc-Power-Automate__clip1_4303_1230)">
+<path d="M52.5093 3C55.3657 3 58.0858 4.22148 59.9834 6.35636L82.6577 31.8649C88.9106 38.8995 85.0005 50.0661 75.7251 51.6632L21.5 61L28.2997 53.3134C30.9819 50.2813 30.9765 45.7235 28.287 42.6979L7.79435 19.6436C2.06189 13.1946 6.63995 3 15.2684 3H52.5093Z" fill="url(#svc-Power-Automate__paint0_linear_4303_1230)"/>
+<path d="M15.2684 93C6.63995 93 2.0619 82.8054 7.79436 76.3563L59.0945 18.6436C62.4624 14.8548 62.4624 9.14522 59.0945 5.35636L57 3L91.0945 41.3564C94.4624 45.1453 94.4624 50.8548 91.0945 54.6437L59.9834 89.6436C58.0858 91.7785 55.3657 93 52.5093 93H15.2684Z" fill="url(#svc-Power-Automate__paint1_linear_4303_1230)"/>
+<path d="M15.2684 93C6.63995 93 2.0619 82.8054 7.79436 76.3563L59.0945 18.6436C62.4624 14.8548 62.4624 9.14522 59.0945 5.35636L57 3L91.0945 41.3564C94.4624 45.1453 94.4624 50.8548 91.0945 54.6437L59.9834 89.6436C58.0858 91.7785 55.3657 93 52.5093 93H15.2684Z" fill="url(#svc-Power-Automate__paint2_linear_4303_1230)"/>
+<path d="M38.3611 93C33.184 93 30.4371 86.8833 33.8766 83.0139L75.0945 36.6436C78.4624 32.8548 78.4624 27.1452 75.0945 23.3563L71 18.75L91.0945 41.3563C94.4624 45.1452 94.4624 50.8547 91.0946 54.6436L59.9834 89.6437C58.0858 91.7785 55.3657 93 52.5093 93H38.3611Z" fill="url(#svc-Power-Automate__paint3_linear_4303_1230)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="svc-Power-Automate__paint0_linear_4303_1230" x1="48" y1="31.5" x2="14" y2="-2.50001" gradientUnits="userSpaceOnUse">
+<stop stop-color="#102784"/>
+<stop offset="0.274053" stop-color="#1B44B1"/>
+<stop offset="1" stop-color="#2764E7"/>
+</linearGradient>
+<linearGradient id="svc-Power-Automate__paint1_linear_4303_1230" x1="76.5" y1="25" x2="11.5" y2="91.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0FAFFF"/>
+<stop offset="0.177827" stop-color="#4894FE"/>
+<stop offset="1" stop-color="#2764E7"/>
+</linearGradient>
+<linearGradient id="svc-Power-Automate__paint2_linear_4303_1230" x1="28.5" y1="72" x2="38.5" y2="83.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2764E7" stop-opacity="0"/>
+<stop offset="1" stop-color="#2052CB"/>
+</linearGradient>
+<linearGradient id="svc-Power-Automate__paint3_linear_4303_1230" x1="89" y1="38.5" x2="43" y2="90.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6CE0FF"/>
+<stop offset="0.211723" stop-color="#66C0FF"/>
+<stop offset="1" stop-color="#58AAFE"/>
+</linearGradient>
+<clipPath id="svc-Power-Automate__clip0_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="svc-Power-Automate__clip1_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+</defs></symbol><symbol id="svc-Dataverse" viewBox="0 0 96 96"><g clip-path="url(#svc-Dataverse__clip0_4303_1230)">
+<g clip-path="url(#svc-Dataverse__clip1_4303_1230)">
+<g clip-path="url(#svc-Dataverse__clip2_4303_1230)">
+<path d="M13.8776 21.8242C29.1033 8.13791 49.7501 8.1861 62.955 18.9134C74.9816 28.6836 77.4697 44.3159 70.851 55.7801C64.2321 67.2443 52.5277 70.1455 39.5011 62.6247L31.7286 76.087L31.7234 76.0862C27.4181 83.5324 17.8937 86.0828 10.4437 81.7817C7.45394 80.0556 5.25322 77.4879 3.96665 74.551L3.96096 74.5511C-4.07832 55.7804 0.200745 34.1184 13.8776 21.8242Z" fill="url(#svc-Dataverse__paint0_radial_4303_1230)"/>
+<path d="M13.8776 21.8242C29.1033 8.13791 49.7501 8.1861 62.955 18.9134C74.9816 28.6836 77.4697 44.3159 70.851 55.7801C64.2321 67.2443 52.5277 70.1455 39.5011 62.6247L31.7286 76.087L31.7234 76.0862C27.4181 83.5324 17.8937 86.0828 10.4437 81.7817C7.45394 80.0556 5.25322 77.4879 3.96665 74.551L3.96096 74.5511C-4.07832 55.7804 0.200745 34.1184 13.8776 21.8242Z" fill="url(#svc-Dataverse__paint1_radial_4303_1230)" fill-opacity="0.8"/>
+<path d="M85.4327 14.2231C88.4528 15.9668 90.6686 18.569 91.9494 21.5433L91.9533 21.5444C99.9406 40.2943 95.6533 61.9068 81.9983 74.1814C66.7726 87.8677 46.1257 87.8196 32.9209 77.0923C20.8945 67.3221 18.4062 51.6897 25.0249 40.2256C31.6438 28.7614 43.3482 25.8601 56.3748 33.381L64.1434 19.9255L64.1482 19.9249C68.4516 12.4736 77.9805 9.92084 85.4327 14.2231Z" fill="url(#svc-Dataverse__paint2_radial_4303_1230)"/>
+<path d="M85.4327 14.2231C88.4528 15.9668 90.6686 18.569 91.9494 21.5433L91.9533 21.5444C99.9406 40.2943 95.6533 61.9068 81.9983 74.1814C66.7726 87.8677 46.1257 87.8196 32.9209 77.0923C20.8945 67.3221 18.4062 51.6897 25.0249 40.2256C31.6438 28.7614 43.3482 25.8601 56.3748 33.381L64.1434 19.9255L64.1482 19.9249C68.4516 12.4736 77.9805 9.92084 85.4327 14.2231Z" fill="url(#svc-Dataverse__paint3_radial_4303_1230)" fill-opacity="0.9"/>
+<path d="M39.5041 62.6261C52.5307 70.1469 64.2352 67.2456 70.8541 55.7814C77.2488 44.7055 75.1426 29.7389 64.147 19.9271L56.3791 33.3814L39.5041 62.6261Z" fill="url(#svc-Dataverse__paint4_radial_4303_1230)"/>
+<path d="M56.3794 33.3815C43.3528 25.8607 31.6482 28.762 25.0294 40.2262C18.6347 51.3021 20.7409 66.2687 31.7364 76.0806L39.5043 62.6262L56.3794 33.3815Z" fill="url(#svc-Dataverse__paint5_radial_4303_1230)"/>
+<path d="M33.3215 56.4453C37.9837 64.5204 48.3094 67.2872 56.3846 62.625C64.4598 57.9628 67.2266 47.6371 62.5643 39.5619C57.9021 31.4867 47.5764 28.72 39.5013 33.3822C31.4261 38.0444 28.6593 48.3701 33.3215 56.4453Z" fill="url(#svc-Dataverse__paint6_radial_4303_1230)"/>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="svc-Dataverse__paint0_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46.0001 49.4996) rotate(-148.717) scale(46.2195 47.5359)">
+<stop offset="0.465088" stop-color="#09442A"/>
+<stop offset="0.70088" stop-color="#136C6C"/>
+<stop offset="1" stop-color="#22918B"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint1_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.0001 32.4996) rotate(123.57) scale(66.0095 46.5498)">
+<stop offset="0.718705" stop-color="#1A7F7C" stop-opacity="0"/>
+<stop offset="1" stop-color="#16BBDA"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint2_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50.4999 44.5001) rotate(30.75) scale(45.9618 44.5095)">
+<stop offset="0.358097" stop-color="#136C6C"/>
+<stop offset="0.789474" stop-color="#42B870"/>
+<stop offset="1" stop-color="#76D45E"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint3_radial_4303_1230" cx="0" cy="0" r="1" gradientTransform="matrix(42.5 -36.0002 31.1824 36.8127 49.4998 55.5001)" gradientUnits="userSpaceOnUse">
+<stop offset="0.583166" stop-color="#76D45E" stop-opacity="0"/>
+<stop offset="1" stop-color="#C8F5B7"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint4_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(47.5 48) rotate(-58.9042) scale(32.6898)">
+<stop offset="0.486266" stop-color="#22918B"/>
+<stop offset="0.729599" stop-color="#42B870"/>
+<stop offset="1" stop-color="#43E5CA"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint5_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(47.3833 49.0077) rotate(119.859) scale(31.1328 29.4032)">
+<stop offset="0.459553" stop-color="#08494E"/>
+<stop offset="0.742242" stop-color="#1A7F7C"/>
+<stop offset="1" stop-color="#309C61"/>
+</radialGradient>
+<radialGradient id="svc-Dataverse__paint6_radial_4303_1230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(52.5 40) rotate(120.784) scale(27.3542)">
+<stop stop-color="#C8F5B7"/>
+<stop offset="0.24583" stop-color="#98F0B0"/>
+<stop offset="0.643961" stop-color="#52D17C"/>
+<stop offset="1" stop-color="#119FC5"/>
+</radialGradient>
+<clipPath id="svc-Dataverse__clip0_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="svc-Dataverse__clip1_4303_1230">
+<rect width="96" height="96" fill="white"/>
+</clipPath>
+<clipPath id="svc-Dataverse__clip2_4303_1230">
+<rect width="95.9998" height="96" fill="white"/>
+</clipPath>
+</defs></symbol></defs>
+<rect class="bg" width="1980" height="1591"/>
+<text class="title" x="40" y="46">Claim question to approved payout across Copilot Studio, Power Automate, Foundry and Fabric</text>
+<text class="subtitle" x="40" y="70">A customer asks about coverage; the Foundry orchestrator grounds the answer in policy wording and Fabric data; a payout above the threshold waits for an adjuster's approval</text>
+<g class="group"><rect x="428" y="116" width="744" height="1435" fill="none" stroke="#243A5E" stroke-width="1.25"/>
+<text class="glabel" x="438" y="136">Azure</text>
+</g>
+<line class="life" x1="135" y1="276" x2="135" y2="1541"/>
+<line class="life" x1="325" y1="276" x2="325" y2="1541"/>
+<line class="life" x1="515" y1="276" x2="515" y2="1541"/>
+<line class="life" x1="705" y1="276" x2="705" y2="1541"/>
+<line class="life" x1="895" y1="276" x2="895" y2="1541"/>
+<line class="life" x1="1085" y1="276" x2="1085" y2="1541"/>
+<line class="life" x1="1275" y1="276" x2="1275" y2="1541"/>
+<line class="life" x1="1465" y1="276" x2="1465" y2="1541"/>
+<line class="life" x1="1655" y1="276" x2="1655" y2="1541"/>
+<line class="life" x1="1845" y1="276" x2="1845" y2="1541"/>
+<g class="frag"><rect x="613" y="911" width="1324" height="432" fill="none"/><path class="fragtab" d="M613 911 h190 v18 l-8 8 h-182 z"/><text class="fraglabel" x="619" y="925">alt [payout above threshold]</text>
+<line class="fragelse" x1="613" y1="1269" x2="1937" y2="1269"/><text class="fraglabel" x="619" y="1283">[below threshold]</text>
+</g>
+<g class="edge" data-from="cust" data-to="cs" data-step="1" data-label="Is my water damage covered? Pay out $9,400?" data-tip="The customer asks in Teams or web chat; Copilot Studio signs them in with Entra ID.">
+<path class="eline" fill="none" stroke-width="2" d="M135 353 H325" marker-end="url(#arw)"/>
+<text class="elabel" x="230" y="317" text-anchor="middle">Is my water damage</text>
+<text class="elabel" x="230" y="331" text-anchor="middle">covered? Pay out</text>
+<text class="elabel" x="230" y="345" text-anchor="middle">$9,400?</text>
+<g class="badge"><title>1. The customer asks in Teams or web chat; Copilot Studio signs them in with Entra ID.</title><circle cx="135" cy="353" r="11"/><circle class="hit" cx="135" cy="353" r="16"/><text x="135" y="357.5" text-anchor="middle">1</text></g>
+</g>
+<g class="edge" data-from="cs" data-to="apim" data-step="2" data-label="hand off to agent" data-tip="Copilot Studio calls the AI gateway with the user's token and the case id.">
+<path class="eline" fill="none" stroke-width="2" d="M325 421 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="420" y="413" text-anchor="middle">hand off to agent</text>
+<g class="badge"><title>2. Copilot Studio calls the AI gateway with the user's token and the case id.</title><circle cx="325" cy="421" r="11"/><circle class="hit" cx="325" cy="421" r="16"/><text x="325" y="425.5" text-anchor="middle">2</text></g>
+</g>
+<g class="edge" data-from="apim" data-to="orch" data-step="3" data-label="validated request" data-tip="API Management → Claims orchestrator (validated request)">
+<path class="eline" fill="none" stroke-width="2" d="M515 475 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="467" text-anchor="middle">validated request</text>
+<g class="badge"><title>3. API Management → Claims orchestrator (validated request)</title><circle cx="515" cy="475" r="11"/><circle class="hit" cx="515" cy="475" r="16"/><text x="515" y="479.5" text-anchor="middle">3</text></g>
+</g>
+<g class="edge" data-from="orch" data-to="safety" data-step="4" data-label="screen prompt" data-tip="Claims orchestrator → Content Safety (screen prompt)">
+<path class="eline" fill="none" stroke-width="2" d="M705 529 H895" marker-end="url(#arw)"/>
+<text class="elabel" x="800" y="521" text-anchor="middle">screen prompt</text>
+<g class="badge"><title>4. Claims orchestrator → Content Safety (screen prompt)</title><circle cx="705" cy="529" r="11"/><circle class="hit" cx="705" cy="529" r="16"/><text x="705" y="533.5" text-anchor="middle">4</text></g>
+</g>
+<g class="edge" data-from="safety" data-to="orch" data-step="5" data-label="allowed">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M895 583 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="800" y="575" text-anchor="middle">allowed</text>
+</g>
+<g class="edge" data-from="orch" data-to="search" data-step="5" data-label="policy wording query" data-tip="The policy agent retrieves coverage clauses from the indexed wording.">
+<path class="eline" fill="none" stroke-width="2" d="M705 637 H1085" marker-end="url(#arw)"/>
+<text class="elabel" x="895" y="629" text-anchor="middle">policy wording query</text>
+<g class="badge"><title>5. The policy agent retrieves coverage clauses from the indexed wording.</title><circle cx="705" cy="637" r="11"/><circle class="hit" cx="705" cy="637" r="16"/><text x="705" y="641.5" text-anchor="middle">5</text></g>
+</g>
+<g class="edge" data-from="search" data-to="orch" data-step="6" data-label="clauses">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1085 691 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="895" y="683" text-anchor="middle">clauses</text>
+</g>
+<g class="edge" data-from="orch" data-to="fda" data-step="6" data-label="claim history question" data-tip="The fraud-signal agent asks the Fabric data agent, which runs governed queries as the signed-in user.">
+<path class="eline" fill="none" stroke-width="2" d="M705 745 H1275" marker-end="url(#arw)"/>
+<text class="elabel" x="990" y="737" text-anchor="middle">claim history question</text>
+<g class="badge"><title>6. The fraud-signal agent asks the Fabric data agent, which runs governed queries as the signed-in user.</title><circle cx="705" cy="745" r="11"/><circle class="hit" cx="705" cy="745" r="16"/><text x="705" y="749.5" text-anchor="middle">6</text></g>
+</g>
+<g class="edge" data-from="fda" data-to="orch" data-step="7" data-label="history + risk score">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1275 799 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="990" y="791" text-anchor="middle">history + risk score</text>
+</g>
+<g class="note"><rect x="665" y="832" width="1030" height="71"/><text x="1180" y="850" text-anchor="middle">A payout above the approval</text><text x="1180" y="865" text-anchor="middle">threshold is never executed by the</text><text x="1180" y="880" text-anchor="middle">agent: it is routed to a human.</text></g>
+<g class="edge" data-from="orch" data-to="fn" data-step="7" data-label="propose payout (managed identity)" data-tip="The action agent calls the claim tool API with the proposed payout.">
+<path class="eline" fill="none" stroke-width="2" d="M705 958 H1465" marker-end="url(#arw)"/>
+<text class="elabel" x="1085" y="950" text-anchor="middle">propose payout (managed identity)</text>
+<g class="badge"><title>7. The action agent calls the claim tool API with the proposed payout.</title><circle cx="705" cy="958" r="11"/><circle class="hit" cx="705" cy="958" r="16"/><text x="705" y="962.5" text-anchor="middle">7</text></g>
+</g>
+<g class="edge" data-from="fn" data-to="flow" data-step="8" data-label="request approval" data-tip="The tool API starts the approval flow, which asks an adjuster in Teams.">
+<path class="eline" fill="none" stroke-width="2" d="M1465 1012 H1655" marker-end="url(#arw)"/>
+<text class="elabel" x="1560" y="1004" text-anchor="middle">request approval</text>
+<g class="badge"><title>8. The tool API starts the approval flow, which asks an adjuster in Teams.</title><circle cx="1465" cy="1012" r="11"/><circle class="hit" cx="1465" cy="1012" r="16"/><text x="1465" y="1016.5" text-anchor="middle">8</text></g>
+</g>
+<g class="edge" data-from="flow" data-to="flow" data-step="9" data-label="adjuster approves in Teams" data-tip="Approval flow → Approval flow (adjuster approves in Teams)">
+<path class="eline" fill="none" stroke-width="2" d="M1655 1061 h40 v24 h-40" marker-end="url(#arw)"/>
+<text class="elabel" x="1705" y="1070">adjuster approves in</text>
+<text class="elabel" x="1705" y="1084">Teams</text>
+<g class="badge"><title>9. Approval flow → Approval flow (adjuster approves in Teams)</title><circle cx="1677" cy="1061" r="11"/><circle class="hit" cx="1677" cy="1061" r="16"/><text x="1677" y="1065.5" text-anchor="middle">9</text></g>
+</g>
+<g class="edge" data-from="flow" data-to="dv" data-step="10" data-label="record decision" data-tip="Approval flow → Dataverse (record decision)">
+<path class="eline" fill="none" stroke-width="2" d="M1655 1134 H1845" marker-end="url(#arw)"/>
+<text class="elabel" x="1750" y="1126" text-anchor="middle">record decision</text>
+<g class="badge"><title>10. Approval flow → Dataverse (record decision)</title><circle cx="1655" cy="1134" r="11"/><circle class="hit" cx="1655" cy="1134" r="16"/><text x="1655" y="1138.5" text-anchor="middle">10</text></g>
+</g>
+<g class="edge" data-from="flow" data-to="fn" data-step="11" data-label="approved">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1655 1188 H1465" marker-end="url(#arw)"/>
+<text class="elabel" x="1560" y="1180" text-anchor="middle">approved</text>
+</g>
+<g class="edge" data-from="fn" data-to="orch" data-step="11" data-label="payout confirmed">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M1465 1242 H705" marker-end="url(#arw)"/>
+<text class="elabel" x="1085" y="1234" text-anchor="middle">payout confirmed</text>
+</g>
+<g class="edge" data-from="orch" data-to="dv" data-step="11" data-label="auto-approve and record" data-tip="Below the threshold the orchestrator's action agent records the payout directly, with the same audit trail.">
+<path class="eline" fill="none" stroke-width="2" d="M705 1318 H1845" marker-end="url(#arw)"/>
+<text class="elabel" x="1275" y="1310" text-anchor="middle">auto-approve and record</text>
+<g class="badge"><title>11. Below the threshold the orchestrator's action agent records the payout directly, with the same audit trail.</title><circle cx="705" cy="1318" r="11"/><circle class="hit" cx="705" cy="1318" r="16"/><text x="705" y="1322.5" text-anchor="middle">11</text></g>
+</g>
+<g class="edge" data-from="orch" data-to="apim" data-step="12" data-label="grounded answer">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M705 1372 H515" marker-end="url(#arw)"/>
+<text class="elabel" x="610" y="1364" text-anchor="middle">grounded answer</text>
+</g>
+<g class="edge" data-from="apim" data-to="cs" data-step="12" data-label="answer + citations">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M515 1426 H325" marker-end="url(#arw)"/>
+<text class="elabel" x="420" y="1418" text-anchor="middle">answer + citations</text>
+</g>
+<g class="edge" data-from="cs" data-to="cust" data-step="12" data-label="covered; payout approved">
+<path class="eline" fill="none" stroke-width="2" stroke-dasharray="6 4" d="M325 1487 H135" marker-end="url(#arw)"/>
+<text class="elabel" x="230" y="1465" text-anchor="middle">covered; payout</text>
+<text class="elabel" x="230" y="1479" text-anchor="middle">approved</text>
+</g>
+<g class="node" data-id="cust" data-label="Customer" data-service="Users" data-category="General"><title>Customer (Users)</title><use href="#gen-Users" x="103" y="164" width="64" height="64"/>
+<text class="nlabel" x="135" y="245" text-anchor="middle">Customer</text>
+</g>
+<g class="node" data-id="cs" data-label="Customer copilot" data-service="Copilot Studio" data-category="power-platform"><title>Customer copilot (Copilot Studio)</title><use href="#svc-Copilot-Studio" x="293" y="164" width="64" height="64"/>
+<text class="nlabel" x="325" y="245" text-anchor="middle">Customer copilot</text>
+<text class="nsub" x="325" y="259" text-anchor="middle">Copilot Studio</text>
+</g>
+<g class="node" data-id="apim" data-label="API Management" data-service="API Management Services" data-category="web"><title>API Management (API Management Services)</title><use href="#svc-API-Management-Services" x="483" y="164" width="64" height="64"/>
+<text class="nlabel" x="515" y="245" text-anchor="middle">API Management</text>
+<text class="nsub" x="515" y="259" text-anchor="middle">AI gateway</text>
+</g>
+<g class="node" data-id="orch" data-label="Claims orchestrator" data-service="Foundry Agent Service" data-category="ai-machine-learning"><title>Claims orchestrator (Foundry Agent Service)</title><use href="#svc-Foundry-Agent-Service" x="673" y="164" width="64" height="64"/>
+<text class="nlabel" x="705" y="245" text-anchor="middle">Claims</text>
+<text class="nlabel" x="705" y="259" text-anchor="middle">orchestrator</text>
+<text class="nsub" x="705" y="273" text-anchor="middle">Foundry agent</text>
+</g>
+<g class="node" data-id="safety" data-label="Content Safety" data-service="Content Safety" data-category="ai-machine-learning"><title>Content Safety (Content Safety)</title><use href="#svc-Content-Safety" x="863" y="164" width="64" height="64"/>
+<text class="nlabel" x="895" y="245" text-anchor="middle">Content Safety</text>
+</g>
+<g class="node" data-id="search" data-label="Azure AI Search" data-service="Cognitive Search" data-category="web"><title>Azure AI Search (Cognitive Search)</title><use href="#svc-Cognitive-Search" x="1053" y="164" width="64" height="64"/>
+<text class="nlabel" x="1085" y="245" text-anchor="middle">Azure AI Search</text>
+</g>
+<g class="node" data-id="fda" data-label="Fabric data agent" data-service="Fabric Data Agent" data-category="fabric"><title>Fabric data agent (Fabric Data Agent)</title><use href="#svc-Fabric-Data-Agent" x="1243" y="164" width="64" height="64"/>
+<text class="nlabel" x="1275" y="245" text-anchor="middle">Fabric data agent</text>
+<text class="nsub" x="1275" y="259" text-anchor="middle">OneLake</text>
+</g>
+<g class="node" data-id="fn" data-label="Functions" data-service="Function Apps" data-category="compute"><title>Functions (Function Apps)</title><use href="#svc-Function-Apps" x="1433" y="164" width="64" height="64"/>
+<text class="nlabel" x="1465" y="245" text-anchor="middle">Functions</text>
+<text class="nsub" x="1465" y="259" text-anchor="middle">claim tool API</text>
+</g>
+<g class="node" data-id="flow" data-label="Approval flow" data-service="Power Automate" data-category="power-platform"><title>Approval flow (Power Automate)</title><use href="#svc-Power-Automate" x="1623" y="164" width="64" height="64"/>
+<text class="nlabel" x="1655" y="245" text-anchor="middle">Approval flow</text>
+<text class="nsub" x="1655" y="259" text-anchor="middle">Power Automate</text>
+</g>
+<g class="node" data-id="dv" data-label="Dataverse" data-service="Dataverse" data-category="power-platform"><title>Dataverse (Dataverse)</title><use href="#svc-Dataverse" x="1813" y="164" width="64" height="64"/>
+<text class="nlabel" x="1845" y="245" text-anchor="middle">Dataverse</text>
+<text class="nsub" x="1845" y="259" text-anchor="middle">case record</text>
+</g>
+</svg>

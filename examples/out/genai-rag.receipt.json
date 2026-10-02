@@ -2,7 +2,7 @@
   "ok": true,
   "tool": "archify-azure",
   "version": "0.1.0",
-  "iconRelease": "Azure Architecture Icons V24 + Power Platform icons",
+  "iconRelease": "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric icons",
   "input": {
     "path": "examples/genai-rag.json",
     "sha256": "ee9cc555b000f2c5d556da1e23b9262575abcb54ca38706239c32b65d6148f1a"
