@@ -21,6 +21,13 @@ Power Automate, Power Pages, Dataverse, AI Builder, Power Platform) from
 Corporation: do not crop, flip, rotate, distort or recolour them, include the product name near the icon, and do not use them to represent
 your own product. `fetch-icons --no-power` skips them.
 
+## Microsoft Fabric icons
+Not redistributed. `npm run icons:fetch` also downloads the official Fabric icons (<https://learn.microsoft.com/fabric/fundamentals/icons>,
+npm package `@fabric-msft/svg-icons` as published in [microsoft/fabric-samples](https://github.com/microsoft/fabric-samples), `docs-samples/Icons.zip`) and keeps
+the five workload icons and the 64 px item icons, in `assets/azure-icons/fabric/` (git-ignored). They are © Microsoft Corporation: use them in
+architecture diagrams, training materials or documentation, do not crop, flip, rotate or distort them, label them with the product or item name,
+and do not use them to represent your own product. `fetch-icons --no-fabric` skips them.
+
 ## Azure Retail Prices API
 Cost estimates use list prices from the public Azure Retail Prices REST API (<https://prices.azure.com/api/retail/prices>,
 documented at <https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices>). `data/prices/` is a

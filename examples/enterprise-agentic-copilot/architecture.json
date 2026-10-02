@@ -1,0 +1,490 @@
+{
+  "meta": {
+    "title": "Claims and customer operations: Copilot Studio, Power Automate, Azure AI Foundry and Microsoft Fabric",
+    "subtitle": "Copilot Studio agents and Power Automate flows run the front office; Foundry agents reason over governed Fabric data; Dataverse holds the system of record",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ],
+    "output": "examples/enterprise-agentic-copilot/out/architecture.html",
+    "workload": {
+      "name": "Claims operations assistant",
+      "criticality": "high",
+      "description": "Customer and adjuster copilots for insurance claims intake, coverage questions, fraud signals and approvals"
+    },
+    "cost": {
+      "note": "Illustrative: 120,000 conversations/month with ~4 model calls each (about 3,000 input and 400 output tokens per call), gpt-4o-0806 global deployment, 2 AI Search units, 400,000 content-safety records. Power Platform licences, Copilot Studio messages, Fabric capacity and Purview are not in the Azure Retail Prices API and are not priced."
+    }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 70,
+    "children": [
+      {
+        "id": "people",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "customers",
+            "icon": "users",
+            "label": "Customers",
+            "sublabel": "web, mobile, Teams"
+          },
+          {
+            "id": "adjusters",
+            "icon": "users",
+            "label": "Claims adjusters",
+            "sublabel": "Teams, model-driven app"
+          }
+        ]
+      },
+      {
+        "id": "pp",
+        "kind": "custom",
+        "icon": "microsoft-power-platform",
+        "label": "Microsoft 365 and Power Platform",
+        "layout": "column",
+        "gap": 30,
+        "children": [
+          {
+            "id": "cs_cust",
+            "icon": "copilot-studio",
+            "label": "Customer copilot",
+            "sublabel": "Copilot Studio: FNOL, status, coverage"
+          },
+          {
+            "id": "cs_adj",
+            "icon": "copilot-studio",
+            "label": "Adjuster copilot",
+            "sublabel": "Copilot Studio: case triage, drafts"
+          },
+          {
+            "id": "flow_in",
+            "icon": "power-automate",
+            "label": "Document intake flow",
+            "sublabel": "Power Automate: OCR, create case"
+          },
+          {
+            "id": "flow_appr",
+            "icon": "power-automate",
+            "label": "Approval flow",
+            "sublabel": "Power Automate: thresholds, Teams approvals"
+          },
+          {
+            "id": "dv",
+            "icon": "dataverse",
+            "label": "Claims case records",
+            "sublabel": "Dataverse: cases, transcripts, audit"
+          },
+          {
+            "id": "app",
+            "icon": "power-apps",
+            "label": "Adjuster console",
+            "sublabel": "Power Apps: model-driven"
+          },
+          {
+            "id": "a365",
+            "icon": "agent-365",
+            "label": "Agent 365",
+            "sublabel": "agent inventory and governance"
+          }
+        ]
+      },
+      {
+        "id": "cloud",
+        "kind": "azure-cloud",
+        "layout": "row",
+        "gap": 70,
+        "children": [
+          {
+            "id": "edge",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "idp",
+                "icon": "entra-id-protection",
+                "label": "Microsoft Entra ID",
+                "sublabel": "SSO, agent identities, Conditional Access"
+              },
+              {
+                "id": "apim",
+                "icon": "apim",
+                "label": "API Management",
+                "sublabel": "AI gateway, token limits",
+                "usage": {
+                  "tier": "standard",
+                  "units": 1,
+                  "callsPerMonth": 1500000
+                }
+              },
+              {
+                "id": "kv",
+                "icon": "key-vaults",
+                "label": "Key Vault",
+                "sublabel": "connection secrets",
+                "usage": {
+                  "operationsPerMonth": 800000
+                }
+              },
+              {
+                "id": "mon",
+                "icon": "monitor",
+                "label": "Azure Monitor",
+                "sublabel": "traces, token usage, audit"
+              },
+              {
+                "id": "ai",
+                "icon": "application-insights",
+                "label": "Application Insights",
+                "sublabel": "agent step telemetry"
+              }
+            ]
+          },
+          {
+            "id": "region",
+            "kind": "region",
+            "layout": "row",
+            "gap": 70,
+            "children": [
+              {
+                "id": "foundry",
+                "kind": "custom",
+                "icon": "ai-foundry",
+                "label": "Azure AI Foundry",
+                "layout": "row",
+                "gap": 60,
+                "children": [
+                  {
+                    "id": "core",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 48,
+                    "children": [
+                      {
+                        "id": "aoai",
+                        "icon": "openai",
+                        "label": "Azure OpenAI",
+                        "sublabel": "gpt-4o deployment",
+                        "usage": {
+                          "model": "gpt-4o-0806",
+                          "deployment": "global",
+                          "inputTokensPerMonth": 1440000000,
+                          "outputTokensPerMonth": 192000000
+                        }
+                      },
+                      {
+                        "id": "orch",
+                        "icon": "foundry-agent-service",
+                        "label": "Claims orchestrator",
+                        "sublabel": "plans and delegates"
+                      },
+                      {
+                        "id": "safety",
+                        "icon": "content-safety",
+                        "label": "Content Safety",
+                        "sublabel": "prompt shields, filters",
+                        "usage": {
+                          "textRecordsPerMonth": 1000000
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "agents",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 48,
+                    "children": [
+                      {
+                        "id": "policy",
+                        "icon": "foundry-agent-service",
+                        "label": "Policy agent",
+                        "sublabel": "coverage and wording"
+                      },
+                      {
+                        "id": "fraud",
+                        "icon": "foundry-agent-service",
+                        "label": "Fraud-signal agent",
+                        "sublabel": "scores and explains"
+                      },
+                      {
+                        "id": "action",
+                        "icon": "foundry-agent-service",
+                        "label": "Action agent",
+                        "sublabel": "tools via Functions"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "tools",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 48,
+                "children": [
+                  {
+                    "id": "search",
+                    "icon": "cognitive-search",
+                    "label": "Azure AI Search",
+                    "sublabel": "policy wording index",
+                    "usage": {
+                      "sku": "standard-s1",
+                      "searchUnits": 2
+                    }
+                  },
+                  {
+                    "id": "fn",
+                    "icon": "function-apps",
+                    "label": "Functions",
+                    "sublabel": "claim tool API",
+                    "usage": {
+                      "plan": "consumption",
+                      "requestsPerMonth": 3000000,
+                      "avgDurationMs": 150,
+                      "memoryMb": 512
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "src",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "core_sys",
+            "icon": "gen:server-farm",
+            "label": "Core claims and policy systems",
+            "sublabel": "SQL Server, mainframe"
+          },
+          {
+            "id": "tele",
+            "icon": "gen:mobile",
+            "label": "Telematics and IoT",
+            "sublabel": "vehicle and device events"
+          }
+        ]
+      },
+      {
+        "id": "fabric",
+        "kind": "custom",
+        "icon": "fabric",
+        "label": "Microsoft Fabric",
+        "layout": "row",
+        "gap": 60,
+        "children": [
+          {
+            "id": "fa",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 48,
+            "children": [
+              {
+                "id": "fdf",
+                "icon": "fabric-data-factory",
+                "label": "Mirroring and pipelines",
+                "sublabel": "claims, policy, billing"
+              },
+              {
+                "id": "lake",
+                "icon": "fabric-lakehouse",
+                "label": "OneLake lakehouse",
+                "sublabel": "bronze, silver, gold"
+              },
+              {
+                "id": "rti",
+                "icon": "fabric-real-time-intelligence",
+                "label": "Real-Time Intelligence",
+                "sublabel": "telematics, fraud streams"
+              }
+            ]
+          },
+          {
+            "id": "fb",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 48,
+            "children": [
+              {
+                "id": "fagent",
+                "icon": "fabric-data-agent",
+                "label": "Fabric data agent",
+                "sublabel": "governed NL questions"
+              },
+              {
+                "id": "sem",
+                "icon": "fabric-semantic-model",
+                "label": "Semantic model",
+                "sublabel": "certified measures"
+              },
+              {
+                "id": "pbi",
+                "icon": "fabric-power-bi",
+                "label": "Power BI",
+                "sublabel": "loss ratio, SLA reports"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "customers",
+      "to": "cs_cust",
+      "step": 1,
+      "label": "chat",
+      "desc": "A customer reports a claim or asks about coverage in the web chat or Teams; Copilot Studio authenticates them with Entra ID"
+    },
+    {
+      "from": "cs_cust",
+      "to": "flow_in",
+      "step": 2,
+      "label": "documents",
+      "desc": "Uploaded photos and forms trigger the document intake flow, which extracts fields and creates the case in Dataverse"
+    },
+    {
+      "from": "flow_in",
+      "to": "dv",
+      "step": 3,
+      "label": "create case"
+    },
+    {
+      "from": "cs_cust",
+      "to": "apim",
+      "step": 4,
+      "label": "agent handoff",
+      "desc": "Coverage and status questions are handed to the Foundry orchestrator through the API Management AI gateway, with the user's token"
+    },
+    {
+      "from": "apim",
+      "to": "orch",
+      "step": 5,
+      "label": "invoke"
+    },
+    {
+      "from": "orch",
+      "to": "aoai",
+      "step": 6,
+      "label": "plan and generate",
+      "desc": "The orchestrator plans with the model; every prompt and response passes Content Safety"
+    },
+    {
+      "from": "orch",
+      "to": "safety",
+      "style": "dashed",
+      "label": "screen"
+    },
+    {
+      "from": "orch",
+      "to": "policy",
+      "step": 7,
+      "label": "connected agent"
+    },
+    {
+      "from": "orch",
+      "to": "fraud",
+      "step": 7,
+      "label": "connected agent"
+    },
+    {
+      "from": "orch",
+      "to": "action",
+      "step": 7,
+      "label": "connected agent"
+    },
+    {
+      "from": "policy",
+      "to": "search",
+      "step": 8,
+      "label": "hybrid query",
+      "desc": "The policy agent grounds coverage answers in the indexed policy wording"
+    },
+    {
+      "from": "fraud",
+      "to": "fagent",
+      "step": 8,
+      "label": "NL question",
+      "desc": "The fraud-signal agent asks the Fabric data agent for claim history and stream-derived signals, as the signed-in user"
+    },
+    {
+      "from": "fagent",
+      "to": "lake",
+      "step": 9,
+      "label": "SQL / DAX"
+    },
+    {
+      "from": "action",
+      "to": "fn",
+      "step": 10,
+      "label": "tool call",
+      "desc": "The action agent calls approved tool APIs; high-impact actions go to the approval flow"
+    },
+    {
+      "from": "fn",
+      "to": "flow_appr",
+      "step": 11,
+      "label": "request approval",
+      "desc": "The approval flow routes payouts above the threshold to an adjuster in Teams"
+    },
+    {
+      "from": "flow_appr",
+      "to": "dv",
+      "step": 12,
+      "label": "record decision"
+    },
+    {
+      "from": "adjusters",
+      "to": "cs_adj",
+      "step": 13,
+      "label": "triage chat"
+    },
+    {
+      "from": "core_sys",
+      "to": "fdf",
+      "step": 14,
+      "label": "mirror"
+    },
+    {
+      "from": "fdf",
+      "to": "lake",
+      "style": "dashed",
+      "label": "load"
+    },
+    {
+      "from": "tele",
+      "to": "rti",
+      "step": 14,
+      "label": "events"
+    },
+    {
+      "from": "rti",
+      "to": "lake",
+      "style": "dashed",
+      "label": "land"
+    },
+    {
+      "from": "lake",
+      "to": "sem",
+      "style": "dashed",
+      "label": "model"
+    },
+    {
+      "from": "sem",
+      "to": "pbi",
+      "style": "dashed",
+      "label": "report"
+    }
+  ]
+}

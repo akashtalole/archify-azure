@@ -36,6 +36,11 @@ test("official Power Platform icons are in the catalog with aliases and importer
   assert.notEqual(guessIcon("Order flow").icon, "power-automate");
 });
 
+test("official Microsoft Fabric icons are in the catalog with aliases", () => {
+  for (const [a, id] of [["fabric", "fabric"], ["lakehouse", "fabric-lakehouse"], ["onelake", "fabric-lakehouse"], ["eventhouse", "fabric-event-house"], ["semantic-model", "fabric-semantic-model"], ["data-agent", "fabric-data-agent"]]) assert.equal(resolveIcon(a).entry.id, id, a);
+  assert.equal(resolveIcon("fabric-power-bi").entry.category, "fabric");
+});
+
 test("label wrapping never breaks a word", () => {
   assert.deepEqual(wrapLabel("Application Gateway Ingress"), ["Application", "Gateway Ingress"]);
   assert.deepEqual(wrapLabel("Key Vault"), ["Key Vault"]);
@@ -262,7 +267,7 @@ test("finalize stops at the first failing gate and lists every error", async (t)
   assert.ok(r.stages[0].detail.errors.some((e) => /cosmosdb-x/.test(e)) && r.stages[0].detail.errors.some((e) => /zz/.test(e)));
 });
 
-for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "multi-agent-foundry-fabric-copilot.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json"]) {
+for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "multi-agent-foundry-fabric-copilot.json", "enterprise-agentic-copilot/architecture.json", "enterprise-agentic-copilot/claim-run.sequence.json", "enterprise-agentic-copilot/data-platform.dataflow.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json"]) {
   test(`example ${f} passes finalize`, async (t) => {
     if (!iconsAvailable()) return t.skip("icons not fetched");
     const { finalize } = await import("../src/finalize.mjs");

@@ -4,18 +4,18 @@
   "version": "0.1.0",
   "iconRelease": "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric icons",
   "input": {
-    "path": "examples/clinical-notes.dataflow.json",
-    "sha256": "314489d83f4b90e0a83aedc8c7bce07451f5271dc22efe7ec657a171c4e06c89"
+    "path": "examples/enterprise-agentic-copilot/claim-run.sequence.json",
+    "sha256": "81236e6d118f266458ed6012d8ecb9883cce377eb1b5c430644eef360485a991"
   },
   "stages": [
     {
       "name": "validate",
       "status": "pass",
       "detail": {
-        "type": "dataflow",
-        "nodes": 8,
-        "groups": 6,
-        "edges": 7
+        "type": "sequence",
+        "nodes": 10,
+        "groups": 1,
+        "edges": 19
       }
     },
     {
@@ -47,8 +47,8 @@
         "minFontPx": 10.5,
         "overflowX": 0,
         "consoleErrors": 0,
-        "viewerNodes": 8,
-        "viewerEdges": 7
+        "viewerNodes": 10,
+        "viewerEdges": 19
       }
     },
     {
@@ -59,65 +59,66 @@
   ],
   "outputs": {
     "html": {
-      "path": "examples/out/clinical-notes.dataflow.html",
-      "sha256": "b15777ca4fbe062b605d6fc6f0c96751d55bf43fe7b2cd7c1002e37735e18879",
-      "bytes": 120036
+      "path": "examples/enterprise-agentic-copilot/out/claim-run.sequence.html",
+      "sha256": "bd1c42590c0714dbb7b1f4b11435dd30872c5cf61d5f14bb553d3db140541b03",
+      "bytes": 163068
     },
     "svg": {
-      "path": "examples/out/clinical-notes.dataflow.svg",
-      "sha256": "d31ca057420e9a71232b556f39cfaf2c3bdae926cf2260af2f556122e0be2995"
+      "path": "examples/enterprise-agentic-copilot/out/claim-run.sequence.svg",
+      "sha256": "d587c86a4930277e73408f49b0b56ab349b96d6c54d1aebcf2fcdc578fa73b9f"
     },
     "drawio": {
-      "path": "examples/out/clinical-notes.dataflow.drawio",
-      "sha256": "ff099fc782ad52770019fd84070c02abeac48c673592469e2374d498516003cb"
+      "path": "examples/enterprise-agentic-copilot/out/claim-run.sequence.drawio",
+      "sha256": "61b270776e3237c5df05a74b9ae7019571032e8524758273f4f95979142ad0b9"
     },
     "png": {
-      "path": "examples/out/clinical-notes.dataflow.png",
-      "sha256": "ecfe6c5e6aa1e4b1abea837f829bfdc31d226ec385005267953b739b0b3b1170"
+      "path": "examples/enterprise-agentic-copilot/out/claim-run.sequence.png",
+      "sha256": "cd262eae4762b6f02ee67f72a6b54dccac3d7a41b532375d039c566a23a0b892"
     }
   },
   "summary": {
-    "type": "dataflow",
-    "nodes": 8,
-    "groups": 6,
-    "edges": 7,
+    "type": "sequence",
+    "nodes": 10,
+    "groups": 1,
+    "edges": 19,
     "size": {
-      "width": 1181,
-      "height": 572
+      "width": 1980,
+      "height": 1591
     }
   },
   "cost": {
     "region": "eastus",
     "asOf": "2026-10-02",
-    "monthlyUsd": 1389.571,
+    "monthlyUsd": 1460.051,
     "confidence": "indicative",
     "coverage": {
-      "nodes": 8,
-      "estimated": 5,
+      "nodes": 10,
+      "estimated": 4,
       "override": 0,
       "noCharge": 0,
       "notBillable": 1,
       "notItemized": 0,
       "needsInput": 0,
-      "notEstimated": 2,
+      "notEstimated": 5,
       "error": 0
     }
   },
   "review": {
     "advisory": true,
     "mode": "full",
-    "lens": "general",
+    "lens": "generative-ai",
     "findings": {
       "Critical": 0,
       "High": 0,
-      "Medium": 2,
+      "Medium": 3,
       "Low": 0
     },
-    "evidenced": 8,
+    "evidenced": 10,
     "bps": 59,
     "ids": [
       "F-001",
-      "F-002"
+      "F-002",
+      "F-003"
     ]
   },
   "visualReview": "not-performed"

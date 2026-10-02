@@ -1,0 +1,213 @@
+{
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Claim question to approved payout across Copilot Studio, Power Automate, Foundry and Fabric",
+    "subtitle": "A customer asks about coverage; the Foundry orchestrator grounds the answer in policy wording and Fabric data; a payout above the threshold waits for an adjuster's approval",
+    "output": "examples/enterprise-agentic-copilot/out/claim-run.sequence.html",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ]
+  },
+  "participants": [
+    {
+      "id": "cust",
+      "icon": "users",
+      "label": "Customer"
+    },
+    {
+      "id": "cs",
+      "icon": "copilot-studio",
+      "label": "Customer copilot",
+      "sublabel": "Copilot Studio"
+    },
+    {
+      "id": "apim",
+      "icon": "apim",
+      "label": "API Management",
+      "sublabel": "AI gateway"
+    },
+    {
+      "id": "orch",
+      "icon": "foundry-agent-service",
+      "label": "Claims orchestrator",
+      "sublabel": "Foundry agent"
+    },
+    {
+      "id": "safety",
+      "icon": "content-safety",
+      "label": "Content Safety"
+    },
+    {
+      "id": "search",
+      "icon": "cognitive-search",
+      "label": "Azure AI Search"
+    },
+    {
+      "id": "fda",
+      "icon": "fabric-data-agent",
+      "label": "Fabric data agent",
+      "sublabel": "OneLake"
+    },
+    {
+      "id": "fn",
+      "icon": "function-apps",
+      "label": "Functions",
+      "sublabel": "claim tool API"
+    },
+    {
+      "id": "flow",
+      "icon": "power-automate",
+      "label": "Approval flow",
+      "sublabel": "Power Automate"
+    },
+    {
+      "id": "dv",
+      "icon": "dataverse",
+      "label": "Dataverse",
+      "sublabel": "case record"
+    }
+  ],
+  "groups": [
+    {
+      "kind": "azure-cloud",
+      "label": "Azure",
+      "members": [
+        "apim",
+        "orch",
+        "safety",
+        "search"
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "from": "cust",
+      "to": "cs",
+      "label": "Is my water damage covered? Pay out $9,400?",
+      "desc": "The customer asks in Teams or web chat; Copilot Studio signs them in with Entra ID."
+    },
+    {
+      "from": "cs",
+      "to": "apim",
+      "label": "hand off to agent",
+      "desc": "Copilot Studio calls the AI gateway with the user's token and the case id."
+    },
+    {
+      "from": "apim",
+      "to": "orch",
+      "label": "validated request"
+    },
+    {
+      "from": "orch",
+      "to": "safety",
+      "label": "screen prompt"
+    },
+    {
+      "from": "safety",
+      "to": "orch",
+      "kind": "return",
+      "label": "allowed"
+    },
+    {
+      "from": "orch",
+      "to": "search",
+      "label": "policy wording query",
+      "desc": "The policy agent retrieves coverage clauses from the indexed wording."
+    },
+    {
+      "from": "search",
+      "to": "orch",
+      "kind": "return",
+      "label": "clauses"
+    },
+    {
+      "from": "orch",
+      "to": "fda",
+      "label": "claim history question",
+      "desc": "The fraud-signal agent asks the Fabric data agent, which runs governed queries as the signed-in user."
+    },
+    {
+      "from": "fda",
+      "to": "orch",
+      "kind": "return",
+      "label": "history + risk score"
+    },
+    {
+      "note": "A payout above the approval threshold is never executed by the agent: it is routed to a human.",
+      "over": [
+        "orch",
+        "flow"
+      ]
+    },
+    {
+      "from": "orch",
+      "to": "fn",
+      "label": "propose payout (managed identity)",
+      "desc": "The action agent calls the claim tool API with the proposed payout."
+    },
+    {
+      "from": "fn",
+      "to": "flow",
+      "label": "request approval",
+      "desc": "The tool API starts the approval flow, which asks an adjuster in Teams."
+    },
+    {
+      "from": "flow",
+      "to": "flow",
+      "kind": "self",
+      "label": "adjuster approves in Teams"
+    },
+    {
+      "from": "flow",
+      "to": "dv",
+      "label": "record decision"
+    },
+    {
+      "from": "flow",
+      "to": "fn",
+      "kind": "return",
+      "label": "approved"
+    },
+    {
+      "from": "fn",
+      "to": "orch",
+      "kind": "return",
+      "label": "payout confirmed"
+    },
+    {
+      "from": "orch",
+      "to": "dv",
+      "label": "auto-approve and record",
+      "desc": "Below the threshold the orchestrator's action agent records the payout directly, with the same audit trail."
+    },
+    {
+      "from": "orch",
+      "to": "apim",
+      "kind": "return",
+      "label": "grounded answer"
+    },
+    {
+      "from": "apim",
+      "to": "cs",
+      "kind": "return",
+      "label": "answer + citations"
+    },
+    {
+      "from": "cs",
+      "to": "cust",
+      "kind": "return",
+      "label": "covered; payout approved"
+    }
+  ],
+  "fragments": [
+    {
+      "kind": "alt",
+      "label": "payout above threshold",
+      "from": 10,
+      "to": 16,
+      "elseAt": 16,
+      "elseLabel": "below threshold"
+    }
+  ]
+}

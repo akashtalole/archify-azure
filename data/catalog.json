@@ -1,5 +1,5 @@
 {
- "generatedFrom": "Azure Architecture Icons V24 + Power Platform icons",
+ "generatedFrom": "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric icons",
  "categories": {
   "ai-machine-learning": "#0078D4",
   "analytics": "#0078D4",
@@ -11,6 +11,7 @@
   "databases": "#0078D4",
   "developer-tools": "#0078D4",
   "devops": "#0078D4",
+  "fabric": "#0078D4",
   "hybrid-multicloud": "#0078D4",
   "identity": "#0078D4",
   "integration": "#0078D4",
@@ -3676,6 +3677,440 @@
    "name": "Power Pages",
    "category": "power-platform",
    "file": "power-platform/Power-Pages.svg"
+  },
+  {
+   "key": "Fabric-Apps",
+   "id": "fabric-apps",
+   "name": "Fabric Apps",
+   "category": "fabric",
+   "file": "fabric/Fabric-Apps.svg"
+  },
+  {
+   "key": "Fabric-Cohort",
+   "id": "fabric-cohort",
+   "name": "Fabric Cohort",
+   "category": "fabric",
+   "file": "fabric/Fabric-Cohort.svg"
+  },
+  {
+   "key": "Fabric-Copy-Job",
+   "id": "fabric-copy-job",
+   "name": "Fabric Copy Job",
+   "category": "fabric",
+   "file": "fabric/Fabric-Copy-Job.svg"
+  },
+  {
+   "key": "Fabric-Custom-Streaming-Connector",
+   "id": "fabric-custom-streaming-connector",
+   "name": "Fabric Custom Streaming Connector",
+   "category": "fabric",
+   "file": "fabric/Fabric-Custom-Streaming-Connector.svg"
+  },
+  {
+   "key": "Fabric-Dashboard",
+   "id": "fabric-dashboard",
+   "name": "Fabric Dashboard",
+   "category": "fabric",
+   "file": "fabric/Fabric-Dashboard.svg"
+  },
+  {
+   "key": "Fabric-Data-Agent",
+   "id": "fabric-data-agent",
+   "name": "Fabric Data Agent",
+   "category": "fabric",
+   "file": "fabric/Fabric-Data-Agent.svg"
+  },
+  {
+   "key": "Fabric-Data-Engineering",
+   "id": "fabric-data-engineering",
+   "name": "Fabric Data Engineering",
+   "category": "fabric",
+   "file": "fabric/Fabric-Data-Engineering.svg"
+  },
+  {
+   "key": "Fabric-Data-Factory",
+   "id": "fabric-data-factory",
+   "name": "Fabric Data Factory",
+   "category": "fabric",
+   "file": "fabric/Fabric-Data-Factory.svg"
+  },
+  {
+   "key": "Fabric-Data-Science",
+   "id": "fabric-data-science",
+   "name": "Fabric Data Science",
+   "category": "fabric",
+   "file": "fabric/Fabric-Data-Science.svg"
+  },
+  {
+   "key": "Fabric-Data-Warehouse",
+   "id": "fabric-data-warehouse",
+   "name": "Fabric Data Warehouse",
+   "category": "fabric",
+   "file": "fabric/Fabric-Data-Warehouse.svg"
+  },
+  {
+   "key": "Fabric-Dataflow",
+   "id": "fabric-dataflow",
+   "name": "Fabric Dataflow",
+   "category": "fabric",
+   "file": "fabric/Fabric-Dataflow.svg"
+  },
+  {
+   "key": "Fabric-Dataflow-Gen2",
+   "id": "fabric-dataflow-gen2",
+   "name": "Fabric Dataflow Gen2",
+   "category": "fabric",
+   "file": "fabric/Fabric-Dataflow-Gen2.svg"
+  },
+  {
+   "key": "Fabric-Datamart",
+   "id": "fabric-datamart",
+   "name": "Fabric Datamart",
+   "category": "fabric",
+   "file": "fabric/Fabric-Datamart.svg"
+  },
+  {
+   "key": "Fabric-Environment",
+   "id": "fabric-environment",
+   "name": "Fabric Environment",
+   "category": "fabric",
+   "file": "fabric/Fabric-Environment.svg"
+  },
+  {
+   "key": "Fabric-Event-House",
+   "id": "fabric-event-house",
+   "name": "Fabric Event House",
+   "category": "fabric",
+   "file": "fabric/Fabric-Event-House.svg"
+  },
+  {
+   "key": "Fabric-Eventstream",
+   "id": "fabric-eventstream",
+   "name": "Fabric Eventstream",
+   "category": "fabric",
+   "file": "fabric/Fabric-Eventstream.svg"
+  },
+  {
+   "key": "Fabric-Experiments",
+   "id": "fabric-experiments",
+   "name": "Fabric Experiments",
+   "category": "fabric",
+   "file": "fabric/Fabric-Experiments.svg"
+  },
+  {
+   "key": "Fabric-Exploration",
+   "id": "fabric-exploration",
+   "name": "Fabric Exploration",
+   "category": "fabric",
+   "file": "fabric/Fabric-Exploration.svg"
+  },
+  {
+   "key": "Fabric-External-Dataflow",
+   "id": "fabric-external-dataflow",
+   "name": "Fabric External Dataflow",
+   "category": "fabric",
+   "file": "fabric/Fabric-External-Dataflow.svg"
+  },
+  {
+   "key": "Fabric-External-Datamart",
+   "id": "fabric-external-datamart",
+   "name": "Fabric External Datamart",
+   "category": "fabric",
+   "file": "fabric/Fabric-External-Datamart.svg"
+  },
+  {
+   "key": "Fabric-External-Semantic-Model",
+   "id": "fabric-external-semantic-model",
+   "name": "Fabric External Semantic Model",
+   "category": "fabric",
+   "file": "fabric/Fabric-External-Semantic-Model.svg"
+  },
+  {
+   "key": "Fabric-Function-Set",
+   "id": "fabric-function-set",
+   "name": "Fabric Function Set",
+   "category": "fabric",
+   "file": "fabric/Fabric-Function-Set.svg"
+  },
+  {
+   "key": "Fabric-Generic-Placeholder",
+   "id": "fabric-generic-placeholder",
+   "name": "Fabric Generic Placeholder",
+   "category": "fabric",
+   "file": "fabric/Fabric-Generic-Placeholder.svg"
+  },
+  {
+   "key": "Fabric-Graph-Model-Instance",
+   "id": "fabric-graph-model-instance",
+   "name": "Fabric Graph Model Instance",
+   "category": "fabric",
+   "file": "fabric/Fabric-Graph-Model-Instance.svg"
+  },
+  {
+   "key": "Fabric-Graph-Model-Instance-Queryset",
+   "id": "fabric-graph-model-instance-queryset",
+   "name": "Fabric Graph Model Instance Queryset",
+   "category": "fabric",
+   "file": "fabric/Fabric-Graph-Model-Instance-Queryset.svg"
+  },
+  {
+   "key": "Fabric-Healthcare",
+   "id": "fabric-healthcare",
+   "name": "Fabric Healthcare",
+   "category": "fabric",
+   "file": "fabric/Fabric-Healthcare.svg"
+  },
+  {
+   "key": "Fabric-KQL-Database",
+   "id": "fabric-kql-database",
+   "name": "Fabric KQL Database",
+   "category": "fabric",
+   "file": "fabric/Fabric-KQL-Database.svg"
+  },
+  {
+   "key": "Fabric-KQL-Queryset",
+   "id": "fabric-kql-queryset",
+   "name": "Fabric KQL Queryset",
+   "category": "fabric",
+   "file": "fabric/Fabric-KQL-Queryset.svg"
+  },
+  {
+   "key": "Fabric-KQL-Script",
+   "id": "fabric-kql-script",
+   "name": "Fabric KQL Script",
+   "category": "fabric",
+   "file": "fabric/Fabric-KQL-Script.svg"
+  },
+  {
+   "key": "Fabric-Lakehouse",
+   "id": "fabric-lakehouse",
+   "name": "Fabric Lakehouse",
+   "category": "fabric",
+   "file": "fabric/Fabric-Lakehouse.svg"
+  },
+  {
+   "key": "Fabric-Links",
+   "id": "fabric-links",
+   "name": "Fabric Links",
+   "category": "fabric",
+   "file": "fabric/Fabric-Links.svg"
+  },
+  {
+   "key": "Fabric-Metric-Sets",
+   "id": "fabric-metric-sets",
+   "name": "Fabric Metric Sets",
+   "category": "fabric",
+   "file": "fabric/Fabric-Metric-Sets.svg"
+  },
+  {
+   "key": "Fabric-Mirrored-Generic-Database",
+   "id": "fabric-mirrored-generic-database",
+   "name": "Fabric Mirrored Generic Database",
+   "category": "fabric",
+   "file": "fabric/Fabric-Mirrored-Generic-Database.svg"
+  },
+  {
+   "key": "Fabric-Mobile-Report",
+   "id": "fabric-mobile-report",
+   "name": "Fabric Mobile Report",
+   "category": "fabric",
+   "file": "fabric/Fabric-Mobile-Report.svg"
+  },
+  {
+   "key": "Fabric-Model",
+   "id": "fabric-model",
+   "name": "Fabric Model",
+   "category": "fabric",
+   "file": "fabric/Fabric-Model.svg"
+  },
+  {
+   "key": "Fabric-No-Access-Semantic-Model",
+   "id": "fabric-no-access-semantic-model",
+   "name": "Fabric No Access Semantic Model",
+   "category": "fabric",
+   "file": "fabric/Fabric-No-Access-Semantic-Model.svg"
+  },
+  {
+   "key": "Fabric-Notebook",
+   "id": "fabric-notebook",
+   "name": "Fabric Notebook",
+   "category": "fabric",
+   "file": "fabric/Fabric-Notebook.svg"
+  },
+  {
+   "key": "Fabric-Operations-Agent",
+   "id": "fabric-operations-agent",
+   "name": "Fabric Operations Agent",
+   "category": "fabric",
+   "file": "fabric/Fabric-Operations-Agent.svg"
+  },
+  {
+   "key": "Fabric-Paginated-Report",
+   "id": "fabric-paginated-report",
+   "name": "Fabric Paginated Report",
+   "category": "fabric",
+   "file": "fabric/Fabric-Paginated-Report.svg"
+  },
+  {
+   "key": "Fabric-Pipeline",
+   "id": "fabric-pipeline",
+   "name": "Fabric Pipeline",
+   "category": "fabric",
+   "file": "fabric/Fabric-Pipeline.svg"
+  },
+  {
+   "key": "Fabric-Planning",
+   "id": "fabric-planning",
+   "name": "Fabric Planning",
+   "category": "fabric",
+   "file": "fabric/Fabric-Planning.svg"
+  },
+  {
+   "key": "Fabric-Power-BI",
+   "id": "fabric-power-bi",
+   "name": "Fabric Power BI",
+   "category": "fabric",
+   "file": "fabric/Fabric-Power-BI.svg"
+  },
+  {
+   "key": "Fabric-RDL-Report",
+   "id": "fabric-rdl-report",
+   "name": "Fabric RDL Report",
+   "category": "fabric",
+   "file": "fabric/Fabric-RDL-Report.svg"
+  },
+  {
+   "key": "Fabric-Real-Time-Dashboard",
+   "id": "fabric-real-time-dashboard",
+   "name": "Fabric Real Time Dashboard",
+   "category": "fabric",
+   "file": "fabric/Fabric-Real-Time-Dashboard.svg"
+  },
+  {
+   "key": "Fabric-Real-Time-Intelligence",
+   "id": "fabric-real-time-intelligence",
+   "name": "Fabric Real Time Intelligence",
+   "category": "fabric",
+   "file": "fabric/Fabric-Real-Time-Intelligence.svg"
+  },
+  {
+   "key": "Fabric-Report",
+   "id": "fabric-report",
+   "name": "Fabric Report",
+   "category": "fabric",
+   "file": "fabric/Fabric-Report.svg"
+  },
+  {
+   "key": "Fabric-Restricted-Report",
+   "id": "fabric-restricted-report",
+   "name": "Fabric Restricted Report",
+   "category": "fabric",
+   "file": "fabric/Fabric-Restricted-Report.svg"
+  },
+  {
+   "key": "Fabric-Restricted-Scorecard",
+   "id": "fabric-restricted-scorecard",
+   "name": "Fabric Restricted Scorecard",
+   "category": "fabric",
+   "file": "fabric/Fabric-Restricted-Scorecard.svg"
+  },
+  {
+   "key": "Fabric-Retail",
+   "id": "fabric-retail",
+   "name": "Fabric Retail",
+   "category": "fabric",
+   "file": "fabric/Fabric-Retail.svg"
+  },
+  {
+   "key": "Fabric-Runtime-Lineage",
+   "id": "fabric-runtime-lineage",
+   "name": "Fabric Runtime Lineage",
+   "category": "fabric",
+   "file": "fabric/Fabric-Runtime-Lineage.svg"
+  },
+  {
+   "key": "Fabric-Schema-Model",
+   "id": "fabric-schema-model",
+   "name": "Fabric Schema Model",
+   "category": "fabric",
+   "file": "fabric/Fabric-Schema-Model.svg"
+  },
+  {
+   "key": "Fabric-Scorecard",
+   "id": "fabric-scorecard",
+   "name": "Fabric Scorecard",
+   "category": "fabric",
+   "file": "fabric/Fabric-Scorecard.svg"
+  },
+  {
+   "key": "Fabric-Semantic-Model",
+   "id": "fabric-semantic-model",
+   "name": "Fabric Semantic Model",
+   "category": "fabric",
+   "file": "fabric/Fabric-Semantic-Model.svg"
+  },
+  {
+   "key": "Fabric-Shared-Semantic-Model",
+   "id": "fabric-shared-semantic-model",
+   "name": "Fabric Shared Semantic Model",
+   "category": "fabric",
+   "file": "fabric/Fabric-Shared-Semantic-Model.svg"
+  },
+  {
+   "key": "Fabric-Spark-Job-Direction",
+   "id": "fabric-spark-job-direction",
+   "name": "Fabric Spark Job Direction",
+   "category": "fabric",
+   "file": "fabric/Fabric-Spark-Job-Direction.svg"
+  },
+  {
+   "key": "Fabric-SQL-Database",
+   "id": "fabric-sql-database",
+   "name": "Fabric SQL Database",
+   "category": "fabric",
+   "file": "fabric/Fabric-SQL-Database.svg"
+  },
+  {
+   "key": "Fabric-Streaming-Dataflow",
+   "id": "fabric-streaming-dataflow",
+   "name": "Fabric Streaming Dataflow",
+   "category": "fabric",
+   "file": "fabric/Fabric-Streaming-Dataflow.svg"
+  },
+  {
+   "key": "Fabric-Streaming-Semantic-Model",
+   "id": "fabric-streaming-semantic-model",
+   "name": "Fabric Streaming Semantic Model",
+   "category": "fabric",
+   "file": "fabric/Fabric-Streaming-Semantic-Model.svg"
+  },
+  {
+   "key": "Fabric-Sustainability",
+   "id": "fabric-sustainability",
+   "name": "Fabric Sustainability",
+   "category": "fabric",
+   "file": "fabric/Fabric-Sustainability.svg"
+  },
+  {
+   "key": "Fabric-User-Data-Function",
+   "id": "fabric-user-data-function",
+   "name": "Fabric User Data Function",
+   "category": "fabric",
+   "file": "fabric/Fabric-User-Data-Function.svg"
+  },
+  {
+   "key": "Fabric-Variable-Library",
+   "id": "fabric-variable-library",
+   "name": "Fabric Variable Library",
+   "category": "fabric",
+   "file": "fabric/Fabric-Variable-Library.svg"
+  },
+  {
+   "key": "Microsoft-Fabric",
+   "id": "fabric",
+   "name": "Microsoft Fabric",
+   "category": "fabric",
+   "file": "fabric/Microsoft-Fabric.svg"
   },
   {
    "key": "ABS-Member",

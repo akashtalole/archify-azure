@@ -8,7 +8,7 @@
     ],
     "output": "examples/out/multi-agent-foundry-fabric-copilot.html",
     "cost": {
-      "note": "Illustrative: 50,000 conversations/month, ~4 model calls each (\u22483,000 input and 400 output tokens per call), gpt-4o-0806 global deployment. Copilot Studio uses the official Power Platform icon set; the Azure package has no Microsoft Fabric icon, so Fabric is drawn with the Synapse Analytics icon. Fabric capacity and Copilot Studio messages are not in the Retail Prices API and are not priced."
+      "note": "Illustrative: 50,000 conversations/month, ~4 model calls each (\u22483,000 input and 400 output tokens per call), gpt-4o-0806 global deployment. Copilot Studio and Microsoft Fabric use the official Power Platform and Fabric icon sets. Fabric capacity and Copilot Studio messages are not in the Retail Prices API and are not priced."
     }
   },
   "root": {

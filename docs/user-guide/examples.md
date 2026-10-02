@@ -13,9 +13,19 @@ Each example is a spec in the repository's `examples/` folder, rendered to a liv
 | **Multi-agent: Copilot Studio + Foundry + Fabric** | Copilot Studio front door, Foundry orchestrator with knowledge/data/action agents, Fabric data agent, AI Search, Logic Apps, Content Safety | [open](../live/multi-agent-foundry-fabric-copilot.html) | [file](../live/multi-agent-foundry-fabric-copilot.drawio) |
 
 !!! note "Icons"
-    Copilot Studio uses the official Power Platform icon set. The Azure package has no Microsoft Fabric icon, so Fabric is drawn with the Synapse Analytics icon and labelled with its real name. Fabric capacity and Copilot Studio messages are not in the Retail Prices API and are not priced.
+    Copilot Studio and Microsoft Fabric use the official Power Platform and Fabric icon sets. Fabric capacity and Copilot Studio messages are not in the Retail Prices API and are not priced.
 
 ![Product catalog search](../assets/example-product-catalog.png)
+
+## Enterprise agentic claims operations
+
+A larger use case in its own folder, `examples/enterprise-agentic-copilot/`: Copilot Studio customer and adjuster copilots, Power Automate intake and approval flows, Dataverse, Power Apps, an API Management AI gateway, a Foundry orchestrator with policy / fraud / action agents, and a Microsoft Fabric lakehouse with a data agent, semantic model and Power BI.
+
+| Example | Type | Page |
+|---|---|---|
+| Claims and customer operations platform | architecture | [open](../live/enterprise-architecture.html) |
+| Claim question to approved payout | sequence | [open](../live/enterprise-claim-run.sequence.html) |
+| Claims data platform on Fabric | dataflow | [open](../live/enterprise-data-platform.dataflow.html) |
 
 ## Sequence and dataflow
 

@@ -1,0 +1,226 @@
+{
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Claims data platform on Microsoft Fabric feeding agents and reports",
+    "subtitle": "Operational systems and telematics land in OneLake, are curated into a certified semantic model, and serve Power BI, the Fabric data agent and the AI Search index",
+    "output": "examples/enterprise-agentic-copilot/out/data-platform.dataflow.html",
+    "boundary": false
+  },
+  "stages": [
+    {
+      "id": "src",
+      "label": "Sources",
+      "external": true,
+      "items": [
+        {
+          "id": "core",
+          "icon": "gen:server-farm",
+          "label": "Core claims and policy systems",
+          "sublabel": "SQL Server"
+        },
+        {
+          "id": "tele",
+          "icon": "gen:mobile",
+          "label": "Telematics and IoT",
+          "sublabel": "vehicle events"
+        },
+        {
+          "id": "docs",
+          "icon": "gen:file",
+          "label": "Claim documents",
+          "sublabel": "photos, forms"
+        }
+      ]
+    },
+    {
+      "id": "ingest",
+      "label": "Ingest",
+      "items": [
+        {
+          "id": "mirror",
+          "icon": "fabric-data-factory",
+          "label": "Mirroring and pipelines",
+          "sublabel": "CDC, scheduled copy"
+        },
+        {
+          "id": "es",
+          "icon": "fabric-eventstream",
+          "label": "Eventstream",
+          "sublabel": "telematics stream"
+        },
+        {
+          "id": "blob",
+          "icon": "storage-accounts",
+          "label": "Azure Blob Storage",
+          "sublabel": "documents",
+          "usage": {
+            "storageGb": 800
+          }
+        }
+      ]
+    },
+    {
+      "id": "lake",
+      "label": "OneLake medallion",
+      "items": [
+        {
+          "id": "bronze",
+          "icon": "fabric-lakehouse",
+          "label": "Lakehouse",
+          "sublabel": "bronze to gold"
+        },
+        {
+          "id": "rti",
+          "icon": "fabric-event-house",
+          "label": "Eventhouse",
+          "sublabel": "KQL, real time"
+        },
+        {
+          "id": "nb",
+          "icon": "fabric-notebook",
+          "label": "Notebooks",
+          "sublabel": "Spark curation"
+        }
+      ]
+    },
+    {
+      "id": "serve",
+      "label": "Serve",
+      "items": [
+        {
+          "id": "sem",
+          "icon": "fabric-semantic-model",
+          "label": "Semantic model",
+          "sublabel": "certified measures"
+        },
+        {
+          "id": "fda",
+          "icon": "fabric-data-agent",
+          "label": "Fabric data agent",
+          "sublabel": "NL questions"
+        },
+        {
+          "id": "idx",
+          "icon": "cognitive-search",
+          "label": "Azure AI Search",
+          "sublabel": "document index",
+          "usage": {
+            "sku": "standard-s1",
+            "searchUnits": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "use",
+      "label": "Consume",
+      "external": false,
+      "items": [
+        {
+          "id": "pbi",
+          "icon": "fabric-power-bi",
+          "label": "Power BI",
+          "sublabel": "loss ratio, SLA"
+        },
+        {
+          "id": "agents",
+          "icon": "foundry-agent-service",
+          "label": "Foundry agents",
+          "sublabel": "fraud, policy"
+        },
+        {
+          "id": "pp",
+          "icon": "copilot-studio",
+          "label": "Copilot Studio",
+          "sublabel": "adjuster copilot"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "core",
+      "to": "mirror",
+      "step": 1,
+      "label": "CDC"
+    },
+    {
+      "from": "tele",
+      "to": "es",
+      "step": 2,
+      "label": "events"
+    },
+    {
+      "from": "docs",
+      "to": "blob",
+      "step": 3,
+      "label": "upload"
+    },
+    {
+      "from": "mirror",
+      "to": "bronze",
+      "step": 4,
+      "label": "mirror"
+    },
+    {
+      "from": "es",
+      "to": "rti",
+      "step": 5,
+      "label": "stream"
+    },
+    {
+      "from": "blob",
+      "to": "nb",
+      "step": 6,
+      "label": "extract"
+    },
+    {
+      "from": "nb",
+      "to": "bronze",
+      "step": 7,
+      "label": "curate"
+    },
+    {
+      "from": "bronze",
+      "to": "sem",
+      "step": 8,
+      "label": "model"
+    },
+    {
+      "from": "bronze",
+      "to": "fda",
+      "step": 9,
+      "label": "ground"
+    },
+    {
+      "from": "nb",
+      "to": "idx",
+      "step": 10,
+      "label": "index"
+    },
+    {
+      "from": "sem",
+      "to": "pbi",
+      "step": 11,
+      "label": "report"
+    },
+    {
+      "from": "fda",
+      "to": "agents",
+      "step": 12,
+      "label": "answers"
+    },
+    {
+      "from": "idx",
+      "to": "agents",
+      "step": 12,
+      "label": "retrieval"
+    },
+    {
+      "from": "agents",
+      "to": "pp",
+      "step": 13,
+      "label": "handoff"
+    }
+  ]
+}
