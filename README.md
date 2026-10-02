@@ -18,6 +18,8 @@ Multi-agent solution (Copilot Studio + Azure AI Foundry + Microsoft Fabric): [ar
 
 **Enterprise agentic claims operations** (Copilot Studio + Power Automate + Dataverse + Foundry + Fabric, three diagrams): [architecture](examples/enterprise-agentic-copilot/out/architecture.png) · [sequence](examples/enterprise-agentic-copilot/out/claim-run.sequence.png) · [dataflow](examples/enterprise-agentic-copilot/out/data-platform.dataflow.png) · [folder](examples/enterprise-agentic-copilot/)
 
+**Dynamics 365 to Fabric analytics** (Business Central + CE apps, Dataverse Link to Fabric, open mirroring): [architecture](examples/dynamics365-fabric-analytics/out/architecture.png) · [dataflow](examples/dynamics365-fabric-analytics/out/data-mirroring.dataflow.png) · [folder](examples/dynamics365-fabric-analytics/)
+
 Serverless API: [architecture](examples/out/serverless-api.png) · Agent tool call: [sequence](examples/out/agent-tool-call.sequence.png) ·
 Clinical notes: [dataflow](examples/out/clinical-notes.dataflow.png)
 
@@ -37,7 +39,7 @@ Node ≥ 20, **no npm dependencies**. PNG export needs Chrome/Chromium (`CHROME_
 The agent searches icons, authors the spec, runs `finalize --json`, repairs failures, looks at the PNG, and reports.
 
 ## What you get
-* **Official icons** — 539 Azure service icons, 8 official **Power Platform** icons (Copilot Studio, Dataverse, Power Apps, Power Automate, Power Pages, AI Builder, Agent 365, Power Platform), 62 official **Microsoft Fabric** icons (workloads and items: lakehouse, eventhouse, semantic model, data agent, Power BI…), 97 general icons and 8 group icons (SVG, unmodified); `icons search`, aliases (`functions`, `aks`, `cosmos`, `apim`, `front-door`…).
+* **Official icons** — 539 Azure service icons, 8 official **Power Platform** icons (Copilot Studio, Dataverse, Power Apps, Power Automate, Power Pages, AI Builder, Agent 365, Power Platform), 62 official **Microsoft Fabric** icons (workloads and items: lakehouse, eventhouse, semantic model, data agent, Power BI…), 16 official **Dynamics 365** icons (Business Central, Sales, Customer Service, Field Service, Finance and Operations…), 97 general icons and 8 group icons (SVG, unmodified); `icons search`, aliases (`functions`, `aks`, `cosmos`, `apim`, `front-door`…).
 * **Azure groups** — Azure, management group, subscription, region, resource group, virtual network, subnets, NSG, availability zone/set, on-premises, custom service groups; 12px Arial labels (≤ 2 lines); open-arrow orthogonal connectors; numbered callouts (hover for the description); light and dark themes.
 * **Layout + routing** — nest groups, list children; rows align icon centre lines; the router avoids nodes and group headers, prefers straight lines, and warns (exit code 2 with `--strict`) when it can't find a clean route.
 * **Three diagram types** — `architecture`, `sequence` (lifelines, boundaries, fragments), `dataflow` (stage columns).

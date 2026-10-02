@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "title": "Dynamics 365 Business Central and customer engagement apps: operational data to Microsoft Fabric analytics",
+    "subtitle": "Customer engagement apps reach OneLake through Dataverse Link to Fabric (shortcuts); Business Central is replicated through an open mirrored database fed by an extract function; both land in one Fabric lakehouse for Power BI and a data agent",
+    "output": "examples/dynamics365-fabric-analytics/out/architecture.html",
+    "cost": {
+      "note": "Illustrative: 20 million Business Central API rows per month through one Functions consumption extractor. Dynamics 365 licences, Dataverse storage and Fabric capacity are not in the Azure Retail Prices API and are not priced."
+    }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 70,
+    "children": [
+      {
+        "id": "users",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "sales",
+            "icon": "users",
+            "label": "Sales and service teams"
+          },
+          {
+            "id": "fin",
+            "icon": "users",
+            "label": "Finance and operations"
+          }
+        ]
+      },
+      {
+        "id": "apps",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 70,
+        "children": [
+          {
+            "id": "bcg",
+            "kind": "custom",
+            "icon": "dynamics-365-business-central",
+            "label": "Business Central environment",
+            "layout": "column",
+            "gap": 40,
+            "children": [
+              {
+                "id": "bc",
+                "icon": "dynamics-365-business-central",
+                "label": "Business Central",
+                "sublabel": "SaaS ERP: ledgers, items, orders, API v2.0"
+              }
+            ]
+          },
+          {
+            "id": "ceg",
+            "kind": "custom",
+            "icon": "dynamics-365",
+            "label": "Customer engagement apps",
+            "layout": "column",
+            "gap": 40,
+            "children": [
+              {
+                "id": "ce_sales",
+                "icon": "dynamics-365-sales",
+                "label": "Dynamics 365 Sales"
+              },
+              {
+                "id": "ce_cs",
+                "icon": "dynamics-365-customer-service",
+                "label": "Customer Service"
+              },
+              {
+                "id": "ce_fs",
+                "icon": "dynamics-365-field-service",
+                "label": "Field Service"
+              },
+              {
+                "id": "dv",
+                "icon": "dataverse",
+                "label": "Dataverse",
+                "sublabel": "tables with Track changes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cloud",
+        "kind": "azure-cloud",
+        "layout": "column",
+        "gap": 50,
+        "children": [
+          {
+            "id": "fn",
+            "icon": "function-apps",
+            "label": "Extract function",
+            "sublabel": "BC API v2.0, incremental by modified time",
+            "usage": {
+              "plan": "consumption",
+              "requestsPerMonth": 2000000,
+              "avgDurationMs": 900,
+              "memoryMb": 512
+            }
+          },
+          {
+            "id": "kv",
+            "icon": "key-vaults",
+            "label": "Key Vault",
+            "sublabel": "app registration secret",
+            "usage": {
+              "operationsPerMonth": 200000
+            }
+          },
+          {
+            "id": "idp",
+            "icon": "entra-id-protection",
+            "label": "Microsoft Entra ID",
+            "sublabel": "service principal, workspace identity"
+          }
+        ]
+      },
+      {
+        "id": "fabric",
+        "kind": "custom",
+        "icon": "fabric",
+        "label": "Microsoft Fabric",
+        "layout": "row",
+        "gap": 70,
+        "children": [
+          {
+            "id": "land",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 110,
+            "children": [
+              {
+                "id": "omd",
+                "icon": "fabric-mirrored-generic-database",
+                "label": "Open mirrored database",
+                "sublabel": "Business Central tables, Delta"
+              },
+              {
+                "id": "dvl",
+                "icon": "fabric-lakehouse",
+                "label": "Dataverse lakehouse",
+                "sublabel": "shortcuts to CE tables, read-only"
+              }
+            ]
+          },
+          {
+            "id": "curate",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 70,
+            "children": [
+              {
+                "id": "gold",
+                "icon": "fabric-lakehouse",
+                "label": "Curated lakehouse",
+                "sublabel": "unified customers, orders, invoices"
+              },
+              {
+                "id": "nb",
+                "icon": "fabric-notebook",
+                "label": "Notebooks",
+                "sublabel": "joins and conformed dimensions"
+              }
+            ]
+          },
+          {
+            "id": "serve",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "sem",
+                "icon": "fabric-semantic-model",
+                "label": "Semantic model",
+                "sublabel": "Direct Lake, certified measures"
+              },
+              {
+                "id": "pbi",
+                "icon": "fabric-power-bi",
+                "label": "Power BI",
+                "sublabel": "order-to-cash, service KPIs"
+              },
+              {
+                "id": "fda",
+                "icon": "fabric-data-agent",
+                "label": "Fabric data agent",
+                "sublabel": "questions over finance + CRM"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "bc",
+      "to": "fn",
+      "step": 1,
+      "label": "API v2.0 delta read",
+      "desc": "An extract function reads changed Business Central records through the API v2.0 (filtered by last modified time) using a service principal"
+    },
+    {
+      "from": "fn",
+      "to": "omd",
+      "step": 2,
+      "label": "change files",
+      "desc": "The function writes initial and incremental change files to the open mirroring landing zone; Fabric applies them to Delta tables"
+    },
+    {
+      "from": "ce_sales",
+      "to": "dv",
+      "step": 3,
+      "label": "tables"
+    },
+    {
+      "from": "dv",
+      "to": "dvl",
+      "step": 4,
+      "label": "Link to Fabric",
+      "desc": "Link to Microsoft Fabric creates a lakehouse with read-only shortcuts to Dataverse tables; data stays in Dataverse and refreshes within about an hour"
+    },
+    {
+      "from": "omd",
+      "to": "gold",
+      "step": 5,
+      "label": "shortcut / SQL"
+    },
+    {
+      "from": "dvl",
+      "to": "gold",
+      "step": 5,
+      "label": "shortcut"
+    },
+    {
+      "from": "gold",
+      "to": "nb",
+      "style": "dashed",
+      "label": "curate"
+    },
+    {
+      "from": "gold",
+      "to": "sem",
+      "step": 6,
+      "label": "Direct Lake"
+    },
+    {
+      "from": "sem",
+      "to": "pbi",
+      "step": 7,
+      "label": "report"
+    },
+    {
+      "from": "sem",
+      "to": "fda",
+      "step": 8,
+      "label": "ground"
+    },
+    {
+      "from": "sales",
+      "to": "ce_sales",
+      "step": 9,
+      "label": "work"
+    },
+    {
+      "from": "fin",
+      "to": "bc",
+      "step": 9,
+      "label": "post"
+    },
+    {
+      "from": "fn",
+      "to": "kv",
+      "style": "dashed",
+      "label": "secret"
+    },
+    {
+      "from": "idp",
+      "to": "fn",
+      "style": "dashed",
+      "label": "token"
+    }
+  ]
+}

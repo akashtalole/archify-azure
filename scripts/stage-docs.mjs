@@ -12,7 +12,7 @@ fs.rmSync(dest, { recursive: true, force: true });
 fs.mkdirSync(dest, { recursive: true });
 
 const sources = [
-  ["examples/out", ""], ["examples/enterprise-agentic-copilot/out", "enterprise-"],
+  ["examples/out", ""], ["examples/enterprise-agentic-copilot/out", "enterprise-"], ["examples/dynamics365-fabric-analytics/out", "d365-"],
   ["examples/iac", "iac-"], ["examples/mermaid", "mermaid-"],
 ];
 let n = 0;

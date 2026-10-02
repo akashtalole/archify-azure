@@ -10,7 +10,7 @@ import { buildCatalog } from "../src/catalog-build.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DEFAULT_URL = "https://arch-center.azureedge.net/icons/Azure_Public_Service_Icons_V24.zip";
-const RELEASE = "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric icons";
+const RELEASE = "Azure Architecture Icons V24 + Power Platform + Microsoft Fabric + Dynamics 365 icons";
 // Official Power Platform / Copilot Studio icons (https://learn.microsoft.com/power-platform/guidance/icons), added as category `power-platform`.
 const POWER_URL = process.env.ARCHIFY_POWER_ICON_URL || "https://download.microsoft.com/download/498606aa-6d27-4f13-aa5c-1401078c153b/Power-Platform-icons-scalable.zip";
 // Microsoft Fabric icons (https://learn.microsoft.com/fabric/fundamentals/icons): the npm package @fabric-msft/svg-icons as published in
@@ -18,11 +18,15 @@ const POWER_URL = process.env.ARCHIFY_POWER_ICON_URL || "https://download.micros
 const FABRIC_URL = process.env.ARCHIFY_FABRIC_ICON_URL || "https://raw.githubusercontent.com/microsoft/fabric-samples/main/docs-samples/Icons.zip";
 const FABRIC_WORKLOADS = { fabric: "Microsoft-Fabric", power_bi: "Fabric-Power-BI", real_time_intelligence: "Fabric-Real-Time-Intelligence", data_engineering: "Fabric-Data-Engineering", data_science: "Fabric-Data-Science" };
 const titleCase = (s) => s.split("_").map((w) => (w.length <= 3 && /^(sql|kql|rdl|api|ai)$/.test(w) ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1))).join("-");
+// Dynamics 365 app icons (https://learn.microsoft.com/dynamics365/get-started/icons): "Dynamics 365 App Icons/<Name>_scalable.svg" plus the product family icon.
+const D365_URL = process.env.ARCHIFY_D365_ICON_URL || "https://download.microsoft.com/download/498606aa-6d27-4f13-aa5c-1401078c153b/Dynamics-365-icons-scalable.zip";
+const D365_NAMES = { Dynamics365: "Dynamics-365", BusinessCentral: "Dynamics-365-Business-Central", Commerce: "Dynamics-365-Commerce", ContactCenter: "Dynamics-365-Contact-Center", CustomerInsights: "Dynamics-365-Customer-Insights", CustomerServices: "Dynamics-365-Customer-Service", CustomerVoice: "Dynamics-365-Customer-Voice", FieldService: "Dynamics-365-Field-Service", FinanceOperations: "Dynamics-365-Finance-and-Operations", Finance: "Dynamics-365-Finance", HumanResources: "Dynamics-365-Human-Resources", IntelligentOrderManagement: "Dynamics-365-Intelligent-Order-Management", ProjectOperations: "Dynamics-365-Project-Operations", SalesInsights: "Dynamics-365-Sales-Insights", Sales: "Dynamics-365-Sales", SupplyChainManagement: "Dynamics-365-Supply-Chain-Management" };
 const POWER_NAMES = { CopilotStudio: "Copilot-Studio", Agent365: "Agent-365", AIBuilder: "AI-Builder", Dataverse: "Dataverse", PowerApps: "Power-Apps", PowerAutomate: "Power-Automate", PowerPages: "Power-Pages", PowerPlatform: "Microsoft-Power-Platform", PowerBI: "Power-BI" };
 
 const args = process.argv.slice(2);
-const zipArg = args.find((a) => a.endsWith(".zip") && fs.existsSync(a) && !/power|fabric/i.test(a));
+const zipArg = args.find((a) => a.endsWith(".zip") && fs.existsSync(a) && !/power|fabric|dynamics|d365/i.test(a));
 const fabricZipArg = args.find((a) => a.endsWith(".zip") && fs.existsSync(a) && /fabric/i.test(a));
+const d365ZipArg = args.find((a) => a.endsWith(".zip") && fs.existsSync(a) && /dynamics|d365/i.test(a));
 const powerZipArg = args.find((a) => a.endsWith(".zip") && fs.existsSync(a) && /power/i.test(a));
 const url = args.find((a) => a.startsWith("http")) || process.env.ARCHIFY_AZURE_ICON_URL || DEFAULT_URL;
 const out = path.resolve(process.env.ARCHIFY_AZURE_ICONS || path.join(root, "assets", "azure-icons"));
@@ -49,6 +53,25 @@ for (const e of readZip(buf)) {
   n++;
 }
 console.error(`Extracted ${n} SVG icons to ${path.relative(process.cwd(), out)}`);
+
+// Dynamics 365 icons. Failure is not fatal.
+if (!args.includes("--no-d365")) {
+  try {
+    let dbuf;
+    if (d365ZipArg) dbuf = fs.readFileSync(d365ZipArg);
+    else { console.error(`Downloading ${D365_URL}`); const r = await fetch(D365_URL); if (!r.ok) throw new Error(`HTTP ${r.status}`); dbuf = Buffer.from(await r.arrayBuffer()); }
+    let dn = 0;
+    for (const e of readZip(dbuf)) {
+      const m = /(?:^|\/)([A-Za-z0-9]+)_scalable\.svg$/.exec(e.name);
+      if (e.isDir || !m || !D365_NAMES[m[1]]) continue;
+      const dest = path.join(out, "dynamics-365", `${D365_NAMES[m[1]]}.svg`);
+      fs.mkdirSync(path.dirname(dest), { recursive: true });
+      fs.writeFileSync(dest, e.data());
+      dn++;
+    }
+    console.error(`Extracted ${dn} Dynamics 365 icons`);
+  } catch (e) { console.error(`warning: Dynamics 365 icons not added (${e.message})`); }
+}
 
 // Fabric icons are in a 30 MB npm-package zip; ".../dist/svg/<name>_<size>_<style>.svg". Failure is not fatal.
 if (!args.includes("--no-fabric")) {

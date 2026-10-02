@@ -5,7 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const PRIORITY = ["compute", "containers", "web", "app-services", "networking", "databases", "storage", "integration", "ai-machine-learning", "analytics",
-  "security", "identity", "monitor", "management-governance", "devops", "iot", "hybrid-multicloud", "migrate", "mobile", "new-icons", "other", "azure-ecosystem", "developer-tools", "general", "menu", "power-platform", "fabric"];
+  "security", "identity", "monitor", "management-governance", "devops", "iot", "hybrid-multicloud", "migrate", "mobile", "new-icons", "other", "azure-ecosystem", "developer-tools", "general", "menu", "power-platform", "fabric", "dynamics-365"];
 const rank = (c) => { const i = PRIORITY.indexOf(c); return i < 0 ? 99 : i; };
 const human = (key) => key.replace(/-/g, " ").replace(/\s+/g, " ").trim();
 const slug = (key) => key.toLowerCase().replace(/^(azure|microsoft)-/, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

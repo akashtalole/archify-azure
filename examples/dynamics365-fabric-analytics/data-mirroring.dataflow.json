@@ -1,0 +1,206 @@
+{
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Dynamics 365 data to Fabric analytics: three ways in, one lakehouse",
+    "subtitle": "Dataverse Link to Fabric (shortcuts), open mirroring for Business Central, and pipelines for anything else",
+    "output": "examples/dynamics365-fabric-analytics/out/data-mirroring.dataflow.html",
+    "boundary": false
+  },
+  "stages": [
+    {
+      "id": "src",
+      "label": "Dynamics 365 sources",
+      "external": true,
+      "items": [
+        {
+          "id": "bc",
+          "icon": "dynamics-365-business-central",
+          "label": "Business Central",
+          "sublabel": "ledgers, orders, items"
+        },
+        {
+          "id": "ce",
+          "icon": "dynamics-365-sales",
+          "label": "Sales and Customer Service",
+          "sublabel": "accounts, cases, opportunities"
+        },
+        {
+          "id": "fo",
+          "icon": "dynamics-365-finance-and-operations",
+          "label": "Finance and Operations",
+          "sublabel": "optional second ERP"
+        }
+      ]
+    },
+    {
+      "id": "cap",
+      "label": "Capture",
+      "items": [
+        {
+          "id": "fn",
+          "icon": "function-apps",
+          "label": "Extract function",
+          "sublabel": "API v2.0 delta"
+        },
+        {
+          "id": "dv",
+          "icon": "dataverse",
+          "label": "Dataverse",
+          "sublabel": "Link to Fabric enabled"
+        },
+        {
+          "id": "dvfo",
+          "icon": "dataverse",
+          "label": "Dataverse tables",
+          "sublabel": "F&O entities, same link"
+        }
+      ]
+    },
+    {
+      "id": "land",
+      "label": "OneLake landing",
+      "items": [
+        {
+          "id": "omd",
+          "icon": "fabric-mirrored-generic-database",
+          "label": "Open mirrored database",
+          "sublabel": "BC Delta tables"
+        },
+        {
+          "id": "dvl",
+          "icon": "fabric-lakehouse",
+          "label": "Dataverse lakehouse",
+          "sublabel": "shortcuts"
+        },
+        {
+          "id": "pipe",
+          "icon": "fabric-pipeline",
+          "label": "Pipeline or copy job",
+          "sublabel": "other sources"
+        }
+      ]
+    },
+    {
+      "id": "curate",
+      "label": "Curate",
+      "items": [
+        {
+          "id": "silver",
+          "icon": "fabric-lakehouse",
+          "label": "Silver lakehouse",
+          "sublabel": "cleaned, conformed"
+        },
+        {
+          "id": "gold",
+          "icon": "fabric-data-warehouse",
+          "label": "Gold warehouse",
+          "sublabel": "star schema"
+        }
+      ]
+    },
+    {
+      "id": "serve",
+      "label": "Serve and consume",
+      "items": [
+        {
+          "id": "sem",
+          "icon": "fabric-semantic-model",
+          "label": "Semantic model",
+          "sublabel": "Direct Lake"
+        },
+        {
+          "id": "pbi",
+          "icon": "fabric-power-bi",
+          "label": "Power BI",
+          "sublabel": "finance and CRM KPIs"
+        },
+        {
+          "id": "fda",
+          "icon": "fabric-data-agent",
+          "label": "Fabric data agent",
+          "sublabel": "NL questions"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "bc",
+      "to": "fn",
+      "step": 1,
+      "label": "API v2.0"
+    },
+    {
+      "from": "ce",
+      "to": "dv",
+      "step": 2,
+      "label": "tables"
+    },
+    {
+      "from": "fo",
+      "to": "dvfo",
+      "step": 3,
+      "label": "entities"
+    },
+    {
+      "from": "fn",
+      "to": "omd",
+      "step": 4,
+      "label": "landing zone"
+    },
+    {
+      "from": "dv",
+      "to": "dvl",
+      "step": 5,
+      "label": "Link to Fabric"
+    },
+    {
+      "from": "dvfo",
+      "to": "dvl",
+      "step": 5,
+      "label": "Link to Fabric"
+    },
+    {
+      "from": "omd",
+      "to": "silver",
+      "step": 6,
+      "label": "mirror"
+    },
+    {
+      "from": "dvl",
+      "to": "silver",
+      "step": 6,
+      "label": "shortcut"
+    },
+    {
+      "from": "pipe",
+      "to": "silver",
+      "step": 6,
+      "label": "load"
+    },
+    {
+      "from": "silver",
+      "to": "gold",
+      "step": 7,
+      "label": "model"
+    },
+    {
+      "from": "gold",
+      "to": "sem",
+      "step": 8,
+      "label": "Direct Lake"
+    },
+    {
+      "from": "sem",
+      "to": "pbi",
+      "step": 9,
+      "label": "report"
+    },
+    {
+      "from": "sem",
+      "to": "fda",
+      "step": 9,
+      "label": "ground"
+    }
+  ]
+}
