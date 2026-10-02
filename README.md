@@ -14,6 +14,8 @@ Enterprise product catalog search (hybrid keyword + vector search on Azure AI Se
 [architecture](examples/out/product-catalog-search.png) · [page with cost and review](examples/out/product-catalog-search.html) ·
 [draw.io file](examples/out/product-catalog-search.drawio)
 
+Multi-agent solution (Copilot Studio + Azure AI Foundry + Microsoft Fabric): [architecture](examples/out/multi-agent-foundry-fabric-copilot.png) · [page](examples/out/multi-agent-foundry-fabric-copilot.html) · [draw.io](examples/out/multi-agent-foundry-fabric-copilot.drawio)
+
 Serverless API: [architecture](examples/out/serverless-api.png) · Agent tool call: [sequence](examples/out/agent-tool-call.sequence.png) ·
 Clinical notes: [dataflow](examples/out/clinical-notes.dataflow.png)
 
@@ -33,7 +35,7 @@ Node ≥ 20, **no npm dependencies**. PNG export needs Chrome/Chromium (`CHROME_
 The agent searches icons, authors the spec, runs `finalize --json`, repairs failures, looks at the PNG, and reports.
 
 ## What you get
-* **Official icons** — 539 Azure service icons, 97 general icons and 8 group icons (SVG, unmodified); `icons search`, aliases (`functions`, `aks`, `cosmos`, `apim`, `front-door`…).
+* **Official icons** — 539 Azure service icons, 8 official **Power Platform** icons (Copilot Studio, Dataverse, Power Apps, Power Automate, Power Pages, AI Builder, Agent 365, Power Platform), 97 general icons and 8 group icons (SVG, unmodified); `icons search`, aliases (`functions`, `aks`, `cosmos`, `apim`, `front-door`…).
 * **Azure groups** — Azure, management group, subscription, region, resource group, virtual network, subnets, NSG, availability zone/set, on-premises, custom service groups; 12px Arial labels (≤ 2 lines); open-arrow orthogonal connectors; numbered callouts (hover for the description); light and dark themes.
 * **Layout + routing** — nest groups, list children; rows align icon centre lines; the router avoids nodes and group headers, prefers straight lines, and warns (exit code 2 with `--strict`) when it can't find a clean route.
 * **Three diagram types** — `architecture`, `sequence` (lifelines, boundaries, fragments), `dataflow` (stage columns).

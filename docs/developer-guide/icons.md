@@ -2,6 +2,8 @@
 
 The official **Azure Architecture Icons** package is **not committed**. `scripts/fetch-icons.mjs` downloads it (V24, `Azure_Public_Service_Icons_V24.zip` from the Azure Architecture Center), extracts the service SVGs by category folder (`NNNNN-icon-service-<Name>.svg`) and the group icons into `assets/azure-icons/` (git-ignored; override with `ARCHIFY_AZURE_ICONS`) and rebuilds `data/catalog.json` through `src/catalog-build.mjs`. A small zero-dependency ZIP reader (`src/zip.mjs`) does the extraction.
 
+The official **Power Platform icons** (<https://learn.microsoft.com/power-platform/guidance/icons>) are fetched by the same script (`POWER_URL`, override with `ARCHIFY_POWER_ICON_URL`, skip with `--no-power`). The zip's `<Name>_scalable.svg` files are renamed through `POWER_NAMES` and extracted to `assets/azure-icons/power-platform/`; they appear in the catalog as category `power-platform` with ids `copilot-studio`, `agent-365`, `ai-builder`, `dataverse`, `power-apps`, `power-automate`, `power-pages` and `microsoft-power-platform` (the Azure package's own `power-platform` icon keeps that id). They have no draw.io Azure-library equivalent, so the draw.io export embeds them as SVG, and the cost engine reports them as not estimated.
+
 ## Catalog (`data/catalog.json`)
 
 ```json
@@ -11,7 +13,7 @@ The official **Azure Architecture Icons** package is **not committed**. `scripts
   "general": [ { "id": "users", "name": "Users", "file": "general/…" } ] }
 ```
 
-Currently 539 services, 97 general icons and 8 group icons. Ids are slugs of the file name with `azure-`/`microsoft-` prefixes removed. `GROUP_ICON_KEYS` in `catalog-build.mjs` maps group kinds to icons (Subscription, Resource-Group, Management-Group, Region, VNet, Subnet, NSG, Availability-Set). Azure has no separate "resource" icon tier, so `catalog.resources` is empty.
+Currently 547 services (539 Azure + 8 Power Platform), 97 general icons and 8 group icons. Ids are slugs of the file name with `azure-`/`microsoft-` prefixes removed. `GROUP_ICON_KEYS` in `catalog-build.mjs` maps group kinds to icons (Subscription, Resource-Group, Management-Group, Region, VNet, Subnet, NSG, Availability-Set). Azure has no separate "resource" icon tier, so `catalog.resources` is empty.
 
 `data/aliases.json` maps friendly names (`functions`, `aks`, `cosmos`, `apim`, `front-door`) to service ids; a separate map exists for general icons.
 

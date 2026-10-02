@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "iconRelease": "Azure Architecture Icons V24 + Power Platform icons",
   "input": {
-    "path": "examples/three-tier.json",
-    "sha256": "49ea9e18e36ae0d11d52dac883b4878584cc0968930edaf76eaddffcdff4a92a"
+    "path": "examples/multi-agent-foundry-fabric-copilot.json",
+    "sha256": "bf2dfc6c32be9476f0fa54cd5e8247ddfdbb2064f39668e6bbccd63e4d118234"
   },
   "stages": [
     {
@@ -13,9 +13,9 @@
       "status": "pass",
       "detail": {
         "type": "architecture",
-        "nodes": 11,
-        "groups": 10,
-        "edges": 9
+        "nodes": 15,
+        "groups": 3,
+        "edges": 14
       }
     },
     {
@@ -35,7 +35,7 @@
       "name": "check",
       "status": "pass",
       "detail": {
-        "warnings": 2,
+        "warnings": 4,
         "standalone": true
       }
     },
@@ -47,8 +47,8 @@
         "minFontPx": 10.5,
         "overflowX": 0,
         "consoleErrors": 0,
-        "viewerNodes": 11,
-        "viewerEdges": 9
+        "viewerNodes": 15,
+        "viewerEdges": 14
       }
     },
     {
@@ -59,63 +59,66 @@
   ],
   "outputs": {
     "html": {
-      "path": "examples/out/three-tier.html",
-      "sha256": "c0fbba455c1133be50fa8d347db768adba4f65fb1530fc7a3014180632ac78d8",
-      "bytes": 141416
+      "path": "examples/out/multi-agent-foundry-fabric-copilot.html",
+      "sha256": "0f279a397bd544e45db83ec8103ece59474591fbc8508728dd2ec3f319264567",
+      "bytes": 163992
     },
     "svg": {
-      "path": "examples/out/three-tier.svg",
-      "sha256": "915bb550e33e13794c3610c34c08da1b14f6ebbc3d71ac850bbbc8cbd789585c"
+      "path": "examples/out/multi-agent-foundry-fabric-copilot.svg",
+      "sha256": "7a16b565fdbb3a01161c85852e8db16ac52b1f936822b95d969e575c82a31f1e"
     },
     "drawio": {
-      "path": "examples/out/three-tier.drawio",
-      "sha256": "670b157fa2de8f479c52285182d35f7e2eebe1e42c18943c2b281c0720690f89"
+      "path": "examples/out/multi-agent-foundry-fabric-copilot.drawio",
+      "sha256": "db523eb572112ac22045782af7f036ce0438a6e57a934b63cf57a3167f4a3f3f"
     },
     "png": {
-      "path": "examples/out/three-tier.png",
-      "sha256": "2b7c39115bede928ef8e58b63108ab47c509e08432d19190e20d7de8574efdb9"
+      "path": "examples/out/multi-agent-foundry-fabric-copilot.png",
+      "sha256": "470375edbab50a5010a71beefb3f330fcc4372595c2ceb45727f9d1d29b66ad4"
     }
   },
   "summary": {
     "type": "architecture",
-    "nodes": 11,
-    "groups": 10,
-    "edges": 9,
+    "nodes": 15,
+    "groups": 3,
+    "edges": 14,
     "size": {
-      "width": 1564,
-      "height": 996
+      "width": 1609,
+      "height": 804
     }
   },
   "cost": {
     "region": "eastus",
     "asOf": "2026-10-02",
-    "monthlyUsd": 1791.5162,
+    "monthlyUsd": 3640.271,
     "confidence": "indicative",
     "coverage": {
-      "nodes": 11,
-      "estimated": 8,
-      "override": 1,
+      "nodes": 15,
+      "estimated": 6,
+      "override": 0,
       "noCharge": 1,
       "notBillable": 1,
       "notItemized": 0,
       "needsInput": 0,
-      "notEstimated": 0,
+      "notEstimated": 7,
       "error": 0
     }
   },
   "review": {
     "advisory": true,
     "mode": "full",
-    "lens": "general",
+    "lens": "generative-ai",
     "findings": {
       "Critical": 0,
-      "High": 0,
-      "Medium": 0,
+      "High": 1,
+      "Medium": 1,
       "Low": 0
     },
-    "evidenced": 17,
+    "evidenced": 12,
     "bps": 59,
-    "ids": []
+    "ids": [
+      "F-001",
+      "F-002"
+    ]
   },
   "visualReview": "not-performed"
 }

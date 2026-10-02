@@ -14,6 +14,13 @@ Not redistributed in this repository. `npm run icons:fetch` downloads the offici
 architecture, do not crop, flip, rotate, distort or recolour them, and do not imply Microsoft endorsement. Rendered
 diagrams embed the icons they use — check the current Microsoft terms before publishing diagrams widely.
 
+## Microsoft Power Platform icons
+Not redistributed. `npm run icons:fetch` also downloads the official Power Platform icon set (Copilot Studio, Agent 365, Power Apps,
+Power Automate, Power Pages, Dataverse, AI Builder, Power Platform) from
+<https://learn.microsoft.com/power-platform/guidance/icons> into `assets/azure-icons/power-platform/` (git-ignored). They are © Microsoft
+Corporation: do not crop, flip, rotate, distort or recolour them, include the product name near the icon, and do not use them to represent
+your own product. `fetch-icons --no-power` skips them.
+
 ## Azure Retail Prices API
 Cost estimates use list prices from the public Azure Retail Prices REST API (<https://prices.azure.com/api/retail/prices>,
 documented at <https://learn.microsoft.com/rest/api/cost-management/retail-prices/azure-retail-prices>). `data/prices/` is a

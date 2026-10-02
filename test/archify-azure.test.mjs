@@ -28,6 +28,14 @@ test("icon aliases resolve to catalog entries", () => {
   assert.ok(searchIcons("cosmos").some((h) => h.id === "cosmos-db"));
 });
 
+test("official Power Platform icons are in the catalog with aliases and importer keywords", async () => {
+  for (const [a, id] of [["copilot-studio", "copilot-studio"], ["copilot", "copilot-studio"], ["power-automate", "power-automate"], ["dataverse", "dataverse"], ["powerapps", "power-apps"], ["agent-365", "agent-365"]]) assert.equal(resolveIcon(a).entry.id, id, a);
+  assert.equal(resolveIcon("copilot-studio").entry.category, "power-platform");
+  const { guessIcon } = await import("../src/iconguess.mjs");
+  assert.equal(guessIcon("Copilot Studio agent").icon, "copilot-studio");
+  assert.notEqual(guessIcon("Order flow").icon, "power-automate");
+});
+
 test("label wrapping never breaks a word", () => {
   assert.deepEqual(wrapLabel("Application Gateway Ingress"), ["Application", "Gateway Ingress"]);
   assert.deepEqual(wrapLabel("Key Vault"), ["Key Vault"]);
@@ -46,7 +54,7 @@ test("layout-only stacks cannot be edge endpoints", () => {
   assert.ok(validateSpec(spec).errors.some((e) => /layout-only/.test(e)));
 });
 
-for (const name of ["three-tier", "serverless-api", "genai-rag", "product-catalog-search"]) {
+for (const name of ["three-tier", "serverless-api", "genai-rag", "product-catalog-search", "multi-agent-foundry-fabric-copilot"]) {
   test(`example ${name} renders with no routing warnings and clean routes`, needIcons, async () => {
     const { buildModel } = await import("../src/build.mjs");
     const { renderSvg } = await import("../src/render.mjs");
@@ -254,7 +262,7 @@ test("finalize stops at the first failing gate and lists every error", async (t)
   assert.ok(r.stages[0].detail.errors.some((e) => /cosmosdb-x/.test(e)) && r.stages[0].detail.errors.some((e) => /zz/.test(e)));
 });
 
-for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json"]) {
+for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "multi-agent-foundry-fabric-copilot.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json"]) {
   test(`example ${f} passes finalize`, async (t) => {
     if (!iconsAvailable()) return t.skip("icons not fetched");
     const { finalize } = await import("../src/finalize.mjs");

@@ -15,7 +15,7 @@ npm run icons:fetch          # official Azure icon package → assets/azure-icon
 node bin/archify-azure.mjs doctor
 ```
 
-`doctor` prints the Node version, whether icons were found, and the catalog size (539 services, 97 general icons, 8 group icons).
+`doctor` prints the Node version, whether icons were found, and the catalog size (547 services including 8 Power Platform icons, 97 general icons, 8 group icons).
 
 !!! tip "Use it as a command"
     `npm link` (or `npx`) exposes `archify-azure`; the rest of this guide writes `archify-azure …` for `node bin/archify-azure.mjs …`.

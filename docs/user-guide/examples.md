@@ -10,6 +10,10 @@ Each example is a spec in the repository's `examples/` folder, rendered to a liv
 | Serverless API | Entra External ID, API Management, Functions, Cosmos DB, Service Bus | [open](../live/serverless-api.html) | [file](../live/serverless-api.drawio) |
 | RAG assistant on Azure OpenAI | Content Safety, model deployment, AI Search vector index, diagnostic logging | [open](../live/genai-rag.html) | [file](../live/genai-rag.drawio) |
 | **Product catalog search** | Hybrid keyword + vector search on Azure AI Search, Azure OpenAI embeddings, event-driven indexing | [open](../live/product-catalog-search.html) | [file](../live/product-catalog-search.drawio) |
+| **Multi-agent: Copilot Studio + Foundry + Fabric** | Copilot Studio front door, Foundry orchestrator with knowledge/data/action agents, Fabric data agent, AI Search, Logic Apps, Content Safety | [open](../live/multi-agent-foundry-fabric-copilot.html) | [file](../live/multi-agent-foundry-fabric-copilot.drawio) |
+
+!!! note "Icons"
+    Copilot Studio uses the official Power Platform icon set. The Azure package has no Microsoft Fabric icon, so Fabric is drawn with the Synapse Analytics icon and labelled with its real name. Fabric capacity and Copilot Studio messages are not in the Retail Prices API and are not priced.
 
 ![Product catalog search](../assets/example-product-catalog.png)
 

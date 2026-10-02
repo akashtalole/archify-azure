@@ -2,7 +2,7 @@
   "ok": true,
   "tool": "archify-azure",
   "version": "0.1.0",
-  "iconRelease": "Azure Architecture Icons V24",
+  "iconRelease": "Azure Architecture Icons V24 + Power Platform icons",
   "input": {
     "path": "examples/clinical-notes.dataflow.json",
     "sha256": "314489d83f4b90e0a83aedc8c7bce07451f5271dc22efe7ec657a171c4e06c89"

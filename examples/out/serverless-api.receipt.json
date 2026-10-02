@@ -2,7 +2,7 @@
   "ok": true,
   "tool": "archify-azure",
   "version": "0.1.0",
-  "iconRelease": "Azure Architecture Icons V24",
+  "iconRelease": "Azure Architecture Icons V24 + Power Platform icons",
   "input": {
     "path": "examples/serverless-api.json",
     "sha256": "c008afd502bd36d3905f31c9b13995e362a9cb94143fb946fa8e2fb191711dee"
