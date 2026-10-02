@@ -46,7 +46,7 @@ test("layout-only stacks cannot be edge endpoints", () => {
   assert.ok(validateSpec(spec).errors.some((e) => /layout-only/.test(e)));
 });
 
-for (const name of ["three-tier", "serverless-api", "genai-rag", "product-catalog-search"]) {
+for (const name of ["three-tier", "serverless-api", "genai-rag", "product-catalog-search", "multi-agent-foundry-fabric-copilot"]) {
   test(`example ${name} renders with no routing warnings and clean routes`, needIcons, async () => {
     const { buildModel } = await import("../src/build.mjs");
     const { renderSvg } = await import("../src/render.mjs");
@@ -254,7 +254,7 @@ test("finalize stops at the first failing gate and lists every error", async (t)
   assert.ok(r.stages[0].detail.errors.some((e) => /cosmosdb-x/.test(e)) && r.stages[0].detail.errors.some((e) => /zz/.test(e)));
 });
 
-for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json"]) {
+for (const f of ["three-tier.json", "serverless-api.json", "genai-rag.json", "product-catalog-search.json", "multi-agent-foundry-fabric-copilot.json", "agent-tool-call.sequence.json", "clinical-notes.dataflow.json"]) {
   test(`example ${f} passes finalize`, async (t) => {
     if (!iconsAvailable()) return t.skip("icons not fetched");
     const { finalize } = await import("../src/finalize.mjs");

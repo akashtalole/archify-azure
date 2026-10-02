@@ -1,0 +1,297 @@
+{
+  "meta": {
+    "title": "Multi-agent assistant: Copilot Studio, Azure AI Foundry and Microsoft Fabric",
+    "subtitle": "Copilot Studio is the employee-facing front door; a Foundry orchestrator delegates to knowledge, data and action agents; Fabric supplies governed enterprise data",
+    "lens": [
+      "framework",
+      "generative-ai"
+    ],
+    "output": "examples/out/multi-agent-foundry-fabric-copilot.html",
+    "cost": {
+      "note": "Illustrative: 50,000 conversations/month, ~4 model calls each (\u22483,000 input and 400 output tokens per call), gpt-4o-0806 global deployment. The package has no Microsoft Fabric or Copilot Studio icon: Fabric is drawn with the Synapse Analytics icon and Copilot Studio with the Power Platform icon; their licences/capacity (Fabric CU, Copilot Studio messages) are not in the Retail Prices API and are not priced."
+    }
+  },
+  "root": {
+    "layout": "row",
+    "gap": 80,
+    "children": [
+      {
+        "id": "ch",
+        "kind": "stack",
+        "layout": "column",
+        "gap": 56,
+        "children": [
+          {
+            "id": "users",
+            "icon": "users",
+            "label": "Employees",
+            "sublabel": "Teams, M365 Copilot, web"
+          },
+          {
+            "id": "copilot",
+            "icon": "power-platform",
+            "label": "Copilot Studio",
+            "sublabel": "front-door agent, topics, handoff"
+          }
+        ]
+      },
+      {
+        "id": "cloud",
+        "kind": "azure-cloud",
+        "layout": "row",
+        "gap": 80,
+        "children": [
+          {
+            "id": "front",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "idp",
+                "icon": "entra-id-protection",
+                "label": "Microsoft Entra ID",
+                "sublabel": "SSO, agent identities, RBAC"
+              },
+              {
+                "id": "apim",
+                "icon": "apim",
+                "label": "API Management",
+                "sublabel": "AI gateway, throttling",
+                "usage": {
+                  "tier": "standard",
+                  "units": 1,
+                  "callsPerMonth": 200000
+                }
+              }
+            ]
+          },
+          {
+            "id": "region",
+            "kind": "region",
+            "layout": "row",
+            "gap": 90,
+            "children": [
+              {
+                "id": "foundry",
+                "kind": "custom",
+                "icon": "ai-foundry",
+                "label": "Azure AI Foundry",
+                "layout": "row",
+                "gap": 70,
+                "children": [
+                  {
+                    "id": "core",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 48,
+                    "children": [
+                      {
+                        "id": "aoai",
+                        "icon": "openai",
+                        "label": "Azure OpenAI",
+                        "sublabel": "gpt-4o deployment",
+                        "usage": {
+                          "model": "gpt-4o-0806",
+                          "deployment": "global",
+                          "inputTokensPerMonth": 600000000,
+                          "outputTokensPerMonth": 80000000
+                        }
+                      },
+                      {
+                        "id": "orch",
+                        "icon": "foundry-agent-service",
+                        "label": "Orchestrator agent",
+                        "sublabel": "plans, routes, merges answers"
+                      },
+                      {
+                        "id": "safety",
+                        "icon": "content-safety",
+                        "label": "Content Safety",
+                        "sublabel": "prompt shields, filters",
+                        "usage": {
+                          "textRecordsPerMonth": 400000
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "specialists",
+                    "kind": "stack",
+                    "layout": "column",
+                    "gap": 48,
+                    "children": [
+                      {
+                        "id": "kagent",
+                        "icon": "foundry-agent-service",
+                        "label": "Knowledge agent",
+                        "sublabel": "grounded Q&A"
+                      },
+                      {
+                        "id": "dagent",
+                        "icon": "foundry-agent-service",
+                        "label": "Data agent",
+                        "sublabel": "analytics questions"
+                      },
+                      {
+                        "id": "aagent",
+                        "icon": "foundry-agent-service",
+                        "label": "Action agent",
+                        "sublabel": "tickets, approvals"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "data",
+                "kind": "stack",
+                "layout": "column",
+                "gap": 48,
+                "children": [
+                  {
+                    "id": "search",
+                    "icon": "cognitive-search",
+                    "label": "Azure AI Search",
+                    "sublabel": "policy and wiki index",
+                    "usage": {
+                      "sku": "standard-s1",
+                      "searchUnits": 2
+                    }
+                  },
+                  {
+                    "id": "fabric",
+                    "icon": "synapse-analytics",
+                    "label": "Microsoft Fabric",
+                    "sublabel": "OneLake, Fabric data agent"
+                  },
+                  {
+                    "id": "logic",
+                    "icon": "logic-apps",
+                    "label": "Logic Apps",
+                    "sublabel": "connectors to ITSM, HR, ERP"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ops",
+            "kind": "stack",
+            "layout": "column",
+            "gap": 56,
+            "children": [
+              {
+                "id": "kv",
+                "icon": "key-vaults",
+                "label": "Key Vault",
+                "sublabel": "secrets, connection keys",
+                "usage": {
+                  "operationsPerMonth": 500000
+                }
+              },
+              {
+                "id": "mon",
+                "icon": "monitor",
+                "label": "Azure Monitor",
+                "sublabel": "traces, token usage, audit"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "from": "users",
+      "to": "copilot",
+      "step": 1,
+      "label": "chat",
+      "desc": "An employee asks a question in Teams or Microsoft 365 Copilot; Copilot Studio authenticates them with Entra ID"
+    },
+    {
+      "from": "copilot",
+      "to": "idp",
+      "style": "dashed",
+      "label": "SSO"
+    },
+    {
+      "from": "copilot",
+      "to": "apim",
+      "step": 2,
+      "label": "handoff",
+      "desc": "Copilot Studio hands complex requests to the Foundry orchestrator through the API Management AI gateway, passing the user's token"
+    },
+    {
+      "from": "apim",
+      "to": "orch",
+      "step": 3,
+      "label": "invoke"
+    },
+    {
+      "from": "orch",
+      "to": "aoai",
+      "step": 4,
+      "label": "plan",
+      "desc": "The orchestrator asks the model to plan and pick specialist agents; prompts and replies pass Content Safety"
+    },
+    {
+      "from": "orch",
+      "to": "safety",
+      "style": "dashed",
+      "label": "screen"
+    },
+    {
+      "from": "orch",
+      "to": "kagent",
+      "step": 5,
+      "label": "connected agent"
+    },
+    {
+      "from": "orch",
+      "to": "dagent",
+      "step": 5,
+      "label": "connected agent"
+    },
+    {
+      "from": "orch",
+      "to": "aagent",
+      "step": 5,
+      "label": "connected agent"
+    },
+    {
+      "from": "kagent",
+      "to": "search",
+      "step": 6,
+      "label": "hybrid query",
+      "desc": "The knowledge agent retrieves grounding passages from Azure AI Search"
+    },
+    {
+      "from": "dagent",
+      "to": "fabric",
+      "step": 6,
+      "label": "NL to SQL/DAX",
+      "desc": "The data agent queries governed lakehouse and semantic-model data through a Fabric data agent, as the signed-in user"
+    },
+    {
+      "from": "aagent",
+      "to": "logic",
+      "step": 6,
+      "label": "tool call",
+      "desc": "The action agent calls approved workflows (ticketing, approvals) in Logic Apps; high-impact actions need human approval"
+    },
+    {
+      "from": "safety",
+      "to": "mon",
+      "style": "dashed",
+      "label": "audit"
+    },
+    {
+      "from": "aoai",
+      "to": "kv",
+      "style": "dashed",
+      "label": "keys"
+    }
+  ]
+}
