@@ -8,6 +8,14 @@
 
 ## Install
 
+**As an agent skill (recommended):**
+
+```bash
+npx skills add akashtalole/archify-azure
+```
+
+The icons are downloaded automatically the first time you render. To use the CLI directly instead, clone the repository:
+
 ```bash
 git clone https://github.com/akashtalole/archify-azure
 cd archify-azure
