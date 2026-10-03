@@ -23,7 +23,13 @@ Multi-agent solution (Copilot Studio + Azure AI Foundry + Microsoft Fabric): [ar
 Serverless API: [architecture](examples/out/serverless-api.png) · Agent tool call: [sequence](examples/out/agent-tool-call.sequence.png) ·
 Clinical notes: [dataflow](examples/out/clinical-notes.dataflow.png)
 
-## Quick start
+## Install as an agent skill
+```bash
+npx skills add akashtalole/archify-azure
+```
+Installs the skill into your agent (Claude Code, Cursor, Codex and others; the CLI asks which). The official icons are downloaded automatically the first time you render (network needed once; set `ARCHIFY_NO_AUTOFETCH=1` to disable). The sibling skills install the same way: `akashtalole/archify-aws`, `akashtalole/archify-azure`, `akashtalole/archify-gcp`.
+
+## Quick start (from a clone)
 ```bash
 git clone https://github.com/akashtalole/archify-azure && cd archify-azure
 npm run icons:fetch                                  # official icon package → assets/azure-icons/ (git-ignored)

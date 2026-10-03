@@ -12,9 +12,11 @@ metadata:
 Turns a description of an Azure workload into a checked, explorable diagram. Same philosophy as Archify: write typed JSON,
 let the tool lay out, route and validate, and report only what was actually verified.
 
-## Setup (once)
+## Setup
+Installed with `npx skills add akashtalole/archify-azure`; run every command below from the skill directory (`node bin/archify-azure.mjs ...`).
+The official Azure icons are downloaded automatically on the first `render`/`finalize` (network needed once). To fetch them yourself or check the install:
 ```bash
-npm run icons:fetch          # downloads the official Azure icon package into assets/azure-icons/ (not committed)
+node bin/archify-azure.mjs fetch-icons
 node bin/archify-azure.mjs doctor
 ```
 No npm dependencies. PNG export additionally needs Chrome/Chromium (`CHROME_PATH`, or Playwright's browser).
